@@ -60,7 +60,6 @@ namespace Haziq_FinalProject
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(608, 450);
             this.panel1.TabIndex = 0;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // labelAccountSignUp
             // 
@@ -101,7 +100,6 @@ namespace Haziq_FinalProject
             this.textBoxPassword.Size = new System.Drawing.Size(450, 44);
             this.textBoxPassword.TabIndex = 4;
             this.textBoxPassword.UseSystemPasswordChar = true;
-            this.textBoxPassword.TextChanged += new System.EventHandler(this.textBoxPassword_TextChanged);
             // 
             // pictureBox2
             // 
@@ -121,7 +119,6 @@ namespace Haziq_FinalProject
             this.textBoxUsername.Name = "textBoxUsername";
             this.textBoxUsername.Size = new System.Drawing.Size(450, 50);
             this.textBoxUsername.TabIndex = 2;
-            this.textBoxUsername.TextChanged += new System.EventHandler(this.label1_Click);
             // 
             // pictureBox1
             // 
@@ -167,7 +164,6 @@ namespace Haziq_FinalProject
             this.label1.TabIndex = 0;
             this.label1.Text = "Login";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // LoginForm
             // 

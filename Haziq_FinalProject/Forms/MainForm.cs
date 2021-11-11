@@ -51,41 +51,6 @@ namespace Haziq_FinalProject
             labelClose.ForeColor = Color.Black;
         }
 
-        private void panel6_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void panel6_Paint_1(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void panel6_Paint_2(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void panel4_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void panel4_Paint_1(object sender, PaintEventArgs e)
-        {
-
-        }
-
         private void MainForm_Load(object sender, EventArgs e)
         {
             flowLayoutPanelNigiri.Hide();
@@ -442,14 +407,19 @@ namespace Haziq_FinalProject
 
         private void buttonGunkan3_Click(object sender, EventArgs e)
         {
+            AddFood(buttonGunkan.Text, labelNameGunkan3.Text, int.Parse(textBoxGunkan3.Text), decimal.Parse(labelPriceGunkan3.Text));
+        }
+        //Parameters are buttonName.text, LabelName.text, textbox.text
+        private void AddFood(string catagory,string orderName, int foodAmount, decimal price)
+        {
             try
             {
-                catagory = buttonGunkan.Text;
-                orderName = labelNameGunkan3.Text;
+                //catagory = buttonGunkan.Text;
+                //orderName = labelNameGunkan3.Text;
                 fullname = catagory + " " + orderName;
-                foodAmount = int.Parse(textBoxGunkan3.Text);
+                //foodAmount = int.Parse(textBoxGunkan3.Text);
 
-                price = decimal.Parse(labelPriceGunkan3.Text) * foodAmount;
+                price = price  * foodAmount;
 
                 if (foodAmount <= 0)
                 {
@@ -500,16 +470,22 @@ namespace Haziq_FinalProject
 
         private void buttonMinusGunkan3_Click(object sender, EventArgs e)
         {
+            
+            //    catagory = buttonGunkan.Text;
+            //    orderName = labelNameGunkan3.Text;
+            //    fullname = catagory + " " + orderName;
+            //    foodAmount = int.Parse(textBoxGunkan3.Text);
+
+            MinusFood(buttonGunkan.Text, labelNameGunkan3.Text, int.Parse(textBoxGunkan3.Text), decimal.Parse(labelPriceGunkan3.Text));
+        }
+
+        public void MinusFood(string catagory, string orderName, int foodAmount, decimal price)
+        {
             try
             {
 
-                catagory = buttonGunkan.Text;
-                orderName = labelNameGunkan3.Text;
                 fullname = catagory + " " + orderName;
-                foodAmount = int.Parse(textBoxGunkan3.Text);
-
-
-                price = decimal.Parse(labelPriceGunkan3.Text) * foodAmount;
+                price = price * foodAmount;
                 foodDeleteCost = price * -1;
 
                 if (foodAmount <= 0)
@@ -547,10 +523,7 @@ namespace Haziq_FinalProject
             }
         }
 
-        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
+      
 
         private void buttonBill_Click(object sender, EventArgs e)
         {
@@ -574,7 +547,11 @@ namespace Haziq_FinalProject
 
         private void buttonOrder_Click(object sender, EventArgs e)
         {
+            Order();
+        }
 
+        public void Order()
+        {
             String.Format("{0:0.00}", labelCostAmount.Text);
 
             listBoxOrder.Items.Clear();

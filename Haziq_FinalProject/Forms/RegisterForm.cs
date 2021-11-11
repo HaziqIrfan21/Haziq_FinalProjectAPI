@@ -13,10 +13,7 @@ namespace Haziq_FinalProject
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
+        
 
         private void labelClose_Click(object sender, EventArgs e)
         {
@@ -203,15 +200,27 @@ namespace Haziq_FinalProject
 
         private void buttonCreateAccount_Click(object sender, EventArgs e)
         {
+            CreateAccount(textBoxUsername.Text, textBoxPassword.Text, textBoxFirstName.Text, textBoxLastName.Text, textBoxEmail.Text);
+        }
+
+        public void CreateAccount(string userName,string password,string firstName,string lastName,string email)
+        {
             //Add new user
             DB db = new DB();
             MySqlCommand command = new MySqlCommand("INSERT INTO `users`(`username`, `password`, `firstname`, `lastname`, `email`) VALUES (@usn, @pass, @fn, @ln, @email)", db.GetConnection());
 
-            command.Parameters.Add("@usn", MySqlDbType.VarChar).Value = textBoxUsername.Text;
-            command.Parameters.Add("@pass", MySqlDbType.VarChar).Value = textBoxPassword.Text;
-            command.Parameters.Add("@fn", MySqlDbType.VarChar).Value = textBoxFirstName.Text;
-            command.Parameters.Add("@ln", MySqlDbType.VarChar).Value = textBoxLastName.Text;
-            command.Parameters.Add("@email", MySqlDbType.VarChar).Value = textBoxEmail.Text;
+            //command.Parameters.Add("@usn", MySqlDbType.VarChar).Value = textBoxUsername.Text;
+            //command.Parameters.Add("@pass", MySqlDbType.VarChar).Value = textBoxPassword.Text;
+            //command.Parameters.Add("@fn", MySqlDbType.VarChar).Value = textBoxFirstName.Text;
+            //command.Parameters.Add("@ln", MySqlDbType.VarChar).Value = textBoxLastName.Text;
+            //command.Parameters.Add("@email", MySqlDbType.VarChar).Value = textBoxEmail.Text;
+
+
+            command.Parameters.Add("@usn", MySqlDbType.VarChar).Value = userName;
+            command.Parameters.Add("@pass", MySqlDbType.VarChar).Value = password;
+            command.Parameters.Add("@fn", MySqlDbType.VarChar).Value = firstName;
+            command.Parameters.Add("@ln", MySqlDbType.VarChar).Value = lastName;
+            command.Parameters.Add("@email", MySqlDbType.VarChar).Value = email;
 
             //Open the connection
             db.OpenConnection();
@@ -221,7 +230,7 @@ namespace Haziq_FinalProject
 
             if (!CheckTextBoxValues())
             {
-                
+
                 //Check if the password is the same as the confirm password
                 if (textBoxPassword.Text.Equals(textBoxPasswordConfirm.Text))
                 {
@@ -249,7 +258,7 @@ namespace Haziq_FinalProject
                 {
                     MessageBox.Show("Password entered is not the same, try again");
                 }
-                
+
             }
             else
             {

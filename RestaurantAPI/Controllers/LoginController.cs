@@ -43,5 +43,14 @@ namespace RestaurantAPI.Controllers
         public void Delete(int id)
         {
         }
+
+        [HttpPost]
+        [Route("login")]
+        public void Login([FromBody] string username,string password)
+        {
+            Login(username, password);
+          
+        }
+
     }
 }

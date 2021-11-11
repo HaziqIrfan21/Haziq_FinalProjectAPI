@@ -240,7 +240,6 @@ namespace Haziq_FinalProject
             this.listViewBill.TabIndex = 1;
             this.listViewBill.UseCompatibleStateImageBehavior = false;
             this.listViewBill.View = System.Windows.Forms.View.Details;
-            this.listViewBill.SelectedIndexChanged += new System.EventHandler(this.listView1_SelectedIndexChanged);
             // 
             // columnHeaderIndex
             // 
@@ -466,7 +465,6 @@ namespace Haziq_FinalProject
             this.buttonPromo.Text = "Promo";
             this.buttonPromo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.buttonPromo.UseVisualStyleBackColor = true;
-            this.buttonPromo.Click += new System.EventHandler(this.button1_Click);
             // 
             // panelLogo
             // 
@@ -615,7 +613,6 @@ namespace Haziq_FinalProject
             this.buttonCallWaiter.TabIndex = 0;
             this.buttonCallWaiter.Text = "Call";
             this.buttonCallWaiter.UseVisualStyleBackColor = true;
-            this.buttonCallWaiter.Click += new System.EventHandler(this.button11_Click);
             // 
             // buttonBill
             // 
