@@ -8,6 +8,7 @@ namespace Haziq_FinalProject
 {
     public partial class LoginForm : Form
     {
+        string CurrentUser;
         public LoginForm()
         {
             InitializeComponent();
@@ -17,6 +18,8 @@ namespace Haziq_FinalProject
 
 
             MySqlConnection connection = new MySqlConnection("server=localhost;port=3306;username=root;password=;email=;database=finalproject_users_db;SSL Mode=None");
+
+          
         }
 
         private void labelClose_MouseEnter(object sender, EventArgs e)
@@ -40,10 +43,13 @@ namespace Haziq_FinalProject
 
         }
 
+       
+
+
         public void Login(string userName,string password)
         {
             DB db = new DB();
-
+          
             //string username = textBoxUsername.Text;
             //string password = textBoxPassword.Text;
 
@@ -77,6 +83,8 @@ namespace Haziq_FinalProject
                     this.Hide();
                     MainForm mainForm = new MainForm();
                     mainForm.Show();
+                    User user = new User(userName);
+
                 }
 
             }

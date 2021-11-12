@@ -1,14 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 using Microsoft.AspNetCore.Mvc;
+using MySql.Data.MySqlClient;
+using Newtonsoft.Json;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
 namespace RestaurantAPI.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/main")]
     [ApiController]
     public class MainController : ControllerBase
     {
@@ -42,6 +46,35 @@ namespace RestaurantAPI.Controllers
         [HttpDelete("{id}")]
         public void Delete(int id)
         {
+        }
+
+        [Route("getreceipt")]
+        [HttpGet]
+        public string GetReceipt()
+        {
+            try
+            {
+                MySqlConnection connection = new MySqlConnection("server=localhost;port=3306;username=root;password=;SSL Mode=None");
+                MySqlDataAdapter adapter = new MySqlDataAdapter("SELECT * FROM finalproject_users_db.orders", connection);
+               // MySqlDataAdapter adapter2 = new MySqlDataAdapter("SELECT * FROM finalproject_users_db.orders", connection);
+
+                connection.Open();
+                DataSet ds = new DataSet();
+                adapter.Fill(ds, "orders");
+                string json = JsonConvert.SerializeObject(ds);
+                return json;
+
+                //DataSet ds2 = new DataSet();
+                //adapter2.Fill(ds2, "orders");
+                //dataGridView2.DataSource = ds2.Tables["orders"];
+                //connection.Close();
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+            }
+            return null;
         }
     }
 }

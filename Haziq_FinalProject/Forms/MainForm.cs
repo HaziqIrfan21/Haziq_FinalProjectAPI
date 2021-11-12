@@ -4,6 +4,9 @@ using System.Drawing;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
 using System.Linq;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
+using MySqlX.XDevAPI.Relational;
 
 namespace Haziq_FinalProject
 {
@@ -82,12 +85,12 @@ namespace Haziq_FinalProject
             flowLayoutPanelMakimono.Show();
         }
 
-       
+
 
         private void buttonNigiri1_Click(object sender, EventArgs e)
         {
 
-          
+
         }
 
         private void buttonDeleteOrder_Click(object sender, EventArgs e)
@@ -119,68 +122,68 @@ namespace Haziq_FinalProject
         private void buttonNigiri2_Click(object sender, EventArgs e)
         {
 
-           
+
         }
 
         private void buttonNigiri3_Click(object sender, EventArgs e)
         {
 
-           
+
         }
 
         private void buttonNigiri4_Click(object sender, EventArgs e)
         {
 
-          
+
         }
 
         private void buttonNigiri5_Click(object sender, EventArgs e)
         {
 
-           
+
         }
 
         private void buttonNigiri6_Click(object sender, EventArgs e)
         {
 
-            
+
 
         }
 
         private void buttonMakimono1_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void buttonMakimono2_Click(object sender, EventArgs e)
         {
-           
+
         }
 
         private void buttonMakimono3_Click(object sender, EventArgs e)
         {
 
-            
+
         }
 
         private void buttonMakimono4_Click(object sender, EventArgs e)
         {
 
 
-           
+
         }
 
         private void buttonMakimono5_Click(object sender, EventArgs e)
         {
 
 
-            
+
         }
 
         private void buttonGunkan1_Click(object sender, EventArgs e)
         {
 
-           
+
 
 
         }
@@ -188,7 +191,7 @@ namespace Haziq_FinalProject
         private void buttonGunkan2_Click(object sender, EventArgs e)
         {
 
-            
+
 
         }
 
@@ -203,10 +206,10 @@ namespace Haziq_FinalProject
 
                 MessageBox.Show("Please insert food amount");
             }
-           
+
         }
         //Parameters are buttonName.text, LabelName.text, textbox.text
-        private void AddFood(string catagory,string orderName, int foodAmount, decimal price,food foodType)
+        private void AddFood(string catagory, string orderName, int foodAmount, decimal price, food foodType)
         {
             try
             {
@@ -215,7 +218,7 @@ namespace Haziq_FinalProject
                 fullname = catagory + " " + orderName;
                 //foodAmount = int.Parse(textBoxGunkan3.Text);
 
-                price = price  * foodAmount;
+                price = price * foodAmount;
 
                 if (foodAmount <= 0)
                 {
@@ -244,7 +247,7 @@ namespace Haziq_FinalProject
 
                     if (bGunkan3 == false)
                     {
-                         foodType = new food(fullname, foodAmount, price);
+                        foodType = new food(fullname, foodAmount, price);
 
                         for (int i = 0; i < foodAmount; i++)
                         {
@@ -266,7 +269,7 @@ namespace Haziq_FinalProject
 
         private void buttonMinusGunkan3_Click(object sender, EventArgs e)
         {
-            
+
             //    catagory = buttonGunkan.Text;
             //    orderName = labelNameGunkan3.Text;
             //    fullname = catagory + " " + orderName;
@@ -303,11 +306,11 @@ namespace Haziq_FinalProject
                                 }
                                 if (foodAmount < 0)
                                 {
-                                    
+
                                     foodList.Remove(item);
 
                                 }
-                                    item.FoodAmount -= foodAmount;
+                                item.FoodAmount -= foodAmount;
                             }
 
                         }
@@ -324,7 +327,7 @@ namespace Haziq_FinalProject
             }
         }
 
-      
+
 
         private void buttonBill_Click(object sender, EventArgs e)
         {
@@ -365,6 +368,7 @@ namespace Haziq_FinalProject
                 }
             }
 
+           
             bGunkan3 = false;
             foodAmount = 0;
             foodDeleteNumber = 0;
@@ -398,6 +402,39 @@ namespace Haziq_FinalProject
             listViewBill.Items.Add(eachrow);
 
             autoID += 1;
+
+            //---------//
+
+            //Add new user
+            DB db = new DB();
+            MySqlCommand command = new MySqlCommand("INSERT INTO `orders` (`item name`, `qty`, `price`, `total_price`) VALUES (@itn, @qty, @price, @total_price)", db.GetConnection());
+
+            //command.Parameters.Add("@usn", MySqlDbType.VarChar).Value = textBoxUsername.Text;
+            //command.Parameters.Add("@pass", MySqlDbType.VarChar).Value = textBoxPassword.Text;
+            //command.Parameters.Add("@fn", MySqlDbType.VarChar).Value = textBoxFirstName.Text;
+            //command.Parameters.Add("@ln", MySqlDbType.VarChar).Value = textBoxLastName.Text;
+            //command.Parameters.Add("@email", MySqlDbType.VarChar).Value = textBoxEmail.Text;
+
+
+           // command.Parameters.Add("@usn", MySqlDbType.VarChar).Value = GetUser();
+            command.Parameters.Add("@itn", MySqlDbType.VarChar).Value =name ;
+            command.Parameters.Add("@qty", MySqlDbType.Int32).Value = qty;
+            command.Parameters.Add("@price", MySqlDbType.Decimal).Value = price;
+            command.Parameters.Add("@total_price", MySqlDbType.Decimal).Value = total;
+          
+            //adapter.SelectCommand = command;
+
+
+            //adapter.Fill(table);
+
+            //Open the connection
+            db.OpenConnection();
+            command.ExecuteNonQuery();
+
+            //close the connection
+            db.CloseConnection();
+
+            //========//
 
         }
 
