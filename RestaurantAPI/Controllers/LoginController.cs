@@ -51,7 +51,7 @@ namespace RestaurantAPI.Controllers
         [HttpGet]
         public bool GetLogin(string userName, string password)
         {
-            DB db = new DB();
+            DBAPI db = new DBAPI();
 
             //string username = textBoxUsername.Text;
             //string password = textBoxPassword.Text;

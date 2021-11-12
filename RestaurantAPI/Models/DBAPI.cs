@@ -5,7 +5,7 @@ using MySql.Data.MySqlClient;
 
 namespace DatabaseSQL
 {
-   public class DB
+   public class DBAPI
     {
         private MySqlConnection connection = new MySqlConnection("server=localhost;port=3306;username=root;password=;email=;database=finalproject_users_db;SSL Mode=None");
 

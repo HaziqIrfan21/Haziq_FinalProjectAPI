@@ -53,7 +53,7 @@ namespace RestaurantAPI.Controllers
         public void CreateAccount(string userName, string password,string confirmPassword, string firstName, string lastName, string email)
         {
             //Add new user
-            DB db = new DB();
+            DBAPI db = new DBAPI();
             MySqlCommand command = new MySqlCommand("INSERT INTO `users`(`username`, `password`, `firstname`, `lastname`, `email`) VALUES (@usn, @pass, @fn, @ln, @email)", db.GetConnection());
 
             //command.Parameters.Add("@usn", MySqlDbType.VarChar).Value = textBoxUsername.Text;
@@ -122,7 +122,7 @@ namespace RestaurantAPI.Controllers
         [HttpGet]
         public bool CheckUsername(string username)
         {
-            DB db = new DB();
+            DBAPI db = new DBAPI();
 
             //string username = textBoxUsername.Text;
 
