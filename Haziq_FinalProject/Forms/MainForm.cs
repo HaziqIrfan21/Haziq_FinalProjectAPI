@@ -82,21 +82,20 @@ namespace Haziq_FinalProject
             flowLayoutPanelMakimono.Show();
         }
 
-        private void button11_Click(object sender, EventArgs e)
-        {
-
-        }
+       
 
         private void buttonNigiri1_Click(object sender, EventArgs e)
         {
 
-            catagory = buttonNigiri.Text;
-            orderName = labelNameNigiri1.Text;
-
-            listBoxOrder.Items.Add(catagory + " " + orderName);
+          
         }
 
         private void buttonDeleteOrder_Click(object sender, EventArgs e)
+        {
+            DeleteOrder();
+        }
+
+        private void DeleteOrder()
         {
             if (listBoxOrder.SelectedIndex == -1)
             {
@@ -120,253 +119,68 @@ namespace Haziq_FinalProject
         private void buttonNigiri2_Click(object sender, EventArgs e)
         {
 
-            catagory = buttonNigiri.Text;
-            orderName = labelNameNigiri2.Text;
-
-            listBoxOrder.Items.Add(catagory + " " + orderName);
+           
         }
 
         private void buttonNigiri3_Click(object sender, EventArgs e)
         {
 
-            catagory = buttonNigiri.Text;
-            orderName = labelNameNigiri3.Text;
-
-            listBoxOrder.Items.Add(catagory + " " + orderName);
+           
         }
 
         private void buttonNigiri4_Click(object sender, EventArgs e)
         {
 
-            catagory = buttonNigiri.Text;
-            orderName = labelNameNigiri4.Text;
-
-            listBoxOrder.Items.Add(catagory + " " + orderName);
+          
         }
 
         private void buttonNigiri5_Click(object sender, EventArgs e)
         {
 
-            catagory = buttonNigiri.Text;
-            orderName = labelNameNigiri5.Text;
-
-            listBoxOrder.Items.Add(catagory + " " + orderName);
+           
         }
 
         private void buttonNigiri6_Click(object sender, EventArgs e)
         {
 
-            catagory = buttonNigiri.Text;
-            orderName = labelNameNigiri6.Text;
-
-            listBoxOrder.Items.Add(catagory + " " + orderName);
+            
 
         }
 
         private void buttonMakimono1_Click(object sender, EventArgs e)
         {
-            try
-            {
-                catagory = buttonMakimono.Text;
-                orderName = labelNameMakimono1.Text;
-                fullname = catagory + " " + orderName;
-                foodAmount = int.Parse(textBoxMakimo1.Text);
-
-                price = decimal.Parse(labelPriceMakimono1.Text) * foodAmount;
-                food makimo1 = new food(fullname, foodAmount, price);
-
-                if (foodAmount <= 0)
-                {
-                    MessageBox.Show("Please insert correct food amount");
-                }
-                else
-                {
-                    for (int i = 0; i < foodAmount; i++)
-                    {
-                        listBoxOrder.Items.Add(makimo1.Fullname);
-                    }
-
-                    foodList.Add(makimo1);
-                }
-            }
-            catch (FormatException)
-            {
-
-                MessageBox.Show("Please insert food amount");
-            }
+            
         }
 
         private void buttonMakimono2_Click(object sender, EventArgs e)
         {
-            try
-            {
-                catagory = buttonMakimono.Text;
-                orderName = labelNameMakimono1.Text;
-                fullname = catagory + " " + orderName;
-                foodAmount = int.Parse(textBoxMakimo2.Text);
-
-                price = decimal.Parse(labelPriceMakimono2.Text) * foodAmount;
-                food makimo2 = new food(fullname, foodAmount, price);
-
-                if (foodAmount <= 0)
-                {
-                    MessageBox.Show("Please insert correct food amount");
-                }
-                else
-                {
-                    for (int i = 0; i < foodAmount; i++)
-                    {
-                        listBoxOrder.Items.Add(makimo2.Fullname);
-                    }
-
-                    foodList.Add(makimo2);
-                }
-            }
-            catch (FormatException)
-            {
-
-                MessageBox.Show("Please insert food amount");
-            }
+           
         }
 
         private void buttonMakimono3_Click(object sender, EventArgs e)
         {
 
-            try
-            {
-                catagory = buttonMakimono.Text;
-                orderName = labelNameMakimono1.Text;
-                fullname = catagory + " " + orderName;
-                foodAmount = int.Parse(textBoxMakimo3.Text);
-
-                price = decimal.Parse(labelPriceMakimono4.Text) * foodAmount;
-                food makimo3 = new food(fullname, foodAmount, price);
-
-                if (foodAmount <= 0)
-                {
-                    MessageBox.Show("Please insert correct food amount");
-                }
-                else
-                {
-                    for (int i = 0; i < foodAmount; i++)
-                    {
-                        listBoxOrder.Items.Add(makimo3.Fullname);
-                    }
-
-                    foodList.Add(makimo3);
-                }
-            }
-            catch (FormatException)
-            {
-
-                MessageBox.Show("Please insert food amount");
-            }
+            
         }
 
         private void buttonMakimono4_Click(object sender, EventArgs e)
         {
 
 
-            try
-            {
-
-                catagory = buttonMakimono.Text;
-                orderName = labelNameMakimono1.Text;
-                fullname = catagory + " " + orderName;
-                foodAmount = int.Parse(textBoxMakimo4.Text);
-
-                price = decimal.Parse(labelPriceMakimono4.Text) * foodAmount;
-                food makimo4 = new food(fullname, foodAmount, price);
-
-                if (foodAmount <= 0)
-                {
-                    MessageBox.Show("Please insert correct food amount");
-                }
-                else
-                {
-                    for (int i = 0; i < foodAmount; i++)
-                    {
-                        listBoxOrder.Items.Add(makimo4.Fullname);
-                    }
-
-                    foodList.Add(makimo4);
-                }
-            }
-            catch (FormatException)
-            {
-
-                MessageBox.Show("Please insert food amount");
-            }
+           
         }
 
         private void buttonMakimono5_Click(object sender, EventArgs e)
         {
 
 
-            try
-            {
-
-                catagory = buttonMakimono.Text;
-                orderName = labelNameMakimono1.Text;
-                fullname = catagory + " " + orderName;
-                foodAmount = int.Parse(textBoxMakimo5.Text);
-
-                price = decimal.Parse(labelPriceMakimono5.Text) * foodAmount;
-                food makimo5 = new food(fullname, foodAmount, price);
-
-                if (foodAmount <= 0)
-                {
-                    MessageBox.Show("Please insert correct food amount");
-                }
-                else
-                {
-                    for (int i = 0; i < foodAmount; i++)
-                    {
-                        listBoxOrder.Items.Add(makimo5.Fullname);
-                    }
-
-                    foodList.Add(makimo5);
-                }
-            }
-            catch (FormatException)
-            {
-
-                MessageBox.Show("Please insert food amount");
-            }
+            
         }
 
         private void buttonGunkan1_Click(object sender, EventArgs e)
         {
 
-            try
-            {
-                catagory = buttonGunkan.Text;
-                orderName = labelNameGunkan1.Text;
-                fullname = catagory + " " + orderName;
-                foodAmount = int.Parse(textBoxGunkan1.Text);
-
-                price = decimal.Parse(labelPriceGunkan1.Text) * foodAmount;
-                food gunkan1 = new food(fullname, foodAmount, price);
-
-                if (foodAmount <= 0)
-                {
-                    MessageBox.Show("Please insert correct food amount");
-                }
-                else
-                {
-                    for (int i = 0; i < foodAmount; i++)
-                    {
-                        listBoxOrder.Items.Add(gunkan1.Fullname);
-                    }
-
-                    foodList.Add(gunkan1);
-                }
-            }
-            catch (FormatException)
-            {
-
-                MessageBox.Show("Please insert food amount");
-            }
+           
 
 
         }
@@ -374,43 +188,25 @@ namespace Haziq_FinalProject
         private void buttonGunkan2_Click(object sender, EventArgs e)
         {
 
+            
+
+        }
+
+        private void buttonGunkan3_Click(object sender, EventArgs e)
+        {
             try
             {
-                catagory = buttonGunkan.Text;
-                orderName = labelNameGunkan2.Text;
-                fullname = catagory + " " + orderName;
-                foodAmount = int.Parse(textBoxGunkan2.Text);
-
-                price = decimal.Parse(labelPriceGunkan2.Text) * foodAmount;
-                food gunkan2 = new food(fullname, foodAmount, price);
-                if (foodAmount <= 0)
-                {
-                    MessageBox.Show("Please insert correct food amount");
-                }
-                else
-                {
-                    for (int i = 0; i < foodAmount; i++)
-                    {
-                        listBoxOrder.Items.Add(gunkan2.Fullname);
-                    }
-
-                    foodList.Add(gunkan2);
-                }
+                AddFood(buttonGunkan.Text, labelNameGunkan3.Text, int.Parse(textBoxGunkan3.Text), decimal.Parse(labelPriceGunkan3.Text), new food(fullname, foodAmount, price));
             }
             catch (FormatException)
             {
 
                 MessageBox.Show("Please insert food amount");
             }
-
-        }
-
-        private void buttonGunkan3_Click(object sender, EventArgs e)
-        {
-            AddFood(buttonGunkan.Text, labelNameGunkan3.Text, int.Parse(textBoxGunkan3.Text), decimal.Parse(labelPriceGunkan3.Text));
+           
         }
         //Parameters are buttonName.text, LabelName.text, textbox.text
-        private void AddFood(string catagory,string orderName, int foodAmount, decimal price)
+        private void AddFood(string catagory,string orderName, int foodAmount, decimal price,food foodType)
         {
             try
             {
@@ -448,14 +244,14 @@ namespace Haziq_FinalProject
 
                     if (bGunkan3 == false)
                     {
-                        food gunkan3 = new food(fullname, foodAmount, price);
+                         foodType = new food(fullname, foodAmount, price);
 
                         for (int i = 0; i < foodAmount; i++)
                         {
-                            listBoxOrder.Items.Add(gunkan3.Fullname);
+                            listBoxOrder.Items.Add(foodType.Fullname);
                         }
 
-                        foodList.Add(gunkan3);
+                        foodList.Add(foodType);
                         bGunkan3 = true;
                     }
                 }
@@ -505,8 +301,13 @@ namespace Haziq_FinalProject
                                     listBoxOrder.Items.Remove(item.Fullname);
 
                                 }
+                                if (foodAmount < 0)
+                                {
+                                    
+                                    foodList.Remove(item);
 
-                                item.FoodAmount -= foodAmount;
+                                }
+                                    item.FoodAmount -= foodAmount;
                             }
 
                         }
@@ -599,12 +400,6 @@ namespace Haziq_FinalProject
             autoID += 1;
 
         }
-
-        private void flowLayoutPanelGunkan_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
 
     }
 }

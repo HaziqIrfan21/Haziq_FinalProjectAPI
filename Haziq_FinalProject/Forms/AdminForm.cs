@@ -19,6 +19,13 @@ namespace Haziq_FinalProject
 
         private void Admin_Load(object sender, EventArgs e)
         {
+
+            Admin_Load();
+
+        }
+
+        private void Admin_Load()
+        {
             try
             {
                 MySqlConnection connection = new MySqlConnection("server=localhost;port=3306;username=root;password=;SSL Mode=None");
@@ -40,8 +47,6 @@ namespace Haziq_FinalProject
 
                 MessageBox.Show(ex.Message);
             }
-         
-
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)

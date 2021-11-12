@@ -634,7 +634,6 @@ namespace Haziq_FinalProject
             this.flowLayoutPanelGunkan.Padding = new System.Windows.Forms.Padding(20);
             this.flowLayoutPanelGunkan.Size = new System.Drawing.Size(444, 600);
             this.flowLayoutPanelGunkan.TabIndex = 3;
-            this.flowLayoutPanelGunkan.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutPanelGunkan_Paint);
             // 
             // panelGunkan1
             // 
