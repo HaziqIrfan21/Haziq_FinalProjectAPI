@@ -87,13 +87,63 @@ namespace RestaurantAPI.Controllers
             return null;
         }
 
-        [Route("adminDB")]
+        //REMEMBER TO MOVE THIS TO ADMIN CONTROLLER INSTEAD-----------------------------------------------------------------
+
+        [Route("getreceipt")]
         [HttpGet]
-        public string GetAdminDB()
+        public string GetReceipt()
+        {
+            try
+            {
+                MySqlConnection connection = new MySqlConnection("server=localhost;port=3306;username=root;password=;SSL Mode=None");
+                MySqlDataAdapter adapter = new MySqlDataAdapter("SELECT * FROM finalproject_users_db.orders", connection);
+                // MySqlDataAdapter adapter2 = new MySqlDataAdapter("SELECT * FROM finalproject_users_db.orders", connection);
+
+                connection.Open();
+                DataSet ds = new DataSet();
+                adapter.Fill(ds, "orders");
+                string json = JsonConvert.SerializeObject(ds);
+                return json;
+
+                //DataSet ds2 = new DataSet();
+                //adapter2.Fill(ds2, "orders");
+                //dataGridView2.DataSource = ds2.Tables["orders"];
+                //connection.Close();
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+            }
+            return null;
+        }
+
+        [Route("adminUserDB")]
+        [HttpGet]
+        public string GetAdminUserDB()
         {
             try
             {
                 var context = _db.User.ToList();
+                string json = JsonConvert.SerializeObject(context);
+                return json;
+
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+            }
+            return null;
+        }
+
+        [Route("adminOrderDB")]
+        [HttpGet]
+        public string GetAdminOrderDB()
+        {
+            try
+            {
+                var context = _db.Order.ToList();
                 string json = JsonConvert.SerializeObject(context);
                 return json;
 

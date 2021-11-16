@@ -48,33 +48,6 @@ namespace RestaurantAPI.Controllers
         {
         }
 
-        [Route("getreceipt")]
-        [HttpGet]
-        public string GetReceipt()
-        {
-            try
-            {
-                MySqlConnection connection = new MySqlConnection("server=localhost;port=3306;username=root;password=;SSL Mode=None");
-                MySqlDataAdapter adapter = new MySqlDataAdapter("SELECT * FROM finalproject_users_db.orders", connection);
-               // MySqlDataAdapter adapter2 = new MySqlDataAdapter("SELECT * FROM finalproject_users_db.orders", connection);
-
-                connection.Open();
-                DataSet ds = new DataSet();
-                adapter.Fill(ds, "orders");
-                string json = JsonConvert.SerializeObject(ds);
-                return json;
-
-                //DataSet ds2 = new DataSet();
-                //adapter2.Fill(ds2, "orders");
-                //dataGridView2.DataSource = ds2.Tables["orders"];
-                //connection.Close();
-            }
-            catch (Exception ex)
-            {
-
-                MessageBox.Show(ex.Message);
-            }
-            return null;
-        }
+        
     }
 }

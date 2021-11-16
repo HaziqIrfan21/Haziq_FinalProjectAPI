@@ -72,12 +72,14 @@ namespace Haziq_FinalProject
             this.buttonBill = new System.Windows.Forms.Button();
             this.flowLayoutPanelGunkan = new System.Windows.Forms.FlowLayoutPanel();
             this.panelGunkan1 = new System.Windows.Forms.Panel();
+            this.buttonMinusGunkan1 = new System.Windows.Forms.Button();
             this.textBoxGunkan1 = new System.Windows.Forms.TextBox();
             this.buttonGunkan1 = new System.Windows.Forms.Button();
             this.labelPriceGunkan1 = new System.Windows.Forms.Label();
             this.labelNameGunkan1 = new System.Windows.Forms.Label();
             this.pictureBoxGunkan1 = new System.Windows.Forms.PictureBox();
             this.panelGunkan2 = new System.Windows.Forms.Panel();
+            this.buttonMinusGunkan2 = new System.Windows.Forms.Button();
             this.textBoxGunkan2 = new System.Windows.Forms.TextBox();
             this.buttonGunkan2 = new System.Windows.Forms.Button();
             this.labelPriceGunkan2 = new System.Windows.Forms.Label();
@@ -638,6 +640,7 @@ namespace Haziq_FinalProject
             // panelGunkan1
             // 
             this.panelGunkan1.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.panelGunkan1.Controls.Add(this.buttonMinusGunkan1);
             this.panelGunkan1.Controls.Add(this.textBoxGunkan1);
             this.panelGunkan1.Controls.Add(this.buttonGunkan1);
             this.panelGunkan1.Controls.Add(this.labelPriceGunkan1);
@@ -647,6 +650,20 @@ namespace Haziq_FinalProject
             this.panelGunkan1.Name = "panelGunkan1";
             this.panelGunkan1.Size = new System.Drawing.Size(192, 179);
             this.panelGunkan1.TabIndex = 27;
+            // 
+            // buttonMinusGunkan1
+            // 
+            this.buttonMinusGunkan1.BackColor = System.Drawing.Color.Transparent;
+            this.buttonMinusGunkan1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.buttonMinusGunkan1.FlatAppearance.BorderSize = 0;
+            this.buttonMinusGunkan1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonMinusGunkan1.Image = global::Haziq_FinalProject.Properties.Resources.minus;
+            this.buttonMinusGunkan1.Location = new System.Drawing.Point(60, 147);
+            this.buttonMinusGunkan1.Name = "buttonMinusGunkan1";
+            this.buttonMinusGunkan1.Size = new System.Drawing.Size(25, 10);
+            this.buttonMinusGunkan1.TabIndex = 8;
+            this.buttonMinusGunkan1.UseVisualStyleBackColor = false;
+            this.buttonMinusGunkan1.Click += new System.EventHandler(this.buttonMinusGunkan1_Click);
             // 
             // textBoxGunkan1
             // 
@@ -703,6 +720,7 @@ namespace Haziq_FinalProject
             // panelGunkan2
             // 
             this.panelGunkan2.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.panelGunkan2.Controls.Add(this.buttonMinusGunkan2);
             this.panelGunkan2.Controls.Add(this.textBoxGunkan2);
             this.panelGunkan2.Controls.Add(this.buttonGunkan2);
             this.panelGunkan2.Controls.Add(this.labelPriceGunkan2);
@@ -712,6 +730,20 @@ namespace Haziq_FinalProject
             this.panelGunkan2.Name = "panelGunkan2";
             this.panelGunkan2.Size = new System.Drawing.Size(192, 179);
             this.panelGunkan2.TabIndex = 26;
+            // 
+            // buttonMinusGunkan2
+            // 
+            this.buttonMinusGunkan2.BackColor = System.Drawing.Color.Transparent;
+            this.buttonMinusGunkan2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.buttonMinusGunkan2.FlatAppearance.BorderSize = 0;
+            this.buttonMinusGunkan2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonMinusGunkan2.Image = global::Haziq_FinalProject.Properties.Resources.minus;
+            this.buttonMinusGunkan2.Location = new System.Drawing.Point(65, 146);
+            this.buttonMinusGunkan2.Name = "buttonMinusGunkan2";
+            this.buttonMinusGunkan2.Size = new System.Drawing.Size(24, 11);
+            this.buttonMinusGunkan2.TabIndex = 7;
+            this.buttonMinusGunkan2.UseVisualStyleBackColor = false;
+            this.buttonMinusGunkan2.Click += new System.EventHandler(this.buttonMinusGunkan2_Click);
             // 
             // textBoxGunkan2
             // 
@@ -786,9 +818,9 @@ namespace Haziq_FinalProject
             this.buttonMinusGunkan3.FlatAppearance.BorderSize = 0;
             this.buttonMinusGunkan3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonMinusGunkan3.Image = global::Haziq_FinalProject.Properties.Resources.minus;
-            this.buttonMinusGunkan3.Location = new System.Drawing.Point(54, 139);
+            this.buttonMinusGunkan3.Location = new System.Drawing.Point(63, 150);
             this.buttonMinusGunkan3.Name = "buttonMinusGunkan3";
-            this.buttonMinusGunkan3.Size = new System.Drawing.Size(41, 31);
+            this.buttonMinusGunkan3.Size = new System.Drawing.Size(21, 10);
             this.buttonMinusGunkan3.TabIndex = 6;
             this.buttonMinusGunkan3.UseVisualStyleBackColor = false;
             this.buttonMinusGunkan3.Click += new System.EventHandler(this.buttonMinusGunkan3_Click);
@@ -1728,5 +1760,7 @@ namespace Haziq_FinalProject
         private System.Windows.Forms.Label labelNameMakimono5;
         private System.Windows.Forms.PictureBox pictureBoxMakimono5;
         private System.Windows.Forms.Button buttonMinusGunkan3;
+        private System.Windows.Forms.Button buttonMinusGunkan1;
+        private System.Windows.Forms.Button buttonMinusGunkan2;
     }
 }

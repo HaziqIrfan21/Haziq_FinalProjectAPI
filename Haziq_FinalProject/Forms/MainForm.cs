@@ -25,7 +25,13 @@ namespace Haziq_FinalProject
         bool foodDeleted = false;
 
         public List<food> foodList = new List<food>();
+
         bool bGunkan3 = false;
+        bool bGunkan2 = false;
+        bool bGunkan1 = false;
+
+       
+
 
         public MainForm()
         {
@@ -184,14 +190,34 @@ namespace Haziq_FinalProject
         {
 
 
+            try
+            {
+                AddFood(buttonGunkan.Text, labelNameGunkan1.Text, int.Parse(textBoxGunkan1.Text), decimal.Parse(labelPriceGunkan1.Text), new food(fullname, foodAmount, price), bGunkan1);
 
+                bGunkan1 = true;
+            }
+            catch (FormatException)
+            {
+
+                MessageBox.Show("Please insert food amount");
+            }
 
         }
 
         private void buttonGunkan2_Click(object sender, EventArgs e)
         {
 
+            try
+            {
+                AddFood(buttonGunkan.Text, labelNameGunkan2.Text, int.Parse(textBoxGunkan2.Text), decimal.Parse(labelPriceGunkan2.Text), new food(fullname, foodAmount, price), bGunkan2);
 
+                bGunkan2 = true;
+            }
+            catch (FormatException)
+            {
+
+                MessageBox.Show("Please insert food amount");
+            }
 
         }
 
@@ -199,7 +225,14 @@ namespace Haziq_FinalProject
         {
             try
             {
-                AddFood(buttonGunkan.Text, labelNameGunkan3.Text, int.Parse(textBoxGunkan3.Text), decimal.Parse(labelPriceGunkan3.Text), new food(fullname, foodAmount, price));
+              
+                    AddFood(buttonGunkan.Text, labelNameGunkan3.Text, int.Parse(textBoxGunkan3.Text), decimal.Parse(labelPriceGunkan3.Text), new food(fullname, foodAmount, price), bGunkan3);
+
+                    bGunkan3 = true;
+
+
+
+
             }
             catch (FormatException)
             {
@@ -209,7 +242,7 @@ namespace Haziq_FinalProject
 
         }
         //Parameters are buttonName.text, LabelName.text, textbox.text
-        private void AddFood(string catagory, string orderName, int foodAmount, decimal price, food foodType)
+        private void AddFood(string catagory, string orderName, int foodAmount, decimal price, food foodType, bool isFoodActive)
         {
             try
             {
@@ -226,7 +259,7 @@ namespace Haziq_FinalProject
                 }
                 else
                 {
-                    if (bGunkan3 == true)
+                    if (isFoodActive == true)
                     {
                         foreach (var item in foodList)
                         {
@@ -245,7 +278,7 @@ namespace Haziq_FinalProject
 
                     }
 
-                    if (bGunkan3 == false)
+                    if (isFoodActive == false)
                     {
                         foodType = new food(fullname, foodAmount, price);
 
@@ -255,7 +288,7 @@ namespace Haziq_FinalProject
                         }
 
                         foodList.Add(foodType);
-                        bGunkan3 = true;
+                        isFoodActive = true;
                     }
                 }
             }
@@ -266,6 +299,31 @@ namespace Haziq_FinalProject
             }
 
         }
+        private void buttonMinusGunkan1_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                MinusFood(buttonGunkan.Text, labelNameGunkan1.Text, int.Parse(textBoxGunkan1.Text), decimal.Parse(labelPriceGunkan1.Text));
+            }
+            catch (FormatException)
+            {
+
+                MessageBox.Show("Please insert food amount");
+            }
+        }
+
+        private void buttonMinusGunkan2_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                MinusFood(buttonGunkan.Text, labelNameGunkan2.Text, int.Parse(textBoxGunkan2.Text), decimal.Parse(labelPriceGunkan2.Text));
+            }
+            catch (FormatException)
+            {
+
+                MessageBox.Show("Please insert food amount");
+            }
+        }
 
         private void buttonMinusGunkan3_Click(object sender, EventArgs e)
         {
@@ -275,7 +333,17 @@ namespace Haziq_FinalProject
             //    fullname = catagory + " " + orderName;
             //    foodAmount = int.Parse(textBoxGunkan3.Text);
 
-            MinusFood(buttonGunkan.Text, labelNameGunkan3.Text, int.Parse(textBoxGunkan3.Text), decimal.Parse(labelPriceGunkan3.Text));
+            try
+            {
+                MinusFood(buttonGunkan.Text, labelNameGunkan3.Text, int.Parse(textBoxGunkan3.Text), decimal.Parse(labelPriceGunkan3.Text));
+            }
+            catch (FormatException)
+            {
+
+                MessageBox.Show("Please insert food amount");
+            }
+
+
         }
 
         public void MinusFood(string catagory, string orderName, int foodAmount, decimal price)
@@ -284,8 +352,8 @@ namespace Haziq_FinalProject
             {
 
                 fullname = catagory + " " + orderName;
-                price = price * foodAmount;
-                foodDeleteCost = price * -1;
+              
+               
 
                 if (foodAmount <= 0)
                 {
@@ -304,13 +372,20 @@ namespace Haziq_FinalProject
                                     listBoxOrder.Items.Remove(item.Fullname);
 
                                 }
-                                if (foodAmount < 0)
-                                {
 
+                                //foodDeleteCost = item.Price;
+                                item.FoodAmount -= foodAmount;
+
+                                if (item.FoodAmount < 0)
+                                {
+                                    item.FoodAmount = 0;
+                                    foodDeleteCost = 0;
                                     foodList.Remove(item);
 
                                 }
-                                item.FoodAmount -= foodAmount;
+
+                                item.Price -= price * foodAmount;
+
                             }
 
                         }
@@ -364,12 +439,14 @@ namespace Haziq_FinalProject
             {
                 {
                     //Item.price is already the final price
-                    AddToListView(item.Fullname, item.FoodAmount - foodDeleteNumber, item.Price + foodDeleteCost);
+                    AddToListView(item.Fullname, item.FoodAmount - foodDeleteNumber, item.Price -  foodDeleteCost);
                 }
             }
 
            
             bGunkan3 = false;
+            bGunkan2 = false;
+            bGunkan1 = false;
             foodAmount = 0;
             foodDeleteNumber = 0;
             foodDeleteCost = 0;
@@ -407,7 +484,7 @@ namespace Haziq_FinalProject
 
             //Add new user
             DB db = new DB();
-            MySqlCommand command = new MySqlCommand("INSERT INTO `orders` (`item name`, `qty`, `price`, `total_price`) VALUES (@itn, @qty, @price, @total_price)", db.GetConnection());
+            MySqlCommand command = new MySqlCommand("INSERT INTO `orders` (`ItemName`, `Qty`, `Price`, `TotalPrice`) VALUES (@itn, @qty, @price, @total_price)", db.GetConnection());
 
             //command.Parameters.Add("@usn", MySqlDbType.VarChar).Value = textBoxUsername.Text;
             //command.Parameters.Add("@pass", MySqlDbType.VarChar).Value = textBoxPassword.Text;
@@ -438,5 +515,6 @@ namespace Haziq_FinalProject
 
         }
 
+      
     }
 }
