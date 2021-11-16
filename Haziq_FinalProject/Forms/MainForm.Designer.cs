@@ -38,24 +38,13 @@ namespace Haziq_FinalProject
             this.columnHeaderQuantity = new System.Windows.Forms.ColumnHeader();
             this.columnHeaderPrice = new System.Windows.Forms.ColumnHeader();
             this.labelBillExit = new System.Windows.Forms.Label();
-            this.labelTotalCost = new System.Windows.Forms.Label();
-            this.labelGSTCost = new System.Windows.Forms.Label();
             this.labelCostAmount = new System.Windows.Forms.Label();
-            this.labelTotalAmount = new System.Windows.Forms.Label();
-            this.labelGST = new System.Windows.Forms.Label();
             this.labelCost = new System.Windows.Forms.Label();
             this.labelBill = new System.Windows.Forms.Label();
             this.panelSideMenu = new System.Windows.Forms.Panel();
-            this.buttonDessert = new System.Windows.Forms.Button();
-            this.buttonDrink = new System.Windows.Forms.Button();
-            this.buttonAppetizer = new System.Windows.Forms.Button();
-            this.buttonRice = new System.Windows.Forms.Button();
-            this.buttonFried = new System.Windows.Forms.Button();
-            this.buttonSashimi = new System.Windows.Forms.Button();
             this.buttonMakimono = new System.Windows.Forms.Button();
             this.buttonGunkan = new System.Windows.Forms.Button();
             this.buttonNigiri = new System.Windows.Forms.Button();
-            this.buttonPromo = new System.Windows.Forms.Button();
             this.panelLogo = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelTopBackground = new System.Windows.Forms.Panel();
@@ -215,11 +204,7 @@ namespace Haziq_FinalProject
             this.panelBill.BackColor = System.Drawing.Color.SeaShell;
             this.panelBill.Controls.Add(this.listViewBill);
             this.panelBill.Controls.Add(this.labelBillExit);
-            this.panelBill.Controls.Add(this.labelTotalCost);
-            this.panelBill.Controls.Add(this.labelGSTCost);
             this.panelBill.Controls.Add(this.labelCostAmount);
-            this.panelBill.Controls.Add(this.labelTotalAmount);
-            this.panelBill.Controls.Add(this.labelGST);
             this.panelBill.Controls.Add(this.labelCost);
             this.panelBill.Controls.Add(this.labelBill);
             this.panelBill.Location = new System.Drawing.Point(238, 72);
@@ -275,26 +260,6 @@ namespace Haziq_FinalProject
             this.labelBillExit.MouseEnter += new System.EventHandler(this.labelBillExit_MouseEnter);
             this.labelBillExit.MouseLeave += new System.EventHandler(this.labelBillExit_MouseLeave);
             // 
-            // labelTotalCost
-            // 
-            this.labelTotalCost.AutoSize = true;
-            this.labelTotalCost.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point);
-            this.labelTotalCost.Location = new System.Drawing.Point(346, 492);
-            this.labelTotalCost.Name = "labelTotalCost";
-            this.labelTotalCost.Size = new System.Drawing.Size(79, 15);
-            this.labelTotalCost.TabIndex = 7;
-            this.labelTotalCost.Text = "Total Amount";
-            // 
-            // labelGSTCost
-            // 
-            this.labelGSTCost.AutoSize = true;
-            this.labelGSTCost.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.labelGSTCost.Location = new System.Drawing.Point(346, 460);
-            this.labelGSTCost.Name = "labelGSTCost";
-            this.labelGSTCost.Size = new System.Drawing.Size(55, 15);
-            this.labelGSTCost.TabIndex = 6;
-            this.labelGSTCost.Text = "GSTCost";
-            // 
             // labelCostAmount
             // 
             this.labelCostAmount.AutoSize = true;
@@ -304,26 +269,6 @@ namespace Haziq_FinalProject
             this.labelCostAmount.Size = new System.Drawing.Size(14, 15);
             this.labelCostAmount.TabIndex = 5;
             this.labelCostAmount.Text = "0";
-            // 
-            // labelTotalAmount
-            // 
-            this.labelTotalAmount.AutoSize = true;
-            this.labelTotalAmount.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point);
-            this.labelTotalAmount.Location = new System.Drawing.Point(242, 491);
-            this.labelTotalAmount.Name = "labelTotalAmount";
-            this.labelTotalAmount.Size = new System.Drawing.Size(79, 15);
-            this.labelTotalAmount.TabIndex = 4;
-            this.labelTotalAmount.Text = "Total Amount";
-            // 
-            // labelGST
-            // 
-            this.labelGST.AutoSize = true;
-            this.labelGST.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.labelGST.Location = new System.Drawing.Point(108, 459);
-            this.labelGST.Name = "labelGST";
-            this.labelGST.Size = new System.Drawing.Size(195, 15);
-            this.labelGST.TabIndex = 3;
-            this.labelGST.Text = "GST(7% plus 11% Service charge)";
             // 
             // labelCost
             // 
@@ -347,16 +292,9 @@ namespace Haziq_FinalProject
             // 
             // panelSideMenu
             // 
-            this.panelSideMenu.Controls.Add(this.buttonDessert);
-            this.panelSideMenu.Controls.Add(this.buttonDrink);
-            this.panelSideMenu.Controls.Add(this.buttonAppetizer);
-            this.panelSideMenu.Controls.Add(this.buttonRice);
-            this.panelSideMenu.Controls.Add(this.buttonFried);
-            this.panelSideMenu.Controls.Add(this.buttonSashimi);
             this.panelSideMenu.Controls.Add(this.buttonMakimono);
             this.panelSideMenu.Controls.Add(this.buttonGunkan);
             this.panelSideMenu.Controls.Add(this.buttonNigiri);
-            this.panelSideMenu.Controls.Add(this.buttonPromo);
             this.panelSideMenu.Controls.Add(this.panelLogo);
             this.panelSideMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelSideMenu.Location = new System.Drawing.Point(0, 113);
@@ -364,70 +302,10 @@ namespace Haziq_FinalProject
             this.panelSideMenu.Size = new System.Drawing.Size(100, 624);
             this.panelSideMenu.TabIndex = 1;
             // 
-            // buttonDessert
-            // 
-            this.buttonDessert.Dock = System.Windows.Forms.DockStyle.Top;
-            this.buttonDessert.Location = new System.Drawing.Point(0, 550);
-            this.buttonDessert.Name = "buttonDessert";
-            this.buttonDessert.Size = new System.Drawing.Size(100, 50);
-            this.buttonDessert.TabIndex = 12;
-            this.buttonDessert.Text = "Dessert";
-            this.buttonDessert.UseVisualStyleBackColor = true;
-            // 
-            // buttonDrink
-            // 
-            this.buttonDrink.Dock = System.Windows.Forms.DockStyle.Top;
-            this.buttonDrink.Location = new System.Drawing.Point(0, 500);
-            this.buttonDrink.Name = "buttonDrink";
-            this.buttonDrink.Size = new System.Drawing.Size(100, 50);
-            this.buttonDrink.TabIndex = 11;
-            this.buttonDrink.Text = "Drink";
-            this.buttonDrink.UseVisualStyleBackColor = true;
-            // 
-            // buttonAppetizer
-            // 
-            this.buttonAppetizer.Dock = System.Windows.Forms.DockStyle.Top;
-            this.buttonAppetizer.Location = new System.Drawing.Point(0, 450);
-            this.buttonAppetizer.Name = "buttonAppetizer";
-            this.buttonAppetizer.Size = new System.Drawing.Size(100, 50);
-            this.buttonAppetizer.TabIndex = 10;
-            this.buttonAppetizer.Text = "Appetizer";
-            this.buttonAppetizer.UseVisualStyleBackColor = true;
-            // 
-            // buttonRice
-            // 
-            this.buttonRice.Dock = System.Windows.Forms.DockStyle.Top;
-            this.buttonRice.Location = new System.Drawing.Point(0, 400);
-            this.buttonRice.Name = "buttonRice";
-            this.buttonRice.Size = new System.Drawing.Size(100, 50);
-            this.buttonRice.TabIndex = 9;
-            this.buttonRice.Text = "Rice/Noodle";
-            this.buttonRice.UseVisualStyleBackColor = true;
-            // 
-            // buttonFried
-            // 
-            this.buttonFried.Dock = System.Windows.Forms.DockStyle.Top;
-            this.buttonFried.Location = new System.Drawing.Point(0, 350);
-            this.buttonFried.Name = "buttonFried";
-            this.buttonFried.Size = new System.Drawing.Size(100, 50);
-            this.buttonFried.TabIndex = 8;
-            this.buttonFried.Text = "Fried/Grill";
-            this.buttonFried.UseVisualStyleBackColor = true;
-            // 
-            // buttonSashimi
-            // 
-            this.buttonSashimi.Dock = System.Windows.Forms.DockStyle.Top;
-            this.buttonSashimi.Location = new System.Drawing.Point(0, 300);
-            this.buttonSashimi.Name = "buttonSashimi";
-            this.buttonSashimi.Size = new System.Drawing.Size(100, 50);
-            this.buttonSashimi.TabIndex = 7;
-            this.buttonSashimi.Text = "Sashimi";
-            this.buttonSashimi.UseVisualStyleBackColor = true;
-            // 
             // buttonMakimono
             // 
             this.buttonMakimono.Dock = System.Windows.Forms.DockStyle.Top;
-            this.buttonMakimono.Location = new System.Drawing.Point(0, 250);
+            this.buttonMakimono.Location = new System.Drawing.Point(0, 200);
             this.buttonMakimono.Name = "buttonMakimono";
             this.buttonMakimono.Size = new System.Drawing.Size(100, 50);
             this.buttonMakimono.TabIndex = 6;
@@ -438,7 +316,7 @@ namespace Haziq_FinalProject
             // buttonGunkan
             // 
             this.buttonGunkan.Dock = System.Windows.Forms.DockStyle.Top;
-            this.buttonGunkan.Location = new System.Drawing.Point(0, 200);
+            this.buttonGunkan.Location = new System.Drawing.Point(0, 150);
             this.buttonGunkan.Name = "buttonGunkan";
             this.buttonGunkan.Size = new System.Drawing.Size(100, 50);
             this.buttonGunkan.TabIndex = 5;
@@ -449,24 +327,13 @@ namespace Haziq_FinalProject
             // buttonNigiri
             // 
             this.buttonNigiri.Dock = System.Windows.Forms.DockStyle.Top;
-            this.buttonNigiri.Location = new System.Drawing.Point(0, 150);
+            this.buttonNigiri.Location = new System.Drawing.Point(0, 100);
             this.buttonNigiri.Name = "buttonNigiri";
             this.buttonNigiri.Size = new System.Drawing.Size(100, 50);
             this.buttonNigiri.TabIndex = 4;
             this.buttonNigiri.Text = "Nigiri";
             this.buttonNigiri.UseVisualStyleBackColor = true;
             this.buttonNigiri.Click += new System.EventHandler(this.buttonNigiri_Click);
-            // 
-            // buttonPromo
-            // 
-            this.buttonPromo.Dock = System.Windows.Forms.DockStyle.Top;
-            this.buttonPromo.Location = new System.Drawing.Point(0, 100);
-            this.buttonPromo.Name = "buttonPromo";
-            this.buttonPromo.Size = new System.Drawing.Size(100, 50);
-            this.buttonPromo.TabIndex = 3;
-            this.buttonPromo.Text = "Promo";
-            this.buttonPromo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.buttonPromo.UseVisualStyleBackColor = true;
             // 
             // panelLogo
             // 
@@ -1642,16 +1509,9 @@ namespace Haziq_FinalProject
         private System.Windows.Forms.Button buttonBill;
         private System.Windows.Forms.Button buttonCallWaiter;
         private System.Windows.Forms.Panel panelSideMenu;
-        private System.Windows.Forms.Button buttonDessert;
-        private System.Windows.Forms.Button buttonDrink;
-        private System.Windows.Forms.Button buttonAppetizer;
-        private System.Windows.Forms.Button buttonRice;
-        private System.Windows.Forms.Button buttonFried;
-        private System.Windows.Forms.Button buttonSashimi;
         private System.Windows.Forms.Button buttonMakimono;
         private System.Windows.Forms.Button buttonGunkan;
         private System.Windows.Forms.Button buttonNigiri;
-        private System.Windows.Forms.Button buttonPromo;
         private System.Windows.Forms.Panel panelLogo;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanelNigiri;
         private System.Windows.Forms.Panel panelTopBackground;
@@ -1719,11 +1579,7 @@ namespace Haziq_FinalProject
         private System.Windows.Forms.ColumnHeader columnHeaderQuantity;
         private System.Windows.Forms.ColumnHeader columnHeaderPrice;
         private System.Windows.Forms.Label labelBill;
-        private System.Windows.Forms.Label labelTotalCost;
-        private System.Windows.Forms.Label labelGSTCost;
         private System.Windows.Forms.Label labelCostAmount;
-        private System.Windows.Forms.Label labelTotalAmount;
-        private System.Windows.Forms.Label labelGST;
         private System.Windows.Forms.Label labelCost;
         private System.Windows.Forms.Label labelBillExit;
         private System.Windows.Forms.TextBox textBoxGunkan3;

@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml.Linq;
 using DatabaseSQL;
+using EFDataAcessLibrary.DataAccess;
+using EFDataAcessLibrary.Models;
 using Haziq_FinalProject;
 using Microsoft.AspNetCore.Mvc;
 using MySql.Data.MySqlClient;
@@ -19,6 +21,7 @@ namespace RestaurantAPI.Controllers
     [ApiController]
     public class MainController : ControllerBase
     {
+        private readonly RestaurantContext _db;
         // GET: api/<MainController>
         [HttpGet]
         public IEnumerable<string> Get()
@@ -85,41 +88,22 @@ namespace RestaurantAPI.Controllers
             db.CloseConnection();
         }
 
+        public MainController(RestaurantContext db)
+        {
+            _db = db;
+        }
+
         [Route("AddtoOrderDB")]
         [HttpPut]
-        public void AddToOrderDB(string name, int qty, decimal price, decimal total)
+        public void AddToOrderDB(string userName, string itemName, int qty, decimal price, decimal total, int id)
         {
 
             //---------//
-
-            //Add new user
-            DB db = new DB();
-            MySqlCommand command = new MySqlCommand("INSERT INTO `orders` (`ItemName`, `Qty`, `Price`, `TotalPrice`) VALUES (@itn, @qty, @price, @total_price)", db.GetConnection());
-
-            //command.Parameters.Add("@usn", MySqlDbType.VarChar).Value = textBoxUsername.Text;
-            //command.Parameters.Add("@pass", MySqlDbType.VarChar).Value = textBoxPassword.Text;
-            //command.Parameters.Add("@fn", MySqlDbType.VarChar).Value = textBoxFirstName.Text;
-            //command.Parameters.Add("@ln", MySqlDbType.VarChar).Value = textBoxLastName.Text;
-            //command.Parameters.Add("@email", MySqlDbType.VarChar).Value = textBoxEmail.Text;
-
-
-            // command.Parameters.Add("@usn", MySqlDbType.VarChar).Value = GetUser();
-            command.Parameters.Add("@itn", MySqlDbType.VarChar).Value = name;
-            command.Parameters.Add("@qty", MySqlDbType.Int32).Value = qty;
-            command.Parameters.Add("@price", MySqlDbType.Decimal).Value = price;
-            command.Parameters.Add("@total_price", MySqlDbType.Decimal).Value = total;
-
-            //adapter.SelectCommand = command;
-
-
-            //adapter.Fill(table);
-
-            //Open the connection
-            db.OpenConnection();
-            command.ExecuteNonQuery();
-
-            //close the connection
-            db.CloseConnection();
+             Orders orders = new Orders() {UserName = userName,ItemName = itemName, Qty = qty,Price = price,TotalPrice = total ,Id = id};
+            
+            _db.Order.Add(orders);
+            _db.SaveChanges();
+            MessageBox.Show("Added to orderDB");
         }
 
     }
