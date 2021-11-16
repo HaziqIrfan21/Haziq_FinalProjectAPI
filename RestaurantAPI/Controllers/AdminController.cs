@@ -5,6 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using DatabaseSQL;
+using EFDataAcessLibrary.DataAccess;
 using Microsoft.AspNetCore.Mvc;
 using MySql.Data.MySqlClient;
 using Newtonsoft.Json;
@@ -16,6 +17,15 @@ namespace RestaurantAPI.Controllers
     [ApiController]
     public class AdminController : ControllerBase
     {
+
+        private readonly RestaurantContext _db;
+
+        public AdminController(RestaurantContext db)
+        {
+
+            _db = db;
+        }
+
         // GET: api/<AdminController>
         [HttpGet]
         public IEnumerable<string> Get()
@@ -77,7 +87,25 @@ namespace RestaurantAPI.Controllers
             return null;
         }
 
+        [Route("adminDB")]
+        [HttpGet]
+        public string GetAdminDB()
+        {
+            try
+            {
+                var context = _db.User.ToList();
+                string json = JsonConvert.SerializeObject(context);
+                return json;
 
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+            }
+            return null;
+        }
 
     }
+
 }
