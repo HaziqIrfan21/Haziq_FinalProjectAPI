@@ -22,9 +22,9 @@ namespace RestaurantAPI.Controllers
     {
         private readonly RestaurantContext _db;
 
-        public LoginController( RestaurantContext db)
+        public LoginController(RestaurantContext db)
         {
-           
+
             _db = db;
         }
 
@@ -39,14 +39,14 @@ namespace RestaurantAPI.Controllers
 
         private void LoadSampleData()
         {
-            
-                string file = System.IO.File.ReadAllText("users.json");
-                var user = JsonSerializer.Deserialize<List<Users>>(file);
-                _db.AddRange(user);
-                _db.SaveChanges();
-            
-                
-            
+
+            string file = System.IO.File.ReadAllText("users.json");
+            var user = JsonSerializer.Deserialize<List<Users>>(file);
+            _db.AddRange(user);
+            _db.SaveChanges();
+
+
+
         }
 
         // GET: api/<ValuesController>
@@ -79,6 +79,7 @@ namespace RestaurantAPI.Controllers
         [HttpDelete("{id}")]
         public void Delete(int id)
         {
+
         }
 
         [Route("login")]
@@ -125,6 +126,50 @@ namespace RestaurantAPI.Controllers
             }
         }
 
+        [Route("loginDB")]
+        [HttpGet]
+        public bool GetLoginDB(string userName, string password)
+        {
+            // Users Users = new Users();
+
+            var users = _db.User.Where(p => p.UserName == userName && p.Password == password);
+            
+
+
+            foreach (var item in users)
+            {
+                if (item.UserName == userName && item.Password == password)
+                {
+                    //Admin Control
+                    if (userName == "user1" && password == "pass")
+                    {
+                        return true;
+                    }
+                    //User Control
+                    else
+                    {
+                        return true;
+                    }
+                }
+
+                else
+                {
+                    return false;
+
+                }
+            }
+
+            return false;
+
+        }
+
 
     }
+
+
 }
+
+
+
+
+

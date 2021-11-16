@@ -11,6 +11,7 @@ using Haziq_FinalProject;
 using Microsoft.AspNetCore.Mvc;
 using MySql.Data.MySqlClient;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
+using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Database;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -61,14 +62,42 @@ namespace RestaurantAPI.Controllers
 
         [Route("registerDB")]
         [HttpPut]
-        public void CreateAccountDB(string userName, string password, string firstName, string lastName, string email)
+        public void CreateAccountDB(string userName, string password, string confirmPassword, string firstName, string lastName, string email)
         {
-         
-           
-                Users user = new Users() { UserName = userName, Password = password, FirstName = firstName, LastName = lastName, Email = email };
+            Users user = new Users() { UserName = userName, Password = password, FirstName = firstName, LastName = lastName, Email = email };
+            if (!CheckTextBoxValues(firstName, lastName, email, password))
+            {
 
-                _db.User.Add(user);
-                _db.SaveChanges();
+                //Check if the password is the same as the confirm password
+                if (password == confirmPassword)
+                {
+                    //Check if this username already exists
+                    if (CheckUsername(userName))
+                    {
+                        MessageBox.Show("Username taken,please select a different username");
+                        //custom error message
+                        //,"Duplicate Username",MessageBoxButtons.OKCancel,MessageBoxIcon.Error
+                    }
+                    else
+                    {
+                        //Execute the query
+                        _db.User.Add(user);
+                        _db.SaveChanges();
+                        MessageBox.Show("Account Created");
+
+
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Password entered is not the same, try again");
+                }
+
+            }
+            else
+            {
+                MessageBox.Show("Please enter your information");
+            }
            
         }
 
@@ -76,7 +105,7 @@ namespace RestaurantAPI.Controllers
 
         [Route("register")]
         [HttpPut]
-        public void CreateAccount(string userName, string password,string confirmPassword, string firstName, string lastName, string email)
+        public void CreateAccount(string userName, string password, string confirmPassword, string firstName, string lastName, string email)
         {
             //Add new user
             DBAPI db = new DBAPI();
@@ -101,7 +130,7 @@ namespace RestaurantAPI.Controllers
             //Checks if the textboxes contains the default values
             //TODO:Probably need to change the way the information is displayed otherwise user can add funky inputs
 
-            if (!CheckTextBoxValues(firstName,lastName,email,password))
+            if (!CheckTextBoxValues(firstName, lastName, email, password))
             {
 
                 //Check if the password is the same as the confirm password
