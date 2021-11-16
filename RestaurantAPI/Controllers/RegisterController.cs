@@ -5,8 +5,12 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using DatabaseSQL;
+using EFDataAcessLibrary.DataAccess;
+using EFDataAcessLibrary.Models;
+using Haziq_FinalProject;
 using Microsoft.AspNetCore.Mvc;
 using MySql.Data.MySqlClient;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -16,6 +20,8 @@ namespace RestaurantAPI.Controllers
     [ApiController]
     public class RegisterController : ControllerBase
     {
+        private readonly RestaurantContext _db;
+
         // GET: api/<ValuesController>
         [HttpGet]
         public IEnumerable<string> Get()
@@ -47,6 +53,26 @@ namespace RestaurantAPI.Controllers
         public void Delete(int id)
         {
         }
+
+        public RegisterController(RestaurantContext db)
+        {
+            _db = db;
+        }
+
+        [Route("registerDB")]
+        [HttpPut]
+        public void CreateAccountDB(string userName, string password, string firstName, string lastName, string email)
+        {
+         
+           
+                Users user = new Users() { UserName = userName, Password = password, FirstName = firstName, LastName = lastName, Email = email };
+
+                _db.User.Add(user);
+                _db.SaveChanges();
+           
+        }
+
+
 
         [Route("register")]
         [HttpPut]

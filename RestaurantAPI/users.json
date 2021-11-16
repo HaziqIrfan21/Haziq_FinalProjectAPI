@@ -1,0 +1,30 @@
+[
+{"type":"header","version":"5.1.1","comment":"Export to JSON plugin for PHPMyAdmin"},
+{"type":"Databases","name":"finalproject_users_db"},
+{"type":"table","name":"users","database":"finalproject_users_db","data":
+[
+  [
+    {
+      "Id": "1",
+      "UserName": "user1",
+      "Password": "pass",
+      "FirstName": "haziq",
+      "LastName": "irfan",
+      "Email": "test@gmail.com",
+      "IsAdmin": "1"
+    }
+  ].
+  [
+    {
+      "Id": "2",
+      "UserName": "haziq123",
+      "Password": "pass123",
+      "FirstName": "Haziq",
+      "LastName": "Irfan",
+      "Email": "sample@gmail.com",
+      "IsAdmin": "0"
+    }
+  ],
+]
+}
+]

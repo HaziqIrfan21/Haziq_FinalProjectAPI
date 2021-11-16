@@ -2,9 +2,14 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
+using System.Text.Json;
 using System.Threading.Tasks;
 using DatabaseSQL;
+using EFDataAcessLibrary.DataAccess;
+using EFDataAcessLibrary.Models;
+using Haziq_FinalProject;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
 using MySql.Data.MySqlClient;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
@@ -15,6 +20,35 @@ namespace RestaurantAPI.Controllers
     [ApiController]
     public class LoginController : ControllerBase
     {
+        private readonly RestaurantContext _db;
+
+        public LoginController( RestaurantContext db)
+        {
+           
+            _db = db;
+        }
+
+        [Route("getDB")]
+        [HttpPost]
+        public void OnGet()
+        {
+            LoadSampleData();
+
+            //var people = _db.User.ToList();
+        }
+
+        private void LoadSampleData()
+        {
+            
+                string file = System.IO.File.ReadAllText("users.json");
+                var user = JsonSerializer.Deserialize<List<Users>>(file);
+                _db.AddRange(user);
+                _db.SaveChanges();
+            
+                
+            
+        }
+
         // GET: api/<ValuesController>
         [HttpGet]
         public IEnumerable<string> Get()

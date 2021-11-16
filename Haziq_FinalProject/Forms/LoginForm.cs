@@ -1,7 +1,11 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Data;
 using System.Drawing;
+using System.Linq;
+using System.Text.Json;
 using System.Windows.Forms;
+using EFDataAcessLibrary.DataAccess;
 using MySql.Data.MySqlClient;
 
 namespace Haziq_FinalProject
@@ -9,6 +13,9 @@ namespace Haziq_FinalProject
     public partial class LoginForm : Form
     {
         string CurrentUser;
+      
+
+
         public LoginForm()
         {
             InitializeComponent();
@@ -20,7 +27,14 @@ namespace Haziq_FinalProject
             MySqlConnection connection = new MySqlConnection("server=localhost;port=3306;username=root;password=;email=;database=finalproject_users_db;SSL Mode=None");
 
           
+
+           
+
         }
+
+       
+
+       
 
         private void labelClose_MouseEnter(object sender, EventArgs e)
         {
