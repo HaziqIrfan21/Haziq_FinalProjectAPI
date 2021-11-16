@@ -637,6 +637,7 @@ namespace Haziq_FinalProject
                                     item.FoodAmount = 0;
                                     foodDeleteCost = 0;
                                     foodList.Remove(item);
+                                   
 
                                 }
 
@@ -695,6 +696,7 @@ namespace Haziq_FinalProject
             {
                 {
                     //Item.price is already the final price
+                    if(item.FoodAmount>0)
                     AddToListView(item.Fullname, item.FoodAmount - foodDeleteNumber, item.Price - foodDeleteCost);
                 }
             }
