@@ -41,6 +41,49 @@ namespace Haziq_FinalProject
             this.labelCostAmount = new System.Windows.Forms.Label();
             this.labelCost = new System.Windows.Forms.Label();
             this.labelBill = new System.Windows.Forms.Label();
+            this.flowLayoutPanelNigiri = new System.Windows.Forms.FlowLayoutPanel();
+            this.panelNigiri1 = new System.Windows.Forms.Panel();
+            this.textBoxNigiri1 = new System.Windows.Forms.TextBox();
+            this.buttonMinusNigiri1 = new System.Windows.Forms.Button();
+            this.buttonNigiri1 = new System.Windows.Forms.Button();
+            this.labelPriceNigiri1 = new System.Windows.Forms.Label();
+            this.labelNameNigiri1 = new System.Windows.Forms.Label();
+            this.pictureBoxNigiri1 = new System.Windows.Forms.PictureBox();
+            this.panelNigiri2 = new System.Windows.Forms.Panel();
+            this.textBoxNigiri2 = new System.Windows.Forms.TextBox();
+            this.buttonMinusNigiri2 = new System.Windows.Forms.Button();
+            this.buttonNigiri2 = new System.Windows.Forms.Button();
+            this.labelPriceNigiri2 = new System.Windows.Forms.Label();
+            this.labelNameNigiri2 = new System.Windows.Forms.Label();
+            this.pictureBoxNigiri2 = new System.Windows.Forms.PictureBox();
+            this.panelNigiri3 = new System.Windows.Forms.Panel();
+            this.textBoxNigiri3 = new System.Windows.Forms.TextBox();
+            this.buttonMinusNigiri3 = new System.Windows.Forms.Button();
+            this.buttonNigiri3 = new System.Windows.Forms.Button();
+            this.labelPriceNigiri3 = new System.Windows.Forms.Label();
+            this.labelNameNigiri3 = new System.Windows.Forms.Label();
+            this.pictureBoxNigiri3 = new System.Windows.Forms.PictureBox();
+            this.panelNigiri4 = new System.Windows.Forms.Panel();
+            this.textBoxNigiri4 = new System.Windows.Forms.TextBox();
+            this.buttonMinusNigiri4 = new System.Windows.Forms.Button();
+            this.buttonNigiri4 = new System.Windows.Forms.Button();
+            this.labelPriceNigiri4 = new System.Windows.Forms.Label();
+            this.labelNameNigiri4 = new System.Windows.Forms.Label();
+            this.pictureBoxNigiri4 = new System.Windows.Forms.PictureBox();
+            this.panelNigiri5 = new System.Windows.Forms.Panel();
+            this.textBoxNigiri5 = new System.Windows.Forms.TextBox();
+            this.buttonMinusNigiri5 = new System.Windows.Forms.Button();
+            this.buttonNigiri5 = new System.Windows.Forms.Button();
+            this.labelPriceNigiri5 = new System.Windows.Forms.Label();
+            this.labelNameNigiri5 = new System.Windows.Forms.Label();
+            this.pictureBoxNigiri5 = new System.Windows.Forms.PictureBox();
+            this.panelNigiri6 = new System.Windows.Forms.Panel();
+            this.textBoxNigiri6 = new System.Windows.Forms.TextBox();
+            this.buttonMinusNigiri6 = new System.Windows.Forms.Button();
+            this.buttonNigiri6 = new System.Windows.Forms.Button();
+            this.labelPriceNigiri6 = new System.Windows.Forms.Label();
+            this.labelNameNigiri6 = new System.Windows.Forms.Label();
+            this.pictureBoxNigiri6 = new System.Windows.Forms.PictureBox();
             this.panelSideMenu = new System.Windows.Forms.Panel();
             this.buttonMakimono = new System.Windows.Forms.Button();
             this.buttonGunkan = new System.Windows.Forms.Button();
@@ -48,9 +91,9 @@ namespace Haziq_FinalProject
             this.panelLogo = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelTopBackground = new System.Windows.Forms.Panel();
-            this.gunkan1 = new Haziq_FinalProject.Gunkan();
             this.labelClose = new System.Windows.Forms.Label();
             this.labelTop = new System.Windows.Forms.Label();
+            this.gunkan1 = new Haziq_FinalProject.Gunkan();
             this.panel1 = new System.Windows.Forms.Panel();
             this.buttonDeleteOrder = new System.Windows.Forms.Button();
             this.buttonOrder = new System.Windows.Forms.Button();
@@ -59,6 +102,42 @@ namespace Haziq_FinalProject
             this.labelOrder = new System.Windows.Forms.Label();
             this.buttonCallWaiter = new System.Windows.Forms.Button();
             this.buttonBill = new System.Windows.Forms.Button();
+            this.flowLayoutPanelMakimono = new System.Windows.Forms.FlowLayoutPanel();
+            this.panelMakimono1 = new System.Windows.Forms.Panel();
+            this.buttonMinusMakimono1 = new System.Windows.Forms.Button();
+            this.buttonMakimono1 = new System.Windows.Forms.Button();
+            this.textBoxMakimono1 = new System.Windows.Forms.TextBox();
+            this.labelPriceMakimono1 = new System.Windows.Forms.Label();
+            this.labelNameMakimono1 = new System.Windows.Forms.Label();
+            this.pictureBoxMakimono1 = new System.Windows.Forms.PictureBox();
+            this.panelMakimono2 = new System.Windows.Forms.Panel();
+            this.buttonMinusMakimono2 = new System.Windows.Forms.Button();
+            this.textBoxMakimono2 = new System.Windows.Forms.TextBox();
+            this.buttonMakimono2 = new System.Windows.Forms.Button();
+            this.labelPriceMakimono2 = new System.Windows.Forms.Label();
+            this.labelNameMakimono2 = new System.Windows.Forms.Label();
+            this.pictureBoxMakimono2 = new System.Windows.Forms.PictureBox();
+            this.panelMakimono3 = new System.Windows.Forms.Panel();
+            this.buttonMinusMakimono3 = new System.Windows.Forms.Button();
+            this.textBoxMakimono3 = new System.Windows.Forms.TextBox();
+            this.buttonMakimono3 = new System.Windows.Forms.Button();
+            this.labelPriceMakimono3 = new System.Windows.Forms.Label();
+            this.labelNameMakimono3 = new System.Windows.Forms.Label();
+            this.pictureBoxMakimono3 = new System.Windows.Forms.PictureBox();
+            this.panelMakimono4 = new System.Windows.Forms.Panel();
+            this.buttonMinusMakimono4 = new System.Windows.Forms.Button();
+            this.textBoxMakimono4 = new System.Windows.Forms.TextBox();
+            this.buttonMakimono4 = new System.Windows.Forms.Button();
+            this.labelPriceMakimono4 = new System.Windows.Forms.Label();
+            this.labelNameMakimono4 = new System.Windows.Forms.Label();
+            this.pictureBoxMakimono4 = new System.Windows.Forms.PictureBox();
+            this.panelMakimono5 = new System.Windows.Forms.Panel();
+            this.buttonMinusMakimono5 = new System.Windows.Forms.Button();
+            this.textBoxMakimono5 = new System.Windows.Forms.TextBox();
+            this.buttonMakimono5 = new System.Windows.Forms.Button();
+            this.labelPriceMakimono5 = new System.Windows.Forms.Label();
+            this.labelNameMakimono5 = new System.Windows.Forms.Label();
+            this.pictureBoxMakimono5 = new System.Windows.Forms.PictureBox();
             this.flowLayoutPanelGunkan = new System.Windows.Forms.FlowLayoutPanel();
             this.panelGunkan1 = new System.Windows.Forms.Panel();
             this.buttonMinusGunkan1 = new System.Windows.Forms.Button();
@@ -81,93 +160,8 @@ namespace Haziq_FinalProject
             this.labelPriceGunkan3 = new System.Windows.Forms.Label();
             this.labelNameGunkan3 = new System.Windows.Forms.Label();
             this.pictureBoxGunkan3 = new System.Windows.Forms.PictureBox();
-            this.flowLayoutPanelMakimono = new System.Windows.Forms.FlowLayoutPanel();
-            this.panelMakimono1 = new System.Windows.Forms.Panel();
-            this.buttonMakimono1 = new System.Windows.Forms.Button();
-            this.textBoxMakimo1 = new System.Windows.Forms.TextBox();
-            this.labelPriceMakimono1 = new System.Windows.Forms.Label();
-            this.labelNameMakimono1 = new System.Windows.Forms.Label();
-            this.pictureBoxMakimono1 = new System.Windows.Forms.PictureBox();
-            this.panelMakimono2 = new System.Windows.Forms.Panel();
-            this.textBoxMakimo2 = new System.Windows.Forms.TextBox();
-            this.buttonMakimono2 = new System.Windows.Forms.Button();
-            this.labelPriceMakimono2 = new System.Windows.Forms.Label();
-            this.labelNameMakimono2 = new System.Windows.Forms.Label();
-            this.pictureBoxMakimono2 = new System.Windows.Forms.PictureBox();
-            this.panelMakimono3 = new System.Windows.Forms.Panel();
-            this.textBoxMakimo3 = new System.Windows.Forms.TextBox();
-            this.buttonMakimono3 = new System.Windows.Forms.Button();
-            this.labelPriceMakimono3 = new System.Windows.Forms.Label();
-            this.labelNameMakimono3 = new System.Windows.Forms.Label();
-            this.pictureBoxMakimono3 = new System.Windows.Forms.PictureBox();
-            this.panelMakimono4 = new System.Windows.Forms.Panel();
-            this.textBoxMakimo4 = new System.Windows.Forms.TextBox();
-            this.buttonMakimono4 = new System.Windows.Forms.Button();
-            this.labelPriceMakimono4 = new System.Windows.Forms.Label();
-            this.labelNameMakimono4 = new System.Windows.Forms.Label();
-            this.pictureBoxMakimono4 = new System.Windows.Forms.PictureBox();
-            this.panelMakimono5 = new System.Windows.Forms.Panel();
-            this.textBoxMakimo5 = new System.Windows.Forms.TextBox();
-            this.buttonMakimono5 = new System.Windows.Forms.Button();
-            this.labelPriceMakimono5 = new System.Windows.Forms.Label();
-            this.labelNameMakimono5 = new System.Windows.Forms.Label();
-            this.pictureBoxMakimono5 = new System.Windows.Forms.PictureBox();
-            this.flowLayoutPanelNigiri = new System.Windows.Forms.FlowLayoutPanel();
-            this.panelNigiri1 = new System.Windows.Forms.Panel();
-            this.buttonNigiri1 = new System.Windows.Forms.Button();
-            this.labelPriceNigiri1 = new System.Windows.Forms.Label();
-            this.labelNameNigiri1 = new System.Windows.Forms.Label();
-            this.pictureBoxNigiri1 = new System.Windows.Forms.PictureBox();
-            this.panelNigiri2 = new System.Windows.Forms.Panel();
-            this.buttonNigiri2 = new System.Windows.Forms.Button();
-            this.labelPriceNigiri2 = new System.Windows.Forms.Label();
-            this.labelNameNigiri2 = new System.Windows.Forms.Label();
-            this.pictureBoxNigiri2 = new System.Windows.Forms.PictureBox();
-            this.panelNigiri3 = new System.Windows.Forms.Panel();
-            this.buttonNigiri3 = new System.Windows.Forms.Button();
-            this.labelPriceNigiri3 = new System.Windows.Forms.Label();
-            this.labelNameNigiri3 = new System.Windows.Forms.Label();
-            this.pictureBoxNigiri3 = new System.Windows.Forms.PictureBox();
-            this.panelNigiri4 = new System.Windows.Forms.Panel();
-            this.buttonNigiri4 = new System.Windows.Forms.Button();
-            this.labelPriceNigiri4 = new System.Windows.Forms.Label();
-            this.labelNameNigiri4 = new System.Windows.Forms.Label();
-            this.pictureBoxNigiri4 = new System.Windows.Forms.PictureBox();
-            this.panelNigiri5 = new System.Windows.Forms.Panel();
-            this.buttonNigiri5 = new System.Windows.Forms.Button();
-            this.labelPriceNigiri5 = new System.Windows.Forms.Label();
-            this.labelNameNigiri5 = new System.Windows.Forms.Label();
-            this.pictureBoxNigiri5 = new System.Windows.Forms.PictureBox();
-            this.panelNigiri6 = new System.Windows.Forms.Panel();
-            this.buttonNigiri6 = new System.Windows.Forms.Button();
-            this.labelPriceNigir6 = new System.Windows.Forms.Label();
-            this.labelNameNigiri6 = new System.Windows.Forms.Label();
-            this.pictureBoxNigiri6 = new System.Windows.Forms.PictureBox();
             this.panelTop.SuspendLayout();
             this.panelBill.SuspendLayout();
-            this.panelSideMenu.SuspendLayout();
-            this.panelLogo.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.panelTopBackground.SuspendLayout();
-            this.panel1.SuspendLayout();
-            this.flowLayoutPanelGunkan.SuspendLayout();
-            this.panelGunkan1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxGunkan1)).BeginInit();
-            this.panelGunkan2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxGunkan2)).BeginInit();
-            this.panelGunkan3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxGunkan3)).BeginInit();
-            this.flowLayoutPanelMakimono.SuspendLayout();
-            this.panelMakimono1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMakimono1)).BeginInit();
-            this.panelMakimono2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMakimono2)).BeginInit();
-            this.panelMakimono3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMakimono3)).BeginInit();
-            this.panelMakimono4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMakimono4)).BeginInit();
-            this.panelMakimono5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMakimono5)).BeginInit();
             this.flowLayoutPanelNigiri.SuspendLayout();
             this.panelNigiri1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxNigiri1)).BeginInit();
@@ -181,18 +175,41 @@ namespace Haziq_FinalProject
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxNigiri5)).BeginInit();
             this.panelNigiri6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxNigiri6)).BeginInit();
+            this.panelSideMenu.SuspendLayout();
+            this.panelLogo.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panelTopBackground.SuspendLayout();
+            this.panel1.SuspendLayout();
+            this.flowLayoutPanelMakimono.SuspendLayout();
+            this.panelMakimono1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMakimono1)).BeginInit();
+            this.panelMakimono2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMakimono2)).BeginInit();
+            this.panelMakimono3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMakimono3)).BeginInit();
+            this.panelMakimono4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMakimono4)).BeginInit();
+            this.panelMakimono5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMakimono5)).BeginInit();
+            this.flowLayoutPanelGunkan.SuspendLayout();
+            this.panelGunkan1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxGunkan1)).BeginInit();
+            this.panelGunkan2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxGunkan2)).BeginInit();
+            this.panelGunkan3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxGunkan3)).BeginInit();
             this.SuspendLayout();
             // 
             // panelTop
             // 
             this.panelTop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(34)))));
             this.panelTop.Controls.Add(this.panelBill);
+            this.panelTop.Controls.Add(this.flowLayoutPanelNigiri);
             this.panelTop.Controls.Add(this.panelSideMenu);
             this.panelTop.Controls.Add(this.panelTopBackground);
             this.panelTop.Controls.Add(this.panel1);
-            this.panelTop.Controls.Add(this.flowLayoutPanelGunkan);
             this.panelTop.Controls.Add(this.flowLayoutPanelMakimono);
-            this.panelTop.Controls.Add(this.flowLayoutPanelNigiri);
+            this.panelTop.Controls.Add(this.flowLayoutPanelGunkan);
             this.panelTop.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelTop.Location = new System.Drawing.Point(0, 0);
             this.panelTop.Name = "panelTop";
@@ -290,6 +307,494 @@ namespace Haziq_FinalProject
             this.labelBill.TabIndex = 0;
             this.labelBill.Text = "Bill";
             // 
+            // flowLayoutPanelNigiri
+            // 
+            this.flowLayoutPanelNigiri.Controls.Add(this.panelNigiri1);
+            this.flowLayoutPanelNigiri.Controls.Add(this.panelNigiri2);
+            this.flowLayoutPanelNigiri.Controls.Add(this.panelNigiri3);
+            this.flowLayoutPanelNigiri.Controls.Add(this.panelNigiri4);
+            this.flowLayoutPanelNigiri.Controls.Add(this.panelNigiri5);
+            this.flowLayoutPanelNigiri.Controls.Add(this.panelNigiri6);
+            this.flowLayoutPanelNigiri.Location = new System.Drawing.Point(106, 116);
+            this.flowLayoutPanelNigiri.Name = "flowLayoutPanelNigiri";
+            this.flowLayoutPanelNigiri.Padding = new System.Windows.Forms.Padding(20);
+            this.flowLayoutPanelNigiri.Size = new System.Drawing.Size(444, 600);
+            this.flowLayoutPanelNigiri.TabIndex = 2;
+            // 
+            // panelNigiri1
+            // 
+            this.panelNigiri1.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.panelNigiri1.Controls.Add(this.textBoxNigiri1);
+            this.panelNigiri1.Controls.Add(this.buttonMinusNigiri1);
+            this.panelNigiri1.Controls.Add(this.buttonNigiri1);
+            this.panelNigiri1.Controls.Add(this.labelPriceNigiri1);
+            this.panelNigiri1.Controls.Add(this.labelNameNigiri1);
+            this.panelNigiri1.Controls.Add(this.pictureBoxNigiri1);
+            this.panelNigiri1.Location = new System.Drawing.Point(23, 23);
+            this.panelNigiri1.Name = "panelNigiri1";
+            this.panelNigiri1.Size = new System.Drawing.Size(192, 179);
+            this.panelNigiri1.TabIndex = 24;
+            // 
+            // textBoxNigiri1
+            // 
+            this.textBoxNigiri1.Location = new System.Drawing.Point(93, 143);
+            this.textBoxNigiri1.Name = "textBoxNigiri1";
+            this.textBoxNigiri1.Size = new System.Drawing.Size(41, 23);
+            this.textBoxNigiri1.TabIndex = 30;
+            // 
+            // buttonMinusNigiri1
+            // 
+            this.buttonMinusNigiri1.BackColor = System.Drawing.Color.Transparent;
+            this.buttonMinusNigiri1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.buttonMinusNigiri1.FlatAppearance.BorderSize = 0;
+            this.buttonMinusNigiri1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonMinusNigiri1.Image = global::Haziq_FinalProject.Properties.Resources.minus;
+            this.buttonMinusNigiri1.Location = new System.Drawing.Point(58, 148);
+            this.buttonMinusNigiri1.Name = "buttonMinusNigiri1";
+            this.buttonMinusNigiri1.Size = new System.Drawing.Size(25, 10);
+            this.buttonMinusNigiri1.TabIndex = 9;
+            this.buttonMinusNigiri1.UseVisualStyleBackColor = false;
+            this.buttonMinusNigiri1.Click += new System.EventHandler(this.buttonMinusNigiri1_Click);
+            // 
+            // buttonNigiri1
+            // 
+            this.buttonNigiri1.BackColor = System.Drawing.Color.Transparent;
+            this.buttonNigiri1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.buttonNigiri1.FlatAppearance.BorderSize = 0;
+            this.buttonNigiri1.Image = ((System.Drawing.Image)(resources.GetObject("buttonNigiri1.Image")));
+            this.buttonNigiri1.Location = new System.Drawing.Point(137, 130);
+            this.buttonNigiri1.Name = "buttonNigiri1";
+            this.buttonNigiri1.Size = new System.Drawing.Size(52, 46);
+            this.buttonNigiri1.TabIndex = 4;
+            this.buttonNigiri1.UseVisualStyleBackColor = false;
+            this.buttonNigiri1.Click += new System.EventHandler(this.buttonNigiri1_Click);
+            // 
+            // labelPriceNigiri1
+            // 
+            this.labelPriceNigiri1.AutoSize = true;
+            this.labelPriceNigiri1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.labelPriceNigiri1.ForeColor = System.Drawing.Color.Red;
+            this.labelPriceNigiri1.Location = new System.Drawing.Point(4, 158);
+            this.labelPriceNigiri1.Name = "labelPriceNigiri1";
+            this.labelPriceNigiri1.Size = new System.Drawing.Size(35, 16);
+            this.labelPriceNigiri1.TabIndex = 3;
+            this.labelPriceNigiri1.Text = "1.80";
+            // 
+            // labelNameNigiri1
+            // 
+            this.labelNameNigiri1.AutoSize = true;
+            this.labelNameNigiri1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.labelNameNigiri1.Location = new System.Drawing.Point(3, 139);
+            this.labelNameNigiri1.Name = "labelNameNigiri1";
+            this.labelNameNigiri1.Size = new System.Drawing.Size(43, 16);
+            this.labelNameNigiri1.TabIndex = 2;
+            this.labelNameNigiri1.Text = "Tako";
+            // 
+            // pictureBoxNigiri1
+            // 
+            this.pictureBoxNigiri1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxNigiri1.Image")));
+            this.pictureBoxNigiri1.Location = new System.Drawing.Point(3, 3);
+            this.pictureBoxNigiri1.Name = "pictureBoxNigiri1";
+            this.pictureBoxNigiri1.Size = new System.Drawing.Size(132, 129);
+            this.pictureBoxNigiri1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxNigiri1.TabIndex = 0;
+            this.pictureBoxNigiri1.TabStop = false;
+            // 
+            // panelNigiri2
+            // 
+            this.panelNigiri2.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.panelNigiri2.Controls.Add(this.textBoxNigiri2);
+            this.panelNigiri2.Controls.Add(this.buttonMinusNigiri2);
+            this.panelNigiri2.Controls.Add(this.buttonNigiri2);
+            this.panelNigiri2.Controls.Add(this.labelPriceNigiri2);
+            this.panelNigiri2.Controls.Add(this.labelNameNigiri2);
+            this.panelNigiri2.Controls.Add(this.pictureBoxNigiri2);
+            this.panelNigiri2.Location = new System.Drawing.Point(221, 23);
+            this.panelNigiri2.Name = "panelNigiri2";
+            this.panelNigiri2.Size = new System.Drawing.Size(192, 179);
+            this.panelNigiri2.TabIndex = 22;
+            // 
+            // textBoxNigiri2
+            // 
+            this.textBoxNigiri2.Location = new System.Drawing.Point(94, 145);
+            this.textBoxNigiri2.Name = "textBoxNigiri2";
+            this.textBoxNigiri2.Size = new System.Drawing.Size(41, 23);
+            this.textBoxNigiri2.TabIndex = 30;
+            // 
+            // buttonMinusNigiri2
+            // 
+            this.buttonMinusNigiri2.BackColor = System.Drawing.Color.Transparent;
+            this.buttonMinusNigiri2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.buttonMinusNigiri2.FlatAppearance.BorderSize = 0;
+            this.buttonMinusNigiri2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonMinusNigiri2.Image = global::Haziq_FinalProject.Properties.Resources.minus;
+            this.buttonMinusNigiri2.Location = new System.Drawing.Point(67, 151);
+            this.buttonMinusNigiri2.Name = "buttonMinusNigiri2";
+            this.buttonMinusNigiri2.Size = new System.Drawing.Size(25, 10);
+            this.buttonMinusNigiri2.TabIndex = 10;
+            this.buttonMinusNigiri2.UseVisualStyleBackColor = false;
+            this.buttonMinusNigiri2.Click += new System.EventHandler(this.buttonMinusNigiri2_Click);
+            // 
+            // buttonNigiri2
+            // 
+            this.buttonNigiri2.BackColor = System.Drawing.Color.Transparent;
+            this.buttonNigiri2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.buttonNigiri2.FlatAppearance.BorderSize = 0;
+            this.buttonNigiri2.Image = ((System.Drawing.Image)(resources.GetObject("buttonNigiri2.Image")));
+            this.buttonNigiri2.Location = new System.Drawing.Point(137, 130);
+            this.buttonNigiri2.Name = "buttonNigiri2";
+            this.buttonNigiri2.Size = new System.Drawing.Size(52, 46);
+            this.buttonNigiri2.TabIndex = 4;
+            this.buttonNigiri2.UseVisualStyleBackColor = false;
+            this.buttonNigiri2.Click += new System.EventHandler(this.buttonNigiri2_Click);
+            // 
+            // labelPriceNigiri2
+            // 
+            this.labelPriceNigiri2.AutoSize = true;
+            this.labelPriceNigiri2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.labelPriceNigiri2.ForeColor = System.Drawing.Color.Red;
+            this.labelPriceNigiri2.Location = new System.Drawing.Point(4, 158);
+            this.labelPriceNigiri2.Name = "labelPriceNigiri2";
+            this.labelPriceNigiri2.Size = new System.Drawing.Size(35, 16);
+            this.labelPriceNigiri2.TabIndex = 3;
+            this.labelPriceNigiri2.Text = "1.80";
+            // 
+            // labelNameNigiri2
+            // 
+            this.labelNameNigiri2.AutoSize = true;
+            this.labelNameNigiri2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.labelNameNigiri2.Location = new System.Drawing.Point(3, 139);
+            this.labelNameNigiri2.Name = "labelNameNigiri2";
+            this.labelNameNigiri2.Size = new System.Drawing.Size(65, 16);
+            this.labelNameNigiri2.TabIndex = 2;
+            this.labelNameNigiri2.Text = "Tamago";
+            // 
+            // pictureBoxNigiri2
+            // 
+            this.pictureBoxNigiri2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxNigiri2.Image")));
+            this.pictureBoxNigiri2.Location = new System.Drawing.Point(3, 3);
+            this.pictureBoxNigiri2.Name = "pictureBoxNigiri2";
+            this.pictureBoxNigiri2.Size = new System.Drawing.Size(132, 129);
+            this.pictureBoxNigiri2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxNigiri2.TabIndex = 0;
+            this.pictureBoxNigiri2.TabStop = false;
+            // 
+            // panelNigiri3
+            // 
+            this.panelNigiri3.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.panelNigiri3.Controls.Add(this.textBoxNigiri3);
+            this.panelNigiri3.Controls.Add(this.buttonMinusNigiri3);
+            this.panelNigiri3.Controls.Add(this.buttonNigiri3);
+            this.panelNigiri3.Controls.Add(this.labelPriceNigiri3);
+            this.panelNigiri3.Controls.Add(this.labelNameNigiri3);
+            this.panelNigiri3.Controls.Add(this.pictureBoxNigiri3);
+            this.panelNigiri3.Location = new System.Drawing.Point(23, 208);
+            this.panelNigiri3.Name = "panelNigiri3";
+            this.panelNigiri3.Size = new System.Drawing.Size(192, 179);
+            this.panelNigiri3.TabIndex = 25;
+            // 
+            // textBoxNigiri3
+            // 
+            this.textBoxNigiri3.Location = new System.Drawing.Point(94, 143);
+            this.textBoxNigiri3.Name = "textBoxNigiri3";
+            this.textBoxNigiri3.Size = new System.Drawing.Size(41, 23);
+            this.textBoxNigiri3.TabIndex = 30;
+            // 
+            // buttonMinusNigiri3
+            // 
+            this.buttonMinusNigiri3.BackColor = System.Drawing.Color.Transparent;
+            this.buttonMinusNigiri3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.buttonMinusNigiri3.FlatAppearance.BorderSize = 0;
+            this.buttonMinusNigiri3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonMinusNigiri3.Image = global::Haziq_FinalProject.Properties.Resources.minus;
+            this.buttonMinusNigiri3.Location = new System.Drawing.Point(58, 148);
+            this.buttonMinusNigiri3.Name = "buttonMinusNigiri3";
+            this.buttonMinusNigiri3.Size = new System.Drawing.Size(25, 10);
+            this.buttonMinusNigiri3.TabIndex = 11;
+            this.buttonMinusNigiri3.UseVisualStyleBackColor = false;
+            this.buttonMinusNigiri3.Click += new System.EventHandler(this.buttonMinusNigiri3_Click);
+            // 
+            // buttonNigiri3
+            // 
+            this.buttonNigiri3.BackColor = System.Drawing.Color.Transparent;
+            this.buttonNigiri3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.buttonNigiri3.FlatAppearance.BorderSize = 0;
+            this.buttonNigiri3.Image = ((System.Drawing.Image)(resources.GetObject("buttonNigiri3.Image")));
+            this.buttonNigiri3.Location = new System.Drawing.Point(137, 130);
+            this.buttonNigiri3.Name = "buttonNigiri3";
+            this.buttonNigiri3.Size = new System.Drawing.Size(52, 46);
+            this.buttonNigiri3.TabIndex = 4;
+            this.buttonNigiri3.UseVisualStyleBackColor = false;
+            this.buttonNigiri3.Click += new System.EventHandler(this.buttonNigiri3_Click);
+            // 
+            // labelPriceNigiri3
+            // 
+            this.labelPriceNigiri3.AutoSize = true;
+            this.labelPriceNigiri3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.labelPriceNigiri3.ForeColor = System.Drawing.Color.Red;
+            this.labelPriceNigiri3.Location = new System.Drawing.Point(4, 158);
+            this.labelPriceNigiri3.Name = "labelPriceNigiri3";
+            this.labelPriceNigiri3.Size = new System.Drawing.Size(35, 16);
+            this.labelPriceNigiri3.TabIndex = 3;
+            this.labelPriceNigiri3.Text = "1.80";
+            // 
+            // labelNameNigiri3
+            // 
+            this.labelNameNigiri3.AutoSize = true;
+            this.labelNameNigiri3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.labelNameNigiri3.Location = new System.Drawing.Point(3, 139);
+            this.labelNameNigiri3.Name = "labelNameNigiri3";
+            this.labelNameNigiri3.Size = new System.Drawing.Size(30, 16);
+            this.labelNameNigiri3.TabIndex = 2;
+            this.labelNameNigiri3.Text = "Eel";
+            // 
+            // pictureBoxNigiri3
+            // 
+            this.pictureBoxNigiri3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxNigiri3.Image")));
+            this.pictureBoxNigiri3.Location = new System.Drawing.Point(3, 3);
+            this.pictureBoxNigiri3.Name = "pictureBoxNigiri3";
+            this.pictureBoxNigiri3.Size = new System.Drawing.Size(132, 129);
+            this.pictureBoxNigiri3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxNigiri3.TabIndex = 0;
+            this.pictureBoxNigiri3.TabStop = false;
+            // 
+            // panelNigiri4
+            // 
+            this.panelNigiri4.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.panelNigiri4.Controls.Add(this.textBoxNigiri4);
+            this.panelNigiri4.Controls.Add(this.buttonMinusNigiri4);
+            this.panelNigiri4.Controls.Add(this.buttonNigiri4);
+            this.panelNigiri4.Controls.Add(this.labelPriceNigiri4);
+            this.panelNigiri4.Controls.Add(this.labelNameNigiri4);
+            this.panelNigiri4.Controls.Add(this.pictureBoxNigiri4);
+            this.panelNigiri4.Location = new System.Drawing.Point(221, 208);
+            this.panelNigiri4.Name = "panelNigiri4";
+            this.panelNigiri4.Size = new System.Drawing.Size(192, 179);
+            this.panelNigiri4.TabIndex = 23;
+            // 
+            // textBoxNigiri4
+            // 
+            this.textBoxNigiri4.Location = new System.Drawing.Point(94, 143);
+            this.textBoxNigiri4.Name = "textBoxNigiri4";
+            this.textBoxNigiri4.Size = new System.Drawing.Size(41, 23);
+            this.textBoxNigiri4.TabIndex = 30;
+            // 
+            // buttonMinusNigiri4
+            // 
+            this.buttonMinusNigiri4.BackColor = System.Drawing.Color.Transparent;
+            this.buttonMinusNigiri4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.buttonMinusNigiri4.FlatAppearance.BorderSize = 0;
+            this.buttonMinusNigiri4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonMinusNigiri4.Image = global::Haziq_FinalProject.Properties.Resources.minus;
+            this.buttonMinusNigiri4.Location = new System.Drawing.Point(63, 148);
+            this.buttonMinusNigiri4.Name = "buttonMinusNigiri4";
+            this.buttonMinusNigiri4.Size = new System.Drawing.Size(25, 10);
+            this.buttonMinusNigiri4.TabIndex = 12;
+            this.buttonMinusNigiri4.UseVisualStyleBackColor = false;
+            this.buttonMinusNigiri4.Click += new System.EventHandler(this.buttonMinusNigiri4_Click);
+            // 
+            // buttonNigiri4
+            // 
+            this.buttonNigiri4.BackColor = System.Drawing.Color.Transparent;
+            this.buttonNigiri4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.buttonNigiri4.FlatAppearance.BorderSize = 0;
+            this.buttonNigiri4.Image = ((System.Drawing.Image)(resources.GetObject("buttonNigiri4.Image")));
+            this.buttonNigiri4.Location = new System.Drawing.Point(137, 130);
+            this.buttonNigiri4.Name = "buttonNigiri4";
+            this.buttonNigiri4.Size = new System.Drawing.Size(52, 46);
+            this.buttonNigiri4.TabIndex = 4;
+            this.buttonNigiri4.UseVisualStyleBackColor = false;
+            this.buttonNigiri4.Click += new System.EventHandler(this.buttonNigiri4_Click);
+            // 
+            // labelPriceNigiri4
+            // 
+            this.labelPriceNigiri4.AutoSize = true;
+            this.labelPriceNigiri4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.labelPriceNigiri4.ForeColor = System.Drawing.Color.Red;
+            this.labelPriceNigiri4.Location = new System.Drawing.Point(4, 158);
+            this.labelPriceNigiri4.Name = "labelPriceNigiri4";
+            this.labelPriceNigiri4.Size = new System.Drawing.Size(35, 16);
+            this.labelPriceNigiri4.TabIndex = 3;
+            this.labelPriceNigiri4.Text = "1.80";
+            // 
+            // labelNameNigiri4
+            // 
+            this.labelNameNigiri4.AutoSize = true;
+            this.labelNameNigiri4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.labelNameNigiri4.Location = new System.Drawing.Point(3, 139);
+            this.labelNameNigiri4.Name = "labelNameNigiri4";
+            this.labelNameNigiri4.Size = new System.Drawing.Size(42, 16);
+            this.labelNameNigiri4.TabIndex = 2;
+            this.labelNameNigiri4.Text = "Tuna";
+            // 
+            // pictureBoxNigiri4
+            // 
+            this.pictureBoxNigiri4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxNigiri4.Image")));
+            this.pictureBoxNigiri4.Location = new System.Drawing.Point(3, 3);
+            this.pictureBoxNigiri4.Name = "pictureBoxNigiri4";
+            this.pictureBoxNigiri4.Size = new System.Drawing.Size(132, 129);
+            this.pictureBoxNigiri4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxNigiri4.TabIndex = 0;
+            this.pictureBoxNigiri4.TabStop = false;
+            // 
+            // panelNigiri5
+            // 
+            this.panelNigiri5.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.panelNigiri5.Controls.Add(this.textBoxNigiri5);
+            this.panelNigiri5.Controls.Add(this.buttonMinusNigiri5);
+            this.panelNigiri5.Controls.Add(this.buttonNigiri5);
+            this.panelNigiri5.Controls.Add(this.labelPriceNigiri5);
+            this.panelNigiri5.Controls.Add(this.labelNameNigiri5);
+            this.panelNigiri5.Controls.Add(this.pictureBoxNigiri5);
+            this.panelNigiri5.Location = new System.Drawing.Point(23, 393);
+            this.panelNigiri5.Name = "panelNigiri5";
+            this.panelNigiri5.Size = new System.Drawing.Size(192, 179);
+            this.panelNigiri5.TabIndex = 21;
+            // 
+            // textBoxNigiri5
+            // 
+            this.textBoxNigiri5.Location = new System.Drawing.Point(94, 144);
+            this.textBoxNigiri5.Name = "textBoxNigiri5";
+            this.textBoxNigiri5.Size = new System.Drawing.Size(41, 23);
+            this.textBoxNigiri5.TabIndex = 30;
+            // 
+            // buttonMinusNigiri5
+            // 
+            this.buttonMinusNigiri5.BackColor = System.Drawing.Color.Transparent;
+            this.buttonMinusNigiri5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.buttonMinusNigiri5.FlatAppearance.BorderSize = 0;
+            this.buttonMinusNigiri5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonMinusNigiri5.Image = global::Haziq_FinalProject.Properties.Resources.minus;
+            this.buttonMinusNigiri5.Location = new System.Drawing.Point(61, 148);
+            this.buttonMinusNigiri5.Name = "buttonMinusNigiri5";
+            this.buttonMinusNigiri5.Size = new System.Drawing.Size(25, 10);
+            this.buttonMinusNigiri5.TabIndex = 13;
+            this.buttonMinusNigiri5.UseVisualStyleBackColor = false;
+            this.buttonMinusNigiri5.Click += new System.EventHandler(this.buttonMinusNigiri5_Click);
+            // 
+            // buttonNigiri5
+            // 
+            this.buttonNigiri5.BackColor = System.Drawing.Color.Transparent;
+            this.buttonNigiri5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.buttonNigiri5.FlatAppearance.BorderSize = 0;
+            this.buttonNigiri5.Image = ((System.Drawing.Image)(resources.GetObject("buttonNigiri5.Image")));
+            this.buttonNigiri5.Location = new System.Drawing.Point(137, 130);
+            this.buttonNigiri5.Name = "buttonNigiri5";
+            this.buttonNigiri5.Size = new System.Drawing.Size(52, 46);
+            this.buttonNigiri5.TabIndex = 4;
+            this.buttonNigiri5.UseVisualStyleBackColor = false;
+            this.buttonNigiri5.Click += new System.EventHandler(this.buttonNigiri5_Click);
+            // 
+            // labelPriceNigiri5
+            // 
+            this.labelPriceNigiri5.AutoSize = true;
+            this.labelPriceNigiri5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.labelPriceNigiri5.ForeColor = System.Drawing.Color.Red;
+            this.labelPriceNigiri5.Location = new System.Drawing.Point(4, 158);
+            this.labelPriceNigiri5.Name = "labelPriceNigiri5";
+            this.labelPriceNigiri5.Size = new System.Drawing.Size(35, 16);
+            this.labelPriceNigiri5.TabIndex = 3;
+            this.labelPriceNigiri5.Text = "1.80";
+            // 
+            // labelNameNigiri5
+            // 
+            this.labelNameNigiri5.AutoSize = true;
+            this.labelNameNigiri5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.labelNameNigiri5.Location = new System.Drawing.Point(3, 139);
+            this.labelNameNigiri5.Name = "labelNameNigiri5";
+            this.labelNameNigiri5.Size = new System.Drawing.Size(55, 16);
+            this.labelNameNigiri5.TabIndex = 2;
+            this.labelNameNigiri5.Text = "Shrimp";
+            // 
+            // pictureBoxNigiri5
+            // 
+            this.pictureBoxNigiri5.Image = global::Haziq_FinalProject.Properties.Resources.Sushi_41;
+            this.pictureBoxNigiri5.Location = new System.Drawing.Point(3, 3);
+            this.pictureBoxNigiri5.Name = "pictureBoxNigiri5";
+            this.pictureBoxNigiri5.Size = new System.Drawing.Size(132, 129);
+            this.pictureBoxNigiri5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxNigiri5.TabIndex = 0;
+            this.pictureBoxNigiri5.TabStop = false;
+            // 
+            // panelNigiri6
+            // 
+            this.panelNigiri6.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.panelNigiri6.Controls.Add(this.textBoxNigiri6);
+            this.panelNigiri6.Controls.Add(this.buttonMinusNigiri6);
+            this.panelNigiri6.Controls.Add(this.buttonNigiri6);
+            this.panelNigiri6.Controls.Add(this.labelPriceNigiri6);
+            this.panelNigiri6.Controls.Add(this.labelNameNigiri6);
+            this.panelNigiri6.Controls.Add(this.pictureBoxNigiri6);
+            this.panelNigiri6.Location = new System.Drawing.Point(221, 393);
+            this.panelNigiri6.Name = "panelNigiri6";
+            this.panelNigiri6.Size = new System.Drawing.Size(192, 179);
+            this.panelNigiri6.TabIndex = 20;
+            // 
+            // textBoxNigiri6
+            // 
+            this.textBoxNigiri6.Location = new System.Drawing.Point(94, 144);
+            this.textBoxNigiri6.Name = "textBoxNigiri6";
+            this.textBoxNigiri6.Size = new System.Drawing.Size(41, 23);
+            this.textBoxNigiri6.TabIndex = 30;
+            // 
+            // buttonMinusNigiri6
+            // 
+            this.buttonMinusNigiri6.BackColor = System.Drawing.Color.Transparent;
+            this.buttonMinusNigiri6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.buttonMinusNigiri6.FlatAppearance.BorderSize = 0;
+            this.buttonMinusNigiri6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonMinusNigiri6.Image = global::Haziq_FinalProject.Properties.Resources.minus;
+            this.buttonMinusNigiri6.Location = new System.Drawing.Point(64, 149);
+            this.buttonMinusNigiri6.Name = "buttonMinusNigiri6";
+            this.buttonMinusNigiri6.Size = new System.Drawing.Size(25, 10);
+            this.buttonMinusNigiri6.TabIndex = 14;
+            this.buttonMinusNigiri6.UseVisualStyleBackColor = false;
+            this.buttonMinusNigiri6.Click += new System.EventHandler(this.buttonMinusNigiri6_Click);
+            // 
+            // buttonNigiri6
+            // 
+            this.buttonNigiri6.BackColor = System.Drawing.Color.Transparent;
+            this.buttonNigiri6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.buttonNigiri6.FlatAppearance.BorderSize = 0;
+            this.buttonNigiri6.Image = ((System.Drawing.Image)(resources.GetObject("buttonNigiri6.Image")));
+            this.buttonNigiri6.Location = new System.Drawing.Point(137, 130);
+            this.buttonNigiri6.Name = "buttonNigiri6";
+            this.buttonNigiri6.Size = new System.Drawing.Size(52, 46);
+            this.buttonNigiri6.TabIndex = 4;
+            this.buttonNigiri6.UseVisualStyleBackColor = false;
+            this.buttonNigiri6.Click += new System.EventHandler(this.buttonNigiri6_Click);
+            // 
+            // labelPriceNigiri6
+            // 
+            this.labelPriceNigiri6.AutoSize = true;
+            this.labelPriceNigiri6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.labelPriceNigiri6.ForeColor = System.Drawing.Color.Red;
+            this.labelPriceNigiri6.Location = new System.Drawing.Point(4, 158);
+            this.labelPriceNigiri6.Name = "labelPriceNigiri6";
+            this.labelPriceNigiri6.Size = new System.Drawing.Size(35, 16);
+            this.labelPriceNigiri6.TabIndex = 3;
+            this.labelPriceNigiri6.Text = "1.80";
+            // 
+            // labelNameNigiri6
+            // 
+            this.labelNameNigiri6.AutoSize = true;
+            this.labelNameNigiri6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.labelNameNigiri6.Location = new System.Drawing.Point(3, 139);
+            this.labelNameNigiri6.Name = "labelNameNigiri6";
+            this.labelNameNigiri6.Size = new System.Drawing.Size(59, 16);
+            this.labelNameNigiri6.TabIndex = 2;
+            this.labelNameNigiri6.Text = "Salmon";
+            // 
+            // pictureBoxNigiri6
+            // 
+            this.pictureBoxNigiri6.Image = global::Haziq_FinalProject.Properties.Resources.Sushi_19;
+            this.pictureBoxNigiri6.Location = new System.Drawing.Point(3, 3);
+            this.pictureBoxNigiri6.Name = "pictureBoxNigiri6";
+            this.pictureBoxNigiri6.Size = new System.Drawing.Size(132, 129);
+            this.pictureBoxNigiri6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxNigiri6.TabIndex = 0;
+            this.pictureBoxNigiri6.TabStop = false;
+            // 
             // panelSideMenu
             // 
             this.panelSideMenu.Controls.Add(this.buttonMakimono);
@@ -357,21 +862,14 @@ namespace Haziq_FinalProject
             // panelTopBackground
             // 
             this.panelTopBackground.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(183)))), ((int)(((byte)(19)))));
-            this.panelTopBackground.Controls.Add(this.gunkan1);
             this.panelTopBackground.Controls.Add(this.labelClose);
             this.panelTopBackground.Controls.Add(this.labelTop);
+            this.panelTopBackground.Controls.Add(this.gunkan1);
             this.panelTopBackground.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelTopBackground.Location = new System.Drawing.Point(0, 0);
             this.panelTopBackground.Name = "panelTopBackground";
             this.panelTopBackground.Size = new System.Drawing.Size(894, 113);
             this.panelTopBackground.TabIndex = 0;
-            // 
-            // gunkan1
-            // 
-            this.gunkan1.Location = new System.Drawing.Point(23, 578);
-            this.gunkan1.Name = "gunkan1";
-            this.gunkan1.Size = new System.Drawing.Size(500, 600);
-            this.gunkan1.TabIndex = 2;
             // 
             // labelClose
             // 
@@ -397,6 +895,13 @@ namespace Haziq_FinalProject
             this.labelTop.TabIndex = 0;
             this.labelTop.Text = "Menu";
             this.labelTop.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // gunkan1
+            // 
+            this.gunkan1.Location = new System.Drawing.Point(23, 578);
+            this.gunkan1.Name = "gunkan1";
+            this.gunkan1.Size = new System.Drawing.Size(500, 600);
+            this.gunkan1.TabIndex = 2;
             // 
             // panel1
             // 
@@ -492,6 +997,415 @@ namespace Haziq_FinalProject
             this.buttonBill.Text = "Bill";
             this.buttonBill.UseVisualStyleBackColor = true;
             this.buttonBill.Click += new System.EventHandler(this.buttonBill_Click);
+            // 
+            // flowLayoutPanelMakimono
+            // 
+            this.flowLayoutPanelMakimono.Controls.Add(this.panelMakimono1);
+            this.flowLayoutPanelMakimono.Controls.Add(this.panelMakimono2);
+            this.flowLayoutPanelMakimono.Controls.Add(this.panelMakimono3);
+            this.flowLayoutPanelMakimono.Controls.Add(this.panelMakimono4);
+            this.flowLayoutPanelMakimono.Controls.Add(this.panelMakimono5);
+            this.flowLayoutPanelMakimono.Location = new System.Drawing.Point(106, 116);
+            this.flowLayoutPanelMakimono.Name = "flowLayoutPanelMakimono";
+            this.flowLayoutPanelMakimono.Padding = new System.Windows.Forms.Padding(20);
+            this.flowLayoutPanelMakimono.Size = new System.Drawing.Size(444, 600);
+            this.flowLayoutPanelMakimono.TabIndex = 3;
+            // 
+            // panelMakimono1
+            // 
+            this.panelMakimono1.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.panelMakimono1.Controls.Add(this.buttonMinusMakimono1);
+            this.panelMakimono1.Controls.Add(this.buttonMakimono1);
+            this.panelMakimono1.Controls.Add(this.textBoxMakimono1);
+            this.panelMakimono1.Controls.Add(this.labelPriceMakimono1);
+            this.panelMakimono1.Controls.Add(this.labelNameMakimono1);
+            this.panelMakimono1.Controls.Add(this.pictureBoxMakimono1);
+            this.panelMakimono1.Location = new System.Drawing.Point(23, 23);
+            this.panelMakimono1.Name = "panelMakimono1";
+            this.panelMakimono1.Size = new System.Drawing.Size(192, 179);
+            this.panelMakimono1.TabIndex = 29;
+            // 
+            // buttonMinusMakimono1
+            // 
+            this.buttonMinusMakimono1.BackColor = System.Drawing.Color.Transparent;
+            this.buttonMinusMakimono1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.buttonMinusMakimono1.FlatAppearance.BorderSize = 0;
+            this.buttonMinusMakimono1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonMinusMakimono1.Image = global::Haziq_FinalProject.Properties.Resources.minus;
+            this.buttonMinusMakimono1.Location = new System.Drawing.Point(60, 148);
+            this.buttonMinusMakimono1.Name = "buttonMinusMakimono1";
+            this.buttonMinusMakimono1.Size = new System.Drawing.Size(25, 10);
+            this.buttonMinusMakimono1.TabIndex = 32;
+            this.buttonMinusMakimono1.UseVisualStyleBackColor = false;
+            this.buttonMinusMakimono1.Click += new System.EventHandler(this.buttonMinusMakimono1_Click);
+            // 
+            // buttonMakimono1
+            // 
+            this.buttonMakimono1.BackColor = System.Drawing.Color.Transparent;
+            this.buttonMakimono1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.buttonMakimono1.FlatAppearance.BorderSize = 0;
+            this.buttonMakimono1.Image = ((System.Drawing.Image)(resources.GetObject("buttonMakimono1.Image")));
+            this.buttonMakimono1.Location = new System.Drawing.Point(137, 130);
+            this.buttonMakimono1.Name = "buttonMakimono1";
+            this.buttonMakimono1.Size = new System.Drawing.Size(52, 46);
+            this.buttonMakimono1.TabIndex = 4;
+            this.buttonMakimono1.UseVisualStyleBackColor = false;
+            this.buttonMakimono1.Click += new System.EventHandler(this.buttonMakimono1_Click);
+            // 
+            // textBoxMakimono1
+            // 
+            this.textBoxMakimono1.Location = new System.Drawing.Point(90, 143);
+            this.textBoxMakimono1.Name = "textBoxMakimono1";
+            this.textBoxMakimono1.Size = new System.Drawing.Size(41, 23);
+            this.textBoxMakimono1.TabIndex = 26;
+            // 
+            // labelPriceMakimono1
+            // 
+            this.labelPriceMakimono1.AutoSize = true;
+            this.labelPriceMakimono1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.labelPriceMakimono1.ForeColor = System.Drawing.Color.Red;
+            this.labelPriceMakimono1.Location = new System.Drawing.Point(4, 158);
+            this.labelPriceMakimono1.Name = "labelPriceMakimono1";
+            this.labelPriceMakimono1.Size = new System.Drawing.Size(35, 16);
+            this.labelPriceMakimono1.TabIndex = 3;
+            this.labelPriceMakimono1.Text = "2.00";
+            // 
+            // labelNameMakimono1
+            // 
+            this.labelNameMakimono1.AutoSize = true;
+            this.labelNameMakimono1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.labelNameMakimono1.Location = new System.Drawing.Point(3, 139);
+            this.labelNameMakimono1.Name = "labelNameMakimono1";
+            this.labelNameMakimono1.Size = new System.Drawing.Size(42, 16);
+            this.labelNameMakimono1.TabIndex = 2;
+            this.labelNameMakimono1.Text = "Tuna";
+            // 
+            // pictureBoxMakimono1
+            // 
+            this.pictureBoxMakimono1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxMakimono1.Image")));
+            this.pictureBoxMakimono1.Location = new System.Drawing.Point(3, 3);
+            this.pictureBoxMakimono1.Name = "pictureBoxMakimono1";
+            this.pictureBoxMakimono1.Size = new System.Drawing.Size(132, 129);
+            this.pictureBoxMakimono1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxMakimono1.TabIndex = 0;
+            this.pictureBoxMakimono1.TabStop = false;
+            // 
+            // panelMakimono2
+            // 
+            this.panelMakimono2.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.panelMakimono2.Controls.Add(this.buttonMinusMakimono2);
+            this.panelMakimono2.Controls.Add(this.textBoxMakimono2);
+            this.panelMakimono2.Controls.Add(this.buttonMakimono2);
+            this.panelMakimono2.Controls.Add(this.labelPriceMakimono2);
+            this.panelMakimono2.Controls.Add(this.labelNameMakimono2);
+            this.panelMakimono2.Controls.Add(this.pictureBoxMakimono2);
+            this.panelMakimono2.Location = new System.Drawing.Point(221, 23);
+            this.panelMakimono2.Name = "panelMakimono2";
+            this.panelMakimono2.Size = new System.Drawing.Size(192, 179);
+            this.panelMakimono2.TabIndex = 27;
+            // 
+            // buttonMinusMakimono2
+            // 
+            this.buttonMinusMakimono2.BackColor = System.Drawing.Color.Transparent;
+            this.buttonMinusMakimono2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.buttonMinusMakimono2.FlatAppearance.BorderSize = 0;
+            this.buttonMinusMakimono2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonMinusMakimono2.Image = global::Haziq_FinalProject.Properties.Resources.minus;
+            this.buttonMinusMakimono2.Location = new System.Drawing.Point(62, 158);
+            this.buttonMinusMakimono2.Name = "buttonMinusMakimono2";
+            this.buttonMinusMakimono2.Size = new System.Drawing.Size(25, 10);
+            this.buttonMinusMakimono2.TabIndex = 32;
+            this.buttonMinusMakimono2.UseVisualStyleBackColor = false;
+            this.buttonMinusMakimono2.Click += new System.EventHandler(this.buttonMinusMakimono2_Click);
+            // 
+            // textBoxMakimono2
+            // 
+            this.textBoxMakimono2.Location = new System.Drawing.Point(94, 143);
+            this.textBoxMakimono2.Name = "textBoxMakimono2";
+            this.textBoxMakimono2.Size = new System.Drawing.Size(41, 23);
+            this.textBoxMakimono2.TabIndex = 27;
+            // 
+            // buttonMakimono2
+            // 
+            this.buttonMakimono2.BackColor = System.Drawing.Color.Transparent;
+            this.buttonMakimono2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.buttonMakimono2.FlatAppearance.BorderSize = 0;
+            this.buttonMakimono2.Image = ((System.Drawing.Image)(resources.GetObject("buttonMakimono2.Image")));
+            this.buttonMakimono2.Location = new System.Drawing.Point(137, 130);
+            this.buttonMakimono2.Name = "buttonMakimono2";
+            this.buttonMakimono2.Size = new System.Drawing.Size(52, 46);
+            this.buttonMakimono2.TabIndex = 4;
+            this.buttonMakimono2.UseVisualStyleBackColor = false;
+            this.buttonMakimono2.Click += new System.EventHandler(this.buttonMakimono2_Click);
+            // 
+            // labelPriceMakimono2
+            // 
+            this.labelPriceMakimono2.AutoSize = true;
+            this.labelPriceMakimono2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.labelPriceMakimono2.ForeColor = System.Drawing.Color.Red;
+            this.labelPriceMakimono2.Location = new System.Drawing.Point(4, 158);
+            this.labelPriceMakimono2.Name = "labelPriceMakimono2";
+            this.labelPriceMakimono2.Size = new System.Drawing.Size(35, 16);
+            this.labelPriceMakimono2.TabIndex = 3;
+            this.labelPriceMakimono2.Text = "2.00";
+            // 
+            // labelNameMakimono2
+            // 
+            this.labelNameMakimono2.AutoSize = true;
+            this.labelNameMakimono2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.labelNameMakimono2.Location = new System.Drawing.Point(3, 139);
+            this.labelNameMakimono2.Name = "labelNameMakimono2";
+            this.labelNameMakimono2.Size = new System.Drawing.Size(143, 16);
+            this.labelNameMakimono2.TabIndex = 2;
+            this.labelNameMakimono2.Text = "Salmon W Avacado";
+            this.labelNameMakimono2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // pictureBoxMakimono2
+            // 
+            this.pictureBoxMakimono2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxMakimono2.Image")));
+            this.pictureBoxMakimono2.Location = new System.Drawing.Point(3, 3);
+            this.pictureBoxMakimono2.Name = "pictureBoxMakimono2";
+            this.pictureBoxMakimono2.Size = new System.Drawing.Size(132, 129);
+            this.pictureBoxMakimono2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxMakimono2.TabIndex = 0;
+            this.pictureBoxMakimono2.TabStop = false;
+            // 
+            // panelMakimono3
+            // 
+            this.panelMakimono3.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.panelMakimono3.Controls.Add(this.buttonMinusMakimono3);
+            this.panelMakimono3.Controls.Add(this.textBoxMakimono3);
+            this.panelMakimono3.Controls.Add(this.buttonMakimono3);
+            this.panelMakimono3.Controls.Add(this.labelPriceMakimono3);
+            this.panelMakimono3.Controls.Add(this.labelNameMakimono3);
+            this.panelMakimono3.Controls.Add(this.pictureBoxMakimono3);
+            this.panelMakimono3.Location = new System.Drawing.Point(23, 208);
+            this.panelMakimono3.Name = "panelMakimono3";
+            this.panelMakimono3.Size = new System.Drawing.Size(192, 179);
+            this.panelMakimono3.TabIndex = 30;
+            // 
+            // buttonMinusMakimono3
+            // 
+            this.buttonMinusMakimono3.BackColor = System.Drawing.Color.Transparent;
+            this.buttonMinusMakimono3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.buttonMinusMakimono3.FlatAppearance.BorderSize = 0;
+            this.buttonMinusMakimono3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonMinusMakimono3.Image = global::Haziq_FinalProject.Properties.Resources.minus;
+            this.buttonMinusMakimono3.Location = new System.Drawing.Point(63, 150);
+            this.buttonMinusMakimono3.Name = "buttonMinusMakimono3";
+            this.buttonMinusMakimono3.Size = new System.Drawing.Size(25, 10);
+            this.buttonMinusMakimono3.TabIndex = 32;
+            this.buttonMinusMakimono3.UseVisualStyleBackColor = false;
+            this.buttonMinusMakimono3.Click += new System.EventHandler(this.buttonMinusMakimono3_Click);
+            // 
+            // textBoxMakimono3
+            // 
+            this.textBoxMakimono3.Location = new System.Drawing.Point(90, 143);
+            this.textBoxMakimono3.Name = "textBoxMakimono3";
+            this.textBoxMakimono3.Size = new System.Drawing.Size(41, 23);
+            this.textBoxMakimono3.TabIndex = 28;
+            // 
+            // buttonMakimono3
+            // 
+            this.buttonMakimono3.BackColor = System.Drawing.Color.Transparent;
+            this.buttonMakimono3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.buttonMakimono3.FlatAppearance.BorderSize = 0;
+            this.buttonMakimono3.Image = ((System.Drawing.Image)(resources.GetObject("buttonMakimono3.Image")));
+            this.buttonMakimono3.Location = new System.Drawing.Point(137, 130);
+            this.buttonMakimono3.Name = "buttonMakimono3";
+            this.buttonMakimono3.Size = new System.Drawing.Size(52, 46);
+            this.buttonMakimono3.TabIndex = 4;
+            this.buttonMakimono3.UseVisualStyleBackColor = false;
+            this.buttonMakimono3.Click += new System.EventHandler(this.buttonMakimono3_Click);
+            // 
+            // labelPriceMakimono3
+            // 
+            this.labelPriceMakimono3.AutoSize = true;
+            this.labelPriceMakimono3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.labelPriceMakimono3.ForeColor = System.Drawing.Color.Red;
+            this.labelPriceMakimono3.Location = new System.Drawing.Point(4, 158);
+            this.labelPriceMakimono3.Name = "labelPriceMakimono3";
+            this.labelPriceMakimono3.Size = new System.Drawing.Size(35, 16);
+            this.labelPriceMakimono3.TabIndex = 3;
+            this.labelPriceMakimono3.Text = "2.00";
+            // 
+            // labelNameMakimono3
+            // 
+            this.labelNameMakimono3.AutoSize = true;
+            this.labelNameMakimono3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.labelNameMakimono3.Location = new System.Drawing.Point(3, 139);
+            this.labelNameMakimono3.Name = "labelNameMakimono3";
+            this.labelNameMakimono3.Size = new System.Drawing.Size(52, 16);
+            this.labelNameMakimono3.TabIndex = 2;
+            this.labelNameMakimono3.Text = "Kappa";
+            // 
+            // pictureBoxMakimono3
+            // 
+            this.pictureBoxMakimono3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxMakimono3.Image")));
+            this.pictureBoxMakimono3.Location = new System.Drawing.Point(3, 3);
+            this.pictureBoxMakimono3.Name = "pictureBoxMakimono3";
+            this.pictureBoxMakimono3.Size = new System.Drawing.Size(132, 129);
+            this.pictureBoxMakimono3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxMakimono3.TabIndex = 0;
+            this.pictureBoxMakimono3.TabStop = false;
+            // 
+            // panelMakimono4
+            // 
+            this.panelMakimono4.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.panelMakimono4.Controls.Add(this.buttonMinusMakimono4);
+            this.panelMakimono4.Controls.Add(this.textBoxMakimono4);
+            this.panelMakimono4.Controls.Add(this.buttonMakimono4);
+            this.panelMakimono4.Controls.Add(this.labelPriceMakimono4);
+            this.panelMakimono4.Controls.Add(this.labelNameMakimono4);
+            this.panelMakimono4.Controls.Add(this.pictureBoxMakimono4);
+            this.panelMakimono4.Location = new System.Drawing.Point(221, 208);
+            this.panelMakimono4.Name = "panelMakimono4";
+            this.panelMakimono4.Size = new System.Drawing.Size(192, 179);
+            this.panelMakimono4.TabIndex = 28;
+            // 
+            // buttonMinusMakimono4
+            // 
+            this.buttonMinusMakimono4.BackColor = System.Drawing.Color.Transparent;
+            this.buttonMinusMakimono4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.buttonMinusMakimono4.FlatAppearance.BorderSize = 0;
+            this.buttonMinusMakimono4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonMinusMakimono4.Image = global::Haziq_FinalProject.Properties.Resources.minus;
+            this.buttonMinusMakimono4.Location = new System.Drawing.Point(66, 156);
+            this.buttonMinusMakimono4.Name = "buttonMinusMakimono4";
+            this.buttonMinusMakimono4.Size = new System.Drawing.Size(25, 10);
+            this.buttonMinusMakimono4.TabIndex = 31;
+            this.buttonMinusMakimono4.UseVisualStyleBackColor = false;
+            this.buttonMinusMakimono4.Click += new System.EventHandler(this.buttonMinusMakimono4_Click);
+            // 
+            // textBoxMakimono4
+            // 
+            this.textBoxMakimono4.Location = new System.Drawing.Point(94, 143);
+            this.textBoxMakimono4.Name = "textBoxMakimono4";
+            this.textBoxMakimono4.Size = new System.Drawing.Size(41, 23);
+            this.textBoxMakimono4.TabIndex = 28;
+            // 
+            // buttonMakimono4
+            // 
+            this.buttonMakimono4.BackColor = System.Drawing.Color.Transparent;
+            this.buttonMakimono4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.buttonMakimono4.FlatAppearance.BorderSize = 0;
+            this.buttonMakimono4.Image = ((System.Drawing.Image)(resources.GetObject("buttonMakimono4.Image")));
+            this.buttonMakimono4.Location = new System.Drawing.Point(137, 130);
+            this.buttonMakimono4.Name = "buttonMakimono4";
+            this.buttonMakimono4.Size = new System.Drawing.Size(52, 46);
+            this.buttonMakimono4.TabIndex = 4;
+            this.buttonMakimono4.UseVisualStyleBackColor = false;
+            this.buttonMakimono4.Click += new System.EventHandler(this.buttonMakimono4_Click);
+            // 
+            // labelPriceMakimono4
+            // 
+            this.labelPriceMakimono4.AutoSize = true;
+            this.labelPriceMakimono4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.labelPriceMakimono4.ForeColor = System.Drawing.Color.Red;
+            this.labelPriceMakimono4.Location = new System.Drawing.Point(4, 158);
+            this.labelPriceMakimono4.Name = "labelPriceMakimono4";
+            this.labelPriceMakimono4.Size = new System.Drawing.Size(35, 16);
+            this.labelPriceMakimono4.TabIndex = 3;
+            this.labelPriceMakimono4.Text = "2.00";
+            // 
+            // labelNameMakimono4
+            // 
+            this.labelNameMakimono4.AutoSize = true;
+            this.labelNameMakimono4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.labelNameMakimono4.Location = new System.Drawing.Point(3, 139);
+            this.labelNameMakimono4.Name = "labelNameMakimono4";
+            this.labelNameMakimono4.Size = new System.Drawing.Size(73, 16);
+            this.labelNameMakimono4.TabIndex = 2;
+            this.labelNameMakimono4.Text = "California";
+            // 
+            // pictureBoxMakimono4
+            // 
+            this.pictureBoxMakimono4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxMakimono4.Image")));
+            this.pictureBoxMakimono4.Location = new System.Drawing.Point(3, 3);
+            this.pictureBoxMakimono4.Name = "pictureBoxMakimono4";
+            this.pictureBoxMakimono4.Size = new System.Drawing.Size(132, 129);
+            this.pictureBoxMakimono4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxMakimono4.TabIndex = 0;
+            this.pictureBoxMakimono4.TabStop = false;
+            // 
+            // panelMakimono5
+            // 
+            this.panelMakimono5.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.panelMakimono5.Controls.Add(this.buttonMinusMakimono5);
+            this.panelMakimono5.Controls.Add(this.textBoxMakimono5);
+            this.panelMakimono5.Controls.Add(this.buttonMakimono5);
+            this.panelMakimono5.Controls.Add(this.labelPriceMakimono5);
+            this.panelMakimono5.Controls.Add(this.labelNameMakimono5);
+            this.panelMakimono5.Controls.Add(this.pictureBoxMakimono5);
+            this.panelMakimono5.Location = new System.Drawing.Point(23, 393);
+            this.panelMakimono5.Name = "panelMakimono5";
+            this.panelMakimono5.Size = new System.Drawing.Size(192, 179);
+            this.panelMakimono5.TabIndex = 26;
+            // 
+            // buttonMinusMakimono5
+            // 
+            this.buttonMinusMakimono5.BackColor = System.Drawing.Color.Transparent;
+            this.buttonMinusMakimono5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.buttonMinusMakimono5.FlatAppearance.BorderSize = 0;
+            this.buttonMinusMakimono5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonMinusMakimono5.Image = global::Haziq_FinalProject.Properties.Resources.minus;
+            this.buttonMinusMakimono5.Location = new System.Drawing.Point(63, 149);
+            this.buttonMinusMakimono5.Name = "buttonMinusMakimono5";
+            this.buttonMinusMakimono5.Size = new System.Drawing.Size(25, 10);
+            this.buttonMinusMakimono5.TabIndex = 30;
+            this.buttonMinusMakimono5.UseVisualStyleBackColor = false;
+            this.buttonMinusMakimono5.Click += new System.EventHandler(this.buttonMinusMakimono5_Click);
+            // 
+            // textBoxMakimono5
+            // 
+            this.textBoxMakimono5.Location = new System.Drawing.Point(94, 143);
+            this.textBoxMakimono5.Name = "textBoxMakimono5";
+            this.textBoxMakimono5.Size = new System.Drawing.Size(41, 23);
+            this.textBoxMakimono5.TabIndex = 29;
+            // 
+            // buttonMakimono5
+            // 
+            this.buttonMakimono5.BackColor = System.Drawing.Color.Transparent;
+            this.buttonMakimono5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.buttonMakimono5.FlatAppearance.BorderSize = 0;
+            this.buttonMakimono5.Image = ((System.Drawing.Image)(resources.GetObject("buttonMakimono5.Image")));
+            this.buttonMakimono5.Location = new System.Drawing.Point(137, 130);
+            this.buttonMakimono5.Name = "buttonMakimono5";
+            this.buttonMakimono5.Size = new System.Drawing.Size(52, 46);
+            this.buttonMakimono5.TabIndex = 4;
+            this.buttonMakimono5.UseVisualStyleBackColor = false;
+            this.buttonMakimono5.Click += new System.EventHandler(this.buttonMakimono5_Click);
+            // 
+            // labelPriceMakimono5
+            // 
+            this.labelPriceMakimono5.AutoSize = true;
+            this.labelPriceMakimono5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.labelPriceMakimono5.ForeColor = System.Drawing.Color.Red;
+            this.labelPriceMakimono5.Location = new System.Drawing.Point(4, 158);
+            this.labelPriceMakimono5.Name = "labelPriceMakimono5";
+            this.labelPriceMakimono5.Size = new System.Drawing.Size(35, 16);
+            this.labelPriceMakimono5.TabIndex = 3;
+            this.labelPriceMakimono5.Text = "2.00";
+            // 
+            // labelNameMakimono5
+            // 
+            this.labelNameMakimono5.AutoSize = true;
+            this.labelNameMakimono5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.labelNameMakimono5.Location = new System.Drawing.Point(3, 139);
+            this.labelNameMakimono5.Name = "labelNameMakimono5";
+            this.labelNameMakimono5.Size = new System.Drawing.Size(55, 16);
+            this.labelNameMakimono5.TabIndex = 2;
+            this.labelNameMakimono5.Text = "Shrimp";
+            // 
+            // pictureBoxMakimono5
+            // 
+            this.pictureBoxMakimono5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxMakimono5.Image")));
+            this.pictureBoxMakimono5.Location = new System.Drawing.Point(3, 3);
+            this.pictureBoxMakimono5.Name = "pictureBoxMakimono5";
+            this.pictureBoxMakimono5.Size = new System.Drawing.Size(132, 129);
+            this.pictureBoxMakimono5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxMakimono5.TabIndex = 0;
+            this.pictureBoxMakimono5.TabStop = false;
             // 
             // flowLayoutPanelGunkan
             // 
@@ -744,696 +1658,6 @@ namespace Haziq_FinalProject
             this.pictureBoxGunkan3.TabIndex = 0;
             this.pictureBoxGunkan3.TabStop = false;
             // 
-            // flowLayoutPanelMakimono
-            // 
-            this.flowLayoutPanelMakimono.Controls.Add(this.panelMakimono1);
-            this.flowLayoutPanelMakimono.Controls.Add(this.panelMakimono2);
-            this.flowLayoutPanelMakimono.Controls.Add(this.panelMakimono3);
-            this.flowLayoutPanelMakimono.Controls.Add(this.panelMakimono4);
-            this.flowLayoutPanelMakimono.Controls.Add(this.panelMakimono5);
-            this.flowLayoutPanelMakimono.Location = new System.Drawing.Point(106, 116);
-            this.flowLayoutPanelMakimono.Name = "flowLayoutPanelMakimono";
-            this.flowLayoutPanelMakimono.Padding = new System.Windows.Forms.Padding(20);
-            this.flowLayoutPanelMakimono.Size = new System.Drawing.Size(444, 600);
-            this.flowLayoutPanelMakimono.TabIndex = 3;
-            // 
-            // panelMakimono1
-            // 
-            this.panelMakimono1.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.panelMakimono1.Controls.Add(this.buttonMakimono1);
-            this.panelMakimono1.Controls.Add(this.textBoxMakimo1);
-            this.panelMakimono1.Controls.Add(this.labelPriceMakimono1);
-            this.panelMakimono1.Controls.Add(this.labelNameMakimono1);
-            this.panelMakimono1.Controls.Add(this.pictureBoxMakimono1);
-            this.panelMakimono1.Location = new System.Drawing.Point(23, 23);
-            this.panelMakimono1.Name = "panelMakimono1";
-            this.panelMakimono1.Size = new System.Drawing.Size(192, 179);
-            this.panelMakimono1.TabIndex = 29;
-            // 
-            // buttonMakimono1
-            // 
-            this.buttonMakimono1.BackColor = System.Drawing.Color.Transparent;
-            this.buttonMakimono1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.buttonMakimono1.FlatAppearance.BorderSize = 0;
-            this.buttonMakimono1.Image = ((System.Drawing.Image)(resources.GetObject("buttonMakimono1.Image")));
-            this.buttonMakimono1.Location = new System.Drawing.Point(137, 130);
-            this.buttonMakimono1.Name = "buttonMakimono1";
-            this.buttonMakimono1.Size = new System.Drawing.Size(52, 46);
-            this.buttonMakimono1.TabIndex = 4;
-            this.buttonMakimono1.UseVisualStyleBackColor = false;
-            this.buttonMakimono1.Click += new System.EventHandler(this.buttonMakimono1_Click);
-            // 
-            // textBoxMakimo1
-            // 
-            this.textBoxMakimo1.Location = new System.Drawing.Point(90, 143);
-            this.textBoxMakimo1.Name = "textBoxMakimo1";
-            this.textBoxMakimo1.Size = new System.Drawing.Size(41, 23);
-            this.textBoxMakimo1.TabIndex = 26;
-            // 
-            // labelPriceMakimono1
-            // 
-            this.labelPriceMakimono1.AutoSize = true;
-            this.labelPriceMakimono1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labelPriceMakimono1.ForeColor = System.Drawing.Color.Red;
-            this.labelPriceMakimono1.Location = new System.Drawing.Point(4, 158);
-            this.labelPriceMakimono1.Name = "labelPriceMakimono1";
-            this.labelPriceMakimono1.Size = new System.Drawing.Size(35, 16);
-            this.labelPriceMakimono1.TabIndex = 3;
-            this.labelPriceMakimono1.Text = "2.00";
-            // 
-            // labelNameMakimono1
-            // 
-            this.labelNameMakimono1.AutoSize = true;
-            this.labelNameMakimono1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labelNameMakimono1.Location = new System.Drawing.Point(3, 139);
-            this.labelNameMakimono1.Name = "labelNameMakimono1";
-            this.labelNameMakimono1.Size = new System.Drawing.Size(42, 16);
-            this.labelNameMakimono1.TabIndex = 2;
-            this.labelNameMakimono1.Text = "Tuna";
-            // 
-            // pictureBoxMakimono1
-            // 
-            this.pictureBoxMakimono1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxMakimono1.Image")));
-            this.pictureBoxMakimono1.Location = new System.Drawing.Point(3, 3);
-            this.pictureBoxMakimono1.Name = "pictureBoxMakimono1";
-            this.pictureBoxMakimono1.Size = new System.Drawing.Size(132, 129);
-            this.pictureBoxMakimono1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBoxMakimono1.TabIndex = 0;
-            this.pictureBoxMakimono1.TabStop = false;
-            // 
-            // panelMakimono2
-            // 
-            this.panelMakimono2.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.panelMakimono2.Controls.Add(this.textBoxMakimo2);
-            this.panelMakimono2.Controls.Add(this.buttonMakimono2);
-            this.panelMakimono2.Controls.Add(this.labelPriceMakimono2);
-            this.panelMakimono2.Controls.Add(this.labelNameMakimono2);
-            this.panelMakimono2.Controls.Add(this.pictureBoxMakimono2);
-            this.panelMakimono2.Location = new System.Drawing.Point(221, 23);
-            this.panelMakimono2.Name = "panelMakimono2";
-            this.panelMakimono2.Size = new System.Drawing.Size(192, 179);
-            this.panelMakimono2.TabIndex = 27;
-            // 
-            // textBoxMakimo2
-            // 
-            this.textBoxMakimo2.Location = new System.Drawing.Point(94, 143);
-            this.textBoxMakimo2.Name = "textBoxMakimo2";
-            this.textBoxMakimo2.Size = new System.Drawing.Size(41, 23);
-            this.textBoxMakimo2.TabIndex = 27;
-            // 
-            // buttonMakimono2
-            // 
-            this.buttonMakimono2.BackColor = System.Drawing.Color.Transparent;
-            this.buttonMakimono2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.buttonMakimono2.FlatAppearance.BorderSize = 0;
-            this.buttonMakimono2.Image = ((System.Drawing.Image)(resources.GetObject("buttonMakimono2.Image")));
-            this.buttonMakimono2.Location = new System.Drawing.Point(137, 130);
-            this.buttonMakimono2.Name = "buttonMakimono2";
-            this.buttonMakimono2.Size = new System.Drawing.Size(52, 46);
-            this.buttonMakimono2.TabIndex = 4;
-            this.buttonMakimono2.UseVisualStyleBackColor = false;
-            this.buttonMakimono2.Click += new System.EventHandler(this.buttonMakimono2_Click);
-            // 
-            // labelPriceMakimono2
-            // 
-            this.labelPriceMakimono2.AutoSize = true;
-            this.labelPriceMakimono2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labelPriceMakimono2.ForeColor = System.Drawing.Color.Red;
-            this.labelPriceMakimono2.Location = new System.Drawing.Point(4, 158);
-            this.labelPriceMakimono2.Name = "labelPriceMakimono2";
-            this.labelPriceMakimono2.Size = new System.Drawing.Size(35, 16);
-            this.labelPriceMakimono2.TabIndex = 3;
-            this.labelPriceMakimono2.Text = "2.00";
-            // 
-            // labelNameMakimono2
-            // 
-            this.labelNameMakimono2.AutoSize = true;
-            this.labelNameMakimono2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labelNameMakimono2.Location = new System.Drawing.Point(3, 139);
-            this.labelNameMakimono2.Name = "labelNameMakimono2";
-            this.labelNameMakimono2.Size = new System.Drawing.Size(143, 16);
-            this.labelNameMakimono2.TabIndex = 2;
-            this.labelNameMakimono2.Text = "Salmon W Avacado";
-            this.labelNameMakimono2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // pictureBoxMakimono2
-            // 
-            this.pictureBoxMakimono2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxMakimono2.Image")));
-            this.pictureBoxMakimono2.Location = new System.Drawing.Point(3, 3);
-            this.pictureBoxMakimono2.Name = "pictureBoxMakimono2";
-            this.pictureBoxMakimono2.Size = new System.Drawing.Size(132, 129);
-            this.pictureBoxMakimono2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBoxMakimono2.TabIndex = 0;
-            this.pictureBoxMakimono2.TabStop = false;
-            // 
-            // panelMakimono3
-            // 
-            this.panelMakimono3.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.panelMakimono3.Controls.Add(this.textBoxMakimo3);
-            this.panelMakimono3.Controls.Add(this.buttonMakimono3);
-            this.panelMakimono3.Controls.Add(this.labelPriceMakimono3);
-            this.panelMakimono3.Controls.Add(this.labelNameMakimono3);
-            this.panelMakimono3.Controls.Add(this.pictureBoxMakimono3);
-            this.panelMakimono3.Location = new System.Drawing.Point(23, 208);
-            this.panelMakimono3.Name = "panelMakimono3";
-            this.panelMakimono3.Size = new System.Drawing.Size(192, 179);
-            this.panelMakimono3.TabIndex = 30;
-            // 
-            // textBoxMakimo3
-            // 
-            this.textBoxMakimo3.Location = new System.Drawing.Point(90, 143);
-            this.textBoxMakimo3.Name = "textBoxMakimo3";
-            this.textBoxMakimo3.Size = new System.Drawing.Size(41, 23);
-            this.textBoxMakimo3.TabIndex = 28;
-            // 
-            // buttonMakimono3
-            // 
-            this.buttonMakimono3.BackColor = System.Drawing.Color.Transparent;
-            this.buttonMakimono3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.buttonMakimono3.FlatAppearance.BorderSize = 0;
-            this.buttonMakimono3.Image = ((System.Drawing.Image)(resources.GetObject("buttonMakimono3.Image")));
-            this.buttonMakimono3.Location = new System.Drawing.Point(137, 130);
-            this.buttonMakimono3.Name = "buttonMakimono3";
-            this.buttonMakimono3.Size = new System.Drawing.Size(52, 46);
-            this.buttonMakimono3.TabIndex = 4;
-            this.buttonMakimono3.UseVisualStyleBackColor = false;
-            this.buttonMakimono3.Click += new System.EventHandler(this.buttonMakimono3_Click);
-            // 
-            // labelPriceMakimono3
-            // 
-            this.labelPriceMakimono3.AutoSize = true;
-            this.labelPriceMakimono3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labelPriceMakimono3.ForeColor = System.Drawing.Color.Red;
-            this.labelPriceMakimono3.Location = new System.Drawing.Point(4, 158);
-            this.labelPriceMakimono3.Name = "labelPriceMakimono3";
-            this.labelPriceMakimono3.Size = new System.Drawing.Size(35, 16);
-            this.labelPriceMakimono3.TabIndex = 3;
-            this.labelPriceMakimono3.Text = "2.00";
-            // 
-            // labelNameMakimono3
-            // 
-            this.labelNameMakimono3.AutoSize = true;
-            this.labelNameMakimono3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labelNameMakimono3.Location = new System.Drawing.Point(3, 139);
-            this.labelNameMakimono3.Name = "labelNameMakimono3";
-            this.labelNameMakimono3.Size = new System.Drawing.Size(52, 16);
-            this.labelNameMakimono3.TabIndex = 2;
-            this.labelNameMakimono3.Text = "Kappa";
-            // 
-            // pictureBoxMakimono3
-            // 
-            this.pictureBoxMakimono3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxMakimono3.Image")));
-            this.pictureBoxMakimono3.Location = new System.Drawing.Point(3, 3);
-            this.pictureBoxMakimono3.Name = "pictureBoxMakimono3";
-            this.pictureBoxMakimono3.Size = new System.Drawing.Size(132, 129);
-            this.pictureBoxMakimono3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBoxMakimono3.TabIndex = 0;
-            this.pictureBoxMakimono3.TabStop = false;
-            // 
-            // panelMakimono4
-            // 
-            this.panelMakimono4.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.panelMakimono4.Controls.Add(this.textBoxMakimo4);
-            this.panelMakimono4.Controls.Add(this.buttonMakimono4);
-            this.panelMakimono4.Controls.Add(this.labelPriceMakimono4);
-            this.panelMakimono4.Controls.Add(this.labelNameMakimono4);
-            this.panelMakimono4.Controls.Add(this.pictureBoxMakimono4);
-            this.panelMakimono4.Location = new System.Drawing.Point(221, 208);
-            this.panelMakimono4.Name = "panelMakimono4";
-            this.panelMakimono4.Size = new System.Drawing.Size(192, 179);
-            this.panelMakimono4.TabIndex = 28;
-            // 
-            // textBoxMakimo4
-            // 
-            this.textBoxMakimo4.Location = new System.Drawing.Point(94, 143);
-            this.textBoxMakimo4.Name = "textBoxMakimo4";
-            this.textBoxMakimo4.Size = new System.Drawing.Size(41, 23);
-            this.textBoxMakimo4.TabIndex = 28;
-            // 
-            // buttonMakimono4
-            // 
-            this.buttonMakimono4.BackColor = System.Drawing.Color.Transparent;
-            this.buttonMakimono4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.buttonMakimono4.FlatAppearance.BorderSize = 0;
-            this.buttonMakimono4.Image = ((System.Drawing.Image)(resources.GetObject("buttonMakimono4.Image")));
-            this.buttonMakimono4.Location = new System.Drawing.Point(137, 130);
-            this.buttonMakimono4.Name = "buttonMakimono4";
-            this.buttonMakimono4.Size = new System.Drawing.Size(52, 46);
-            this.buttonMakimono4.TabIndex = 4;
-            this.buttonMakimono4.UseVisualStyleBackColor = false;
-            this.buttonMakimono4.Click += new System.EventHandler(this.buttonMakimono4_Click);
-            // 
-            // labelPriceMakimono4
-            // 
-            this.labelPriceMakimono4.AutoSize = true;
-            this.labelPriceMakimono4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labelPriceMakimono4.ForeColor = System.Drawing.Color.Red;
-            this.labelPriceMakimono4.Location = new System.Drawing.Point(4, 158);
-            this.labelPriceMakimono4.Name = "labelPriceMakimono4";
-            this.labelPriceMakimono4.Size = new System.Drawing.Size(35, 16);
-            this.labelPriceMakimono4.TabIndex = 3;
-            this.labelPriceMakimono4.Text = "2.00";
-            // 
-            // labelNameMakimono4
-            // 
-            this.labelNameMakimono4.AutoSize = true;
-            this.labelNameMakimono4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labelNameMakimono4.Location = new System.Drawing.Point(3, 139);
-            this.labelNameMakimono4.Name = "labelNameMakimono4";
-            this.labelNameMakimono4.Size = new System.Drawing.Size(73, 16);
-            this.labelNameMakimono4.TabIndex = 2;
-            this.labelNameMakimono4.Text = "California";
-            // 
-            // pictureBoxMakimono4
-            // 
-            this.pictureBoxMakimono4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxMakimono4.Image")));
-            this.pictureBoxMakimono4.Location = new System.Drawing.Point(3, 3);
-            this.pictureBoxMakimono4.Name = "pictureBoxMakimono4";
-            this.pictureBoxMakimono4.Size = new System.Drawing.Size(132, 129);
-            this.pictureBoxMakimono4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBoxMakimono4.TabIndex = 0;
-            this.pictureBoxMakimono4.TabStop = false;
-            // 
-            // panelMakimono5
-            // 
-            this.panelMakimono5.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.panelMakimono5.Controls.Add(this.textBoxMakimo5);
-            this.panelMakimono5.Controls.Add(this.buttonMakimono5);
-            this.panelMakimono5.Controls.Add(this.labelPriceMakimono5);
-            this.panelMakimono5.Controls.Add(this.labelNameMakimono5);
-            this.panelMakimono5.Controls.Add(this.pictureBoxMakimono5);
-            this.panelMakimono5.Location = new System.Drawing.Point(23, 393);
-            this.panelMakimono5.Name = "panelMakimono5";
-            this.panelMakimono5.Size = new System.Drawing.Size(192, 179);
-            this.panelMakimono5.TabIndex = 26;
-            // 
-            // textBoxMakimo5
-            // 
-            this.textBoxMakimo5.Location = new System.Drawing.Point(94, 143);
-            this.textBoxMakimo5.Name = "textBoxMakimo5";
-            this.textBoxMakimo5.Size = new System.Drawing.Size(41, 23);
-            this.textBoxMakimo5.TabIndex = 29;
-            // 
-            // buttonMakimono5
-            // 
-            this.buttonMakimono5.BackColor = System.Drawing.Color.Transparent;
-            this.buttonMakimono5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.buttonMakimono5.FlatAppearance.BorderSize = 0;
-            this.buttonMakimono5.Image = ((System.Drawing.Image)(resources.GetObject("buttonMakimono5.Image")));
-            this.buttonMakimono5.Location = new System.Drawing.Point(137, 130);
-            this.buttonMakimono5.Name = "buttonMakimono5";
-            this.buttonMakimono5.Size = new System.Drawing.Size(52, 46);
-            this.buttonMakimono5.TabIndex = 4;
-            this.buttonMakimono5.UseVisualStyleBackColor = false;
-            this.buttonMakimono5.Click += new System.EventHandler(this.buttonMakimono5_Click);
-            // 
-            // labelPriceMakimono5
-            // 
-            this.labelPriceMakimono5.AutoSize = true;
-            this.labelPriceMakimono5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labelPriceMakimono5.ForeColor = System.Drawing.Color.Red;
-            this.labelPriceMakimono5.Location = new System.Drawing.Point(4, 158);
-            this.labelPriceMakimono5.Name = "labelPriceMakimono5";
-            this.labelPriceMakimono5.Size = new System.Drawing.Size(35, 16);
-            this.labelPriceMakimono5.TabIndex = 3;
-            this.labelPriceMakimono5.Text = "2.00";
-            // 
-            // labelNameMakimono5
-            // 
-            this.labelNameMakimono5.AutoSize = true;
-            this.labelNameMakimono5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labelNameMakimono5.Location = new System.Drawing.Point(3, 139);
-            this.labelNameMakimono5.Name = "labelNameMakimono5";
-            this.labelNameMakimono5.Size = new System.Drawing.Size(55, 16);
-            this.labelNameMakimono5.TabIndex = 2;
-            this.labelNameMakimono5.Text = "Shrimp";
-            // 
-            // pictureBoxMakimono5
-            // 
-            this.pictureBoxMakimono5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxMakimono5.Image")));
-            this.pictureBoxMakimono5.Location = new System.Drawing.Point(3, 3);
-            this.pictureBoxMakimono5.Name = "pictureBoxMakimono5";
-            this.pictureBoxMakimono5.Size = new System.Drawing.Size(132, 129);
-            this.pictureBoxMakimono5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBoxMakimono5.TabIndex = 0;
-            this.pictureBoxMakimono5.TabStop = false;
-            // 
-            // flowLayoutPanelNigiri
-            // 
-            this.flowLayoutPanelNigiri.Controls.Add(this.panelNigiri1);
-            this.flowLayoutPanelNigiri.Controls.Add(this.panelNigiri2);
-            this.flowLayoutPanelNigiri.Controls.Add(this.panelNigiri3);
-            this.flowLayoutPanelNigiri.Controls.Add(this.panelNigiri4);
-            this.flowLayoutPanelNigiri.Controls.Add(this.panelNigiri5);
-            this.flowLayoutPanelNigiri.Controls.Add(this.panelNigiri6);
-            this.flowLayoutPanelNigiri.Location = new System.Drawing.Point(106, 116);
-            this.flowLayoutPanelNigiri.Name = "flowLayoutPanelNigiri";
-            this.flowLayoutPanelNigiri.Padding = new System.Windows.Forms.Padding(20);
-            this.flowLayoutPanelNigiri.Size = new System.Drawing.Size(444, 600);
-            this.flowLayoutPanelNigiri.TabIndex = 2;
-            // 
-            // panelNigiri1
-            // 
-            this.panelNigiri1.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.panelNigiri1.Controls.Add(this.buttonNigiri1);
-            this.panelNigiri1.Controls.Add(this.labelPriceNigiri1);
-            this.panelNigiri1.Controls.Add(this.labelNameNigiri1);
-            this.panelNigiri1.Controls.Add(this.pictureBoxNigiri1);
-            this.panelNigiri1.Location = new System.Drawing.Point(23, 23);
-            this.panelNigiri1.Name = "panelNigiri1";
-            this.panelNigiri1.Size = new System.Drawing.Size(192, 179);
-            this.panelNigiri1.TabIndex = 24;
-            // 
-            // buttonNigiri1
-            // 
-            this.buttonNigiri1.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.buttonNigiri1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.buttonNigiri1.FlatAppearance.BorderSize = 0;
-            this.buttonNigiri1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonNigiri1.Image = ((System.Drawing.Image)(resources.GetObject("buttonNigiri1.Image")));
-            this.buttonNigiri1.Location = new System.Drawing.Point(137, 130);
-            this.buttonNigiri1.Name = "buttonNigiri1";
-            this.buttonNigiri1.Size = new System.Drawing.Size(52, 46);
-            this.buttonNigiri1.TabIndex = 4;
-            this.buttonNigiri1.UseVisualStyleBackColor = false;
-            this.buttonNigiri1.Click += new System.EventHandler(this.buttonNigiri1_Click);
-            // 
-            // labelPriceNigiri1
-            // 
-            this.labelPriceNigiri1.AutoSize = true;
-            this.labelPriceNigiri1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labelPriceNigiri1.ForeColor = System.Drawing.Color.Red;
-            this.labelPriceNigiri1.Location = new System.Drawing.Point(4, 158);
-            this.labelPriceNigiri1.Name = "labelPriceNigiri1";
-            this.labelPriceNigiri1.Size = new System.Drawing.Size(83, 16);
-            this.labelPriceNigiri1.TabIndex = 3;
-            this.labelPriceNigiri1.Text = "Price $1.80";
-            // 
-            // labelNameNigiri1
-            // 
-            this.labelNameNigiri1.AutoSize = true;
-            this.labelNameNigiri1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labelNameNigiri1.Location = new System.Drawing.Point(3, 139);
-            this.labelNameNigiri1.Name = "labelNameNigiri1";
-            this.labelNameNigiri1.Size = new System.Drawing.Size(43, 16);
-            this.labelNameNigiri1.TabIndex = 2;
-            this.labelNameNigiri1.Text = "Tako";
-            // 
-            // pictureBoxNigiri1
-            // 
-            this.pictureBoxNigiri1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxNigiri1.Image")));
-            this.pictureBoxNigiri1.Location = new System.Drawing.Point(3, 3);
-            this.pictureBoxNigiri1.Name = "pictureBoxNigiri1";
-            this.pictureBoxNigiri1.Size = new System.Drawing.Size(132, 129);
-            this.pictureBoxNigiri1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBoxNigiri1.TabIndex = 0;
-            this.pictureBoxNigiri1.TabStop = false;
-            // 
-            // panelNigiri2
-            // 
-            this.panelNigiri2.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.panelNigiri2.Controls.Add(this.buttonNigiri2);
-            this.panelNigiri2.Controls.Add(this.labelPriceNigiri2);
-            this.panelNigiri2.Controls.Add(this.labelNameNigiri2);
-            this.panelNigiri2.Controls.Add(this.pictureBoxNigiri2);
-            this.panelNigiri2.Location = new System.Drawing.Point(221, 23);
-            this.panelNigiri2.Name = "panelNigiri2";
-            this.panelNigiri2.Size = new System.Drawing.Size(192, 179);
-            this.panelNigiri2.TabIndex = 22;
-            // 
-            // buttonNigiri2
-            // 
-            this.buttonNigiri2.BackColor = System.Drawing.Color.Transparent;
-            this.buttonNigiri2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.buttonNigiri2.FlatAppearance.BorderSize = 0;
-            this.buttonNigiri2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonNigiri2.Image = ((System.Drawing.Image)(resources.GetObject("buttonNigiri2.Image")));
-            this.buttonNigiri2.Location = new System.Drawing.Point(137, 130);
-            this.buttonNigiri2.Name = "buttonNigiri2";
-            this.buttonNigiri2.Size = new System.Drawing.Size(52, 46);
-            this.buttonNigiri2.TabIndex = 4;
-            this.buttonNigiri2.UseVisualStyleBackColor = false;
-            this.buttonNigiri2.Click += new System.EventHandler(this.buttonNigiri2_Click);
-            // 
-            // labelPriceNigiri2
-            // 
-            this.labelPriceNigiri2.AutoSize = true;
-            this.labelPriceNigiri2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labelPriceNigiri2.ForeColor = System.Drawing.Color.Red;
-            this.labelPriceNigiri2.Location = new System.Drawing.Point(4, 158);
-            this.labelPriceNigiri2.Name = "labelPriceNigiri2";
-            this.labelPriceNigiri2.Size = new System.Drawing.Size(83, 16);
-            this.labelPriceNigiri2.TabIndex = 3;
-            this.labelPriceNigiri2.Text = "Price $1.80";
-            // 
-            // labelNameNigiri2
-            // 
-            this.labelNameNigiri2.AutoSize = true;
-            this.labelNameNigiri2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labelNameNigiri2.Location = new System.Drawing.Point(3, 139);
-            this.labelNameNigiri2.Name = "labelNameNigiri2";
-            this.labelNameNigiri2.Size = new System.Drawing.Size(65, 16);
-            this.labelNameNigiri2.TabIndex = 2;
-            this.labelNameNigiri2.Text = "Tamago";
-            // 
-            // pictureBoxNigiri2
-            // 
-            this.pictureBoxNigiri2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxNigiri2.Image")));
-            this.pictureBoxNigiri2.Location = new System.Drawing.Point(3, 3);
-            this.pictureBoxNigiri2.Name = "pictureBoxNigiri2";
-            this.pictureBoxNigiri2.Size = new System.Drawing.Size(132, 129);
-            this.pictureBoxNigiri2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBoxNigiri2.TabIndex = 0;
-            this.pictureBoxNigiri2.TabStop = false;
-            // 
-            // panelNigiri3
-            // 
-            this.panelNigiri3.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.panelNigiri3.Controls.Add(this.buttonNigiri3);
-            this.panelNigiri3.Controls.Add(this.labelPriceNigiri3);
-            this.panelNigiri3.Controls.Add(this.labelNameNigiri3);
-            this.panelNigiri3.Controls.Add(this.pictureBoxNigiri3);
-            this.panelNigiri3.Location = new System.Drawing.Point(23, 208);
-            this.panelNigiri3.Name = "panelNigiri3";
-            this.panelNigiri3.Size = new System.Drawing.Size(192, 179);
-            this.panelNigiri3.TabIndex = 25;
-            // 
-            // buttonNigiri3
-            // 
-            this.buttonNigiri3.BackColor = System.Drawing.Color.Transparent;
-            this.buttonNigiri3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.buttonNigiri3.FlatAppearance.BorderSize = 0;
-            this.buttonNigiri3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonNigiri3.Image = ((System.Drawing.Image)(resources.GetObject("buttonNigiri3.Image")));
-            this.buttonNigiri3.Location = new System.Drawing.Point(137, 130);
-            this.buttonNigiri3.Name = "buttonNigiri3";
-            this.buttonNigiri3.Size = new System.Drawing.Size(52, 46);
-            this.buttonNigiri3.TabIndex = 4;
-            this.buttonNigiri3.UseVisualStyleBackColor = false;
-            this.buttonNigiri3.Click += new System.EventHandler(this.buttonNigiri3_Click);
-            // 
-            // labelPriceNigiri3
-            // 
-            this.labelPriceNigiri3.AutoSize = true;
-            this.labelPriceNigiri3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labelPriceNigiri3.ForeColor = System.Drawing.Color.Red;
-            this.labelPriceNigiri3.Location = new System.Drawing.Point(4, 158);
-            this.labelPriceNigiri3.Name = "labelPriceNigiri3";
-            this.labelPriceNigiri3.Size = new System.Drawing.Size(83, 16);
-            this.labelPriceNigiri3.TabIndex = 3;
-            this.labelPriceNigiri3.Text = "Price $1.80";
-            // 
-            // labelNameNigiri3
-            // 
-            this.labelNameNigiri3.AutoSize = true;
-            this.labelNameNigiri3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labelNameNigiri3.Location = new System.Drawing.Point(3, 139);
-            this.labelNameNigiri3.Name = "labelNameNigiri3";
-            this.labelNameNigiri3.Size = new System.Drawing.Size(30, 16);
-            this.labelNameNigiri3.TabIndex = 2;
-            this.labelNameNigiri3.Text = "Eel";
-            // 
-            // pictureBoxNigiri3
-            // 
-            this.pictureBoxNigiri3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxNigiri3.Image")));
-            this.pictureBoxNigiri3.Location = new System.Drawing.Point(3, 3);
-            this.pictureBoxNigiri3.Name = "pictureBoxNigiri3";
-            this.pictureBoxNigiri3.Size = new System.Drawing.Size(132, 129);
-            this.pictureBoxNigiri3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBoxNigiri3.TabIndex = 0;
-            this.pictureBoxNigiri3.TabStop = false;
-            // 
-            // panelNigiri4
-            // 
-            this.panelNigiri4.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.panelNigiri4.Controls.Add(this.buttonNigiri4);
-            this.panelNigiri4.Controls.Add(this.labelPriceNigiri4);
-            this.panelNigiri4.Controls.Add(this.labelNameNigiri4);
-            this.panelNigiri4.Controls.Add(this.pictureBoxNigiri4);
-            this.panelNigiri4.Location = new System.Drawing.Point(221, 208);
-            this.panelNigiri4.Name = "panelNigiri4";
-            this.panelNigiri4.Size = new System.Drawing.Size(192, 179);
-            this.panelNigiri4.TabIndex = 23;
-            // 
-            // buttonNigiri4
-            // 
-            this.buttonNigiri4.BackColor = System.Drawing.Color.Transparent;
-            this.buttonNigiri4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.buttonNigiri4.FlatAppearance.BorderSize = 0;
-            this.buttonNigiri4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonNigiri4.Image = ((System.Drawing.Image)(resources.GetObject("buttonNigiri4.Image")));
-            this.buttonNigiri4.Location = new System.Drawing.Point(137, 130);
-            this.buttonNigiri4.Name = "buttonNigiri4";
-            this.buttonNigiri4.Size = new System.Drawing.Size(52, 46);
-            this.buttonNigiri4.TabIndex = 4;
-            this.buttonNigiri4.UseVisualStyleBackColor = false;
-            this.buttonNigiri4.Click += new System.EventHandler(this.buttonNigiri4_Click);
-            // 
-            // labelPriceNigiri4
-            // 
-            this.labelPriceNigiri4.AutoSize = true;
-            this.labelPriceNigiri4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labelPriceNigiri4.ForeColor = System.Drawing.Color.Red;
-            this.labelPriceNigiri4.Location = new System.Drawing.Point(4, 158);
-            this.labelPriceNigiri4.Name = "labelPriceNigiri4";
-            this.labelPriceNigiri4.Size = new System.Drawing.Size(83, 16);
-            this.labelPriceNigiri4.TabIndex = 3;
-            this.labelPriceNigiri4.Text = "Price $1.80";
-            // 
-            // labelNameNigiri4
-            // 
-            this.labelNameNigiri4.AutoSize = true;
-            this.labelNameNigiri4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labelNameNigiri4.Location = new System.Drawing.Point(3, 139);
-            this.labelNameNigiri4.Name = "labelNameNigiri4";
-            this.labelNameNigiri4.Size = new System.Drawing.Size(42, 16);
-            this.labelNameNigiri4.TabIndex = 2;
-            this.labelNameNigiri4.Text = "Tuna";
-            // 
-            // pictureBoxNigiri4
-            // 
-            this.pictureBoxNigiri4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxNigiri4.Image")));
-            this.pictureBoxNigiri4.Location = new System.Drawing.Point(3, 3);
-            this.pictureBoxNigiri4.Name = "pictureBoxNigiri4";
-            this.pictureBoxNigiri4.Size = new System.Drawing.Size(132, 129);
-            this.pictureBoxNigiri4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBoxNigiri4.TabIndex = 0;
-            this.pictureBoxNigiri4.TabStop = false;
-            // 
-            // panelNigiri5
-            // 
-            this.panelNigiri5.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.panelNigiri5.Controls.Add(this.buttonNigiri5);
-            this.panelNigiri5.Controls.Add(this.labelPriceNigiri5);
-            this.panelNigiri5.Controls.Add(this.labelNameNigiri5);
-            this.panelNigiri5.Controls.Add(this.pictureBoxNigiri5);
-            this.panelNigiri5.Location = new System.Drawing.Point(23, 393);
-            this.panelNigiri5.Name = "panelNigiri5";
-            this.panelNigiri5.Size = new System.Drawing.Size(192, 179);
-            this.panelNigiri5.TabIndex = 21;
-            // 
-            // buttonNigiri5
-            // 
-            this.buttonNigiri5.BackColor = System.Drawing.Color.Transparent;
-            this.buttonNigiri5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.buttonNigiri5.FlatAppearance.BorderSize = 0;
-            this.buttonNigiri5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonNigiri5.Image = ((System.Drawing.Image)(resources.GetObject("buttonNigiri5.Image")));
-            this.buttonNigiri5.Location = new System.Drawing.Point(137, 130);
-            this.buttonNigiri5.Name = "buttonNigiri5";
-            this.buttonNigiri5.Size = new System.Drawing.Size(52, 46);
-            this.buttonNigiri5.TabIndex = 4;
-            this.buttonNigiri5.UseVisualStyleBackColor = false;
-            this.buttonNigiri5.Click += new System.EventHandler(this.buttonNigiri5_Click);
-            // 
-            // labelPriceNigiri5
-            // 
-            this.labelPriceNigiri5.AutoSize = true;
-            this.labelPriceNigiri5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labelPriceNigiri5.ForeColor = System.Drawing.Color.Red;
-            this.labelPriceNigiri5.Location = new System.Drawing.Point(4, 158);
-            this.labelPriceNigiri5.Name = "labelPriceNigiri5";
-            this.labelPriceNigiri5.Size = new System.Drawing.Size(83, 16);
-            this.labelPriceNigiri5.TabIndex = 3;
-            this.labelPriceNigiri5.Text = "Price $1.80";
-            // 
-            // labelNameNigiri5
-            // 
-            this.labelNameNigiri5.AutoSize = true;
-            this.labelNameNigiri5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labelNameNigiri5.Location = new System.Drawing.Point(3, 139);
-            this.labelNameNigiri5.Name = "labelNameNigiri5";
-            this.labelNameNigiri5.Size = new System.Drawing.Size(55, 16);
-            this.labelNameNigiri5.TabIndex = 2;
-            this.labelNameNigiri5.Text = "Shrimp";
-            // 
-            // pictureBoxNigiri5
-            // 
-            this.pictureBoxNigiri5.Image = global::Haziq_FinalProject.Properties.Resources.Sushi_41;
-            this.pictureBoxNigiri5.Location = new System.Drawing.Point(3, 3);
-            this.pictureBoxNigiri5.Name = "pictureBoxNigiri5";
-            this.pictureBoxNigiri5.Size = new System.Drawing.Size(132, 129);
-            this.pictureBoxNigiri5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBoxNigiri5.TabIndex = 0;
-            this.pictureBoxNigiri5.TabStop = false;
-            // 
-            // panelNigiri6
-            // 
-            this.panelNigiri6.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.panelNigiri6.Controls.Add(this.buttonNigiri6);
-            this.panelNigiri6.Controls.Add(this.labelPriceNigir6);
-            this.panelNigiri6.Controls.Add(this.labelNameNigiri6);
-            this.panelNigiri6.Controls.Add(this.pictureBoxNigiri6);
-            this.panelNigiri6.Location = new System.Drawing.Point(221, 393);
-            this.panelNigiri6.Name = "panelNigiri6";
-            this.panelNigiri6.Size = new System.Drawing.Size(192, 179);
-            this.panelNigiri6.TabIndex = 20;
-            // 
-            // buttonNigiri6
-            // 
-            this.buttonNigiri6.BackColor = System.Drawing.Color.Transparent;
-            this.buttonNigiri6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.buttonNigiri6.FlatAppearance.BorderSize = 0;
-            this.buttonNigiri6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonNigiri6.Image = ((System.Drawing.Image)(resources.GetObject("buttonNigiri6.Image")));
-            this.buttonNigiri6.Location = new System.Drawing.Point(137, 130);
-            this.buttonNigiri6.Name = "buttonNigiri6";
-            this.buttonNigiri6.Size = new System.Drawing.Size(52, 46);
-            this.buttonNigiri6.TabIndex = 4;
-            this.buttonNigiri6.UseVisualStyleBackColor = false;
-            this.buttonNigiri6.Click += new System.EventHandler(this.buttonNigiri6_Click);
-            // 
-            // labelPriceNigir6
-            // 
-            this.labelPriceNigir6.AutoSize = true;
-            this.labelPriceNigir6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labelPriceNigir6.ForeColor = System.Drawing.Color.Red;
-            this.labelPriceNigir6.Location = new System.Drawing.Point(4, 158);
-            this.labelPriceNigir6.Name = "labelPriceNigir6";
-            this.labelPriceNigir6.Size = new System.Drawing.Size(83, 16);
-            this.labelPriceNigir6.TabIndex = 3;
-            this.labelPriceNigir6.Text = "Price $1.80";
-            // 
-            // labelNameNigiri6
-            // 
-            this.labelNameNigiri6.AutoSize = true;
-            this.labelNameNigiri6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labelNameNigiri6.Location = new System.Drawing.Point(3, 139);
-            this.labelNameNigiri6.Name = "labelNameNigiri6";
-            this.labelNameNigiri6.Size = new System.Drawing.Size(59, 16);
-            this.labelNameNigiri6.TabIndex = 2;
-            this.labelNameNigiri6.Text = "Salmon";
-            // 
-            // pictureBoxNigiri6
-            // 
-            this.pictureBoxNigiri6.Image = global::Haziq_FinalProject.Properties.Resources.Sushi_19;
-            this.pictureBoxNigiri6.Location = new System.Drawing.Point(3, 3);
-            this.pictureBoxNigiri6.Name = "pictureBoxNigiri6";
-            this.pictureBoxNigiri6.Size = new System.Drawing.Size(132, 129);
-            this.pictureBoxNigiri6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBoxNigiri6.TabIndex = 0;
-            this.pictureBoxNigiri6.TabStop = false;
-            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -1448,39 +1672,6 @@ namespace Haziq_FinalProject
             this.panelTop.ResumeLayout(false);
             this.panelBill.ResumeLayout(false);
             this.panelBill.PerformLayout();
-            this.panelSideMenu.ResumeLayout(false);
-            this.panelLogo.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.panelTopBackground.ResumeLayout(false);
-            this.panelTopBackground.PerformLayout();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            this.flowLayoutPanelGunkan.ResumeLayout(false);
-            this.panelGunkan1.ResumeLayout(false);
-            this.panelGunkan1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxGunkan1)).EndInit();
-            this.panelGunkan2.ResumeLayout(false);
-            this.panelGunkan2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxGunkan2)).EndInit();
-            this.panelGunkan3.ResumeLayout(false);
-            this.panelGunkan3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxGunkan3)).EndInit();
-            this.flowLayoutPanelMakimono.ResumeLayout(false);
-            this.panelMakimono1.ResumeLayout(false);
-            this.panelMakimono1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMakimono1)).EndInit();
-            this.panelMakimono2.ResumeLayout(false);
-            this.panelMakimono2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMakimono2)).EndInit();
-            this.panelMakimono3.ResumeLayout(false);
-            this.panelMakimono3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMakimono3)).EndInit();
-            this.panelMakimono4.ResumeLayout(false);
-            this.panelMakimono4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMakimono4)).EndInit();
-            this.panelMakimono5.ResumeLayout(false);
-            this.panelMakimono5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMakimono5)).EndInit();
             this.flowLayoutPanelNigiri.ResumeLayout(false);
             this.panelNigiri1.ResumeLayout(false);
             this.panelNigiri1.PerformLayout();
@@ -1500,6 +1691,39 @@ namespace Haziq_FinalProject
             this.panelNigiri6.ResumeLayout(false);
             this.panelNigiri6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxNigiri6)).EndInit();
+            this.panelSideMenu.ResumeLayout(false);
+            this.panelLogo.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panelTopBackground.ResumeLayout(false);
+            this.panelTopBackground.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            this.flowLayoutPanelMakimono.ResumeLayout(false);
+            this.panelMakimono1.ResumeLayout(false);
+            this.panelMakimono1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMakimono1)).EndInit();
+            this.panelMakimono2.ResumeLayout(false);
+            this.panelMakimono2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMakimono2)).EndInit();
+            this.panelMakimono3.ResumeLayout(false);
+            this.panelMakimono3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMakimono3)).EndInit();
+            this.panelMakimono4.ResumeLayout(false);
+            this.panelMakimono4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMakimono4)).EndInit();
+            this.panelMakimono5.ResumeLayout(false);
+            this.panelMakimono5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMakimono5)).EndInit();
+            this.flowLayoutPanelGunkan.ResumeLayout(false);
+            this.panelGunkan1.ResumeLayout(false);
+            this.panelGunkan1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxGunkan1)).EndInit();
+            this.panelGunkan2.ResumeLayout(false);
+            this.panelGunkan2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxGunkan2)).EndInit();
+            this.panelGunkan3.ResumeLayout(false);
+            this.panelGunkan3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxGunkan3)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1517,43 +1741,8 @@ namespace Haziq_FinalProject
         private System.Windows.Forms.Panel panelTopBackground;
         private System.Windows.Forms.Label labelClose;
         private System.Windows.Forms.Label labelTop;
-        private System.Windows.Forms.Panel panelNigiri1;
-        private System.Windows.Forms.Button buttonNigiri1;
-        private System.Windows.Forms.Label labelPriceNigiri1;
-        private System.Windows.Forms.Label labelNameNigiri1;
-        private System.Windows.Forms.PictureBox pictureBoxNigiri1;
-        private System.Windows.Forms.Panel panelNigiri2;
-        private System.Windows.Forms.Button buttonNigiri2;
-        private System.Windows.Forms.Label labelPriceNigiri2;
-        private System.Windows.Forms.Label labelNameNigiri2;
-        private System.Windows.Forms.PictureBox pictureBoxNigiri2;
-        private System.Windows.Forms.Panel panelNigiri3;
-        private System.Windows.Forms.Button buttonNigiri3;
-        private System.Windows.Forms.Label labelPriceNigiri3;
-        private System.Windows.Forms.Label labelNameNigiri3;
-        private System.Windows.Forms.PictureBox pictureBoxNigiri3;
-        private System.Windows.Forms.Panel panelNigiri4;
-        private System.Windows.Forms.Button buttonNigiri4;
-        private System.Windows.Forms.Label labelPriceNigiri4;
-        private System.Windows.Forms.Label labelNameNigiri4;
-        private System.Windows.Forms.PictureBox pictureBoxNigiri4;
-        private System.Windows.Forms.Panel panelNigiri5;
-        private System.Windows.Forms.Button buttonNigiri5;
-        private System.Windows.Forms.Label labelPriceNigiri5;
-        private System.Windows.Forms.Label labelNameNigiri5;
-        private System.Windows.Forms.PictureBox pictureBoxNigiri5;
-        private System.Windows.Forms.Panel panelNigiri6;
-        private System.Windows.Forms.Button buttonNigiri6;
-        private System.Windows.Forms.Label labelPriceNigir6;
-        private System.Windows.Forms.Label labelNameNigiri6;
-        private System.Windows.Forms.PictureBox pictureBoxNigiri6;
         private Gunkan gunkan1;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanelGunkan;
-        private System.Windows.Forms.Panel panelGunkan1;
-        private System.Windows.Forms.Button buttonGunkan1;
-        private System.Windows.Forms.Label labelPriceGunkan1;
-        private System.Windows.Forms.Label labelNameGunkan1;
-        private System.Windows.Forms.PictureBox pictureBoxGunkan1;
         private System.Windows.Forms.Panel panelGunkan2;
         private System.Windows.Forms.Button buttonGunkan2;
         private System.Windows.Forms.Label labelPriceGunkan2;
@@ -1583,40 +1772,92 @@ namespace Haziq_FinalProject
         private System.Windows.Forms.Label labelCost;
         private System.Windows.Forms.Label labelBillExit;
         private System.Windows.Forms.TextBox textBoxGunkan3;
-        private System.Windows.Forms.TextBox textBoxGunkan1;
         private System.Windows.Forms.TextBox textBoxGunkan2;
         private System.Windows.Forms.Panel panelMakimono1;
         private System.Windows.Forms.Button buttonMakimono1;
-        private System.Windows.Forms.TextBox textBoxMakimo1;
+        private System.Windows.Forms.TextBox textBoxMakimono1;
         private System.Windows.Forms.Label labelPriceMakimono1;
         private System.Windows.Forms.Label labelNameMakimono1;
         private System.Windows.Forms.PictureBox pictureBoxMakimono1;
         private System.Windows.Forms.Panel panelMakimono2;
-        private System.Windows.Forms.TextBox textBoxMakimo2;
+        private System.Windows.Forms.TextBox textBoxMakimono2;
         private System.Windows.Forms.Button buttonMakimono2;
         private System.Windows.Forms.Label labelPriceMakimono2;
         private System.Windows.Forms.Label labelNameMakimono2;
         private System.Windows.Forms.PictureBox pictureBoxMakimono2;
         private System.Windows.Forms.Panel panelMakimono3;
-        private System.Windows.Forms.TextBox textBoxMakimo3;
+        private System.Windows.Forms.TextBox textBoxMakimono3;
         private System.Windows.Forms.Button buttonMakimono3;
         private System.Windows.Forms.Label labelPriceMakimono3;
         private System.Windows.Forms.Label labelNameMakimono3;
         private System.Windows.Forms.PictureBox pictureBoxMakimono3;
         private System.Windows.Forms.Panel panelMakimono4;
-        private System.Windows.Forms.TextBox textBoxMakimo4;
+        private System.Windows.Forms.TextBox textBoxMakimono4;
         private System.Windows.Forms.Button buttonMakimono4;
         private System.Windows.Forms.Label labelPriceMakimono4;
         private System.Windows.Forms.Label labelNameMakimono4;
         private System.Windows.Forms.PictureBox pictureBoxMakimono4;
         private System.Windows.Forms.Panel panelMakimono5;
-        private System.Windows.Forms.TextBox textBoxMakimo5;
+        private System.Windows.Forms.TextBox textBoxMakimono5;
         private System.Windows.Forms.Button buttonMakimono5;
         private System.Windows.Forms.Label labelPriceMakimono5;
         private System.Windows.Forms.Label labelNameMakimono5;
         private System.Windows.Forms.PictureBox pictureBoxMakimono5;
         private System.Windows.Forms.Button buttonMinusGunkan3;
-        private System.Windows.Forms.Button buttonMinusGunkan1;
         private System.Windows.Forms.Button buttonMinusGunkan2;
+        private System.Windows.Forms.Button buttonMinusMakimono1;
+        private System.Windows.Forms.Button buttonMinusMakimono2;
+        private System.Windows.Forms.Button buttonMinusMakimono3;
+        private System.Windows.Forms.Button buttonMinusMakimono4;
+        private System.Windows.Forms.Button buttonMinusMakimono5;
+        private System.Windows.Forms.Panel panelNigiri1;
+        private System.Windows.Forms.Button buttonMinusNigiri1;
+        private System.Windows.Forms.Button buttonNigiri1;
+        private System.Windows.Forms.Label labelPriceNigiri1;
+        private System.Windows.Forms.Label labelNameNigiri1;
+        private System.Windows.Forms.PictureBox pictureBoxNigiri1;
+        private System.Windows.Forms.Panel panelNigiri2;
+        private System.Windows.Forms.Button buttonMinusNigiri2;
+        private System.Windows.Forms.Button buttonNigiri2;
+        private System.Windows.Forms.Label labelPriceNigiri2;
+        private System.Windows.Forms.Label labelNameNigiri2;
+        private System.Windows.Forms.PictureBox pictureBoxNigiri2;
+        private System.Windows.Forms.Panel panelNigiri3;
+        private System.Windows.Forms.Button buttonMinusNigiri3;
+        private System.Windows.Forms.Button buttonNigiri3;
+        private System.Windows.Forms.Label labelPriceNigiri3;
+        private System.Windows.Forms.Label labelNameNigiri3;
+        private System.Windows.Forms.PictureBox pictureBoxNigiri3;
+        private System.Windows.Forms.Panel panelNigiri4;
+        private System.Windows.Forms.Button buttonMinusNigiri4;
+        private System.Windows.Forms.Button buttonNigiri4;
+        private System.Windows.Forms.Label labelPriceNigiri4;
+        private System.Windows.Forms.Label labelNameNigiri4;
+        private System.Windows.Forms.PictureBox pictureBoxNigiri4;
+        private System.Windows.Forms.Panel panelNigiri5;
+        private System.Windows.Forms.Button buttonMinusNigiri5;
+        private System.Windows.Forms.Button buttonNigiri5;
+        private System.Windows.Forms.Label labelPriceNigiri5;
+        private System.Windows.Forms.Label labelNameNigiri5;
+        private System.Windows.Forms.PictureBox pictureBoxNigiri5;
+        private System.Windows.Forms.Panel panelNigiri6;
+        private System.Windows.Forms.Button buttonMinusNigiri6;
+        private System.Windows.Forms.Button buttonNigiri6;
+        private System.Windows.Forms.Label labelPriceNigiri6;
+        private System.Windows.Forms.Label labelNameNigiri6;
+        private System.Windows.Forms.PictureBox pictureBoxNigiri6;
+        private System.Windows.Forms.Panel panelGunkan1;
+        private System.Windows.Forms.Button buttonMinusGunkan1;
+        private System.Windows.Forms.TextBox textBoxGunkan1;
+        private System.Windows.Forms.Button buttonGunkan1;
+        private System.Windows.Forms.Label labelPriceGunkan1;
+        private System.Windows.Forms.Label labelNameGunkan1;
+        private System.Windows.Forms.PictureBox pictureBoxGunkan1;
+        private System.Windows.Forms.TextBox textBoxNigiri1;
+        private System.Windows.Forms.TextBox textBoxNigiri2;
+        private System.Windows.Forms.TextBox textBoxNigiri3;
+        private System.Windows.Forms.TextBox textBoxNigiri4;
+        private System.Windows.Forms.TextBox textBoxNigiri5;
+        private System.Windows.Forms.TextBox textBoxNigiri6;
     }
 }

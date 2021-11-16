@@ -30,7 +30,21 @@ namespace Haziq_FinalProject
         bool bGunkan2 = false;
         bool bGunkan1 = false;
 
-       
+        bool bMakimono5 = false;
+        bool bMakimono4 = false;
+        bool bMakimono3 = false;
+        bool bMakimono2 = false;
+        bool bMakimono1 = false;
+
+        bool bNigiri6 = false;
+        bool bNigiri5 = false;
+        bool bNigiri4 = false;
+        bool bNigiri3 = false;
+        bool bNigiri2 = false;
+        bool bNigiri1 = false;
+
+
+
 
 
         public MainForm()
@@ -93,11 +107,7 @@ namespace Haziq_FinalProject
 
 
 
-        private void buttonNigiri1_Click(object sender, EventArgs e)
-        {
 
-
-        }
 
         private void buttonDeleteOrder_Click(object sender, EventArgs e)
         {
@@ -106,83 +116,187 @@ namespace Haziq_FinalProject
 
         private void DeleteOrder()
         {
-            if (listBoxOrder.SelectedIndex == -1)
-            {
-                MessageBox.Show("You have not ordered anything. Try again");
-            }
 
-            if (listBoxOrder.SelectedIndex > -1)
-            {
-                //listBoxOrder.Items.RemoveAt(listBoxOrder.SelectedIndex);
-                //foodDeleteNumber++;            
-                //foodDeleted = true;
-                ////   foodAmount--;
-
-            }
             listBoxOrder.Items.Clear();
             foodList.Clear();
 
             foodDeleted = false;
         }
+        private void buttonNigiri1_Click(object sender, EventArgs e)
+        {
+
+            try
+            {
+                AddFood(buttonNigiri.Text, labelNameNigiri1.Text, int.Parse(textBoxNigiri1.Text), decimal.Parse(labelPriceNigiri1.Text), new food(fullname, foodAmount, price), bNigiri1);
+
+                bNigiri1 = true;
+            }
+            catch (FormatException)
+            {
+
+                MessageBox.Show("Please insert food amount");
+            }
+        }
 
         private void buttonNigiri2_Click(object sender, EventArgs e)
         {
 
+            try
+            {
+                AddFood(buttonNigiri.Text, labelNameNigiri2.Text, int.Parse(textBoxNigiri2.Text), decimal.Parse(labelPriceNigiri2.Text), new food(fullname, foodAmount, price), bNigiri2);
 
+                bNigiri2 = true;
+            }
+            catch (FormatException)
+            {
+
+                MessageBox.Show("Please insert food amount");
+            }
         }
 
         private void buttonNigiri3_Click(object sender, EventArgs e)
         {
 
+            try
+            {
+                AddFood(buttonNigiri.Text, labelNameNigiri3.Text, int.Parse(textBoxNigiri3.Text), decimal.Parse(labelPriceNigiri3.Text), new food(fullname, foodAmount, price), bNigiri3);
 
+                bNigiri3 = true;
+            }
+            catch (FormatException)
+            {
+
+                MessageBox.Show("Please insert food amount");
+            }
         }
 
         private void buttonNigiri4_Click(object sender, EventArgs e)
         {
 
 
+            try
+            {
+                AddFood(buttonNigiri.Text, labelNameNigiri4.Text, int.Parse(textBoxNigiri4.Text), decimal.Parse(labelPriceNigiri4.Text), new food(fullname, foodAmount, price), bNigiri4);
+
+                bNigiri4 = true;
+            }
+            catch (FormatException)
+            {
+
+                MessageBox.Show("Please insert food amount");
+            }
         }
 
         private void buttonNigiri5_Click(object sender, EventArgs e)
         {
 
+            try
+            {
+                AddFood(buttonNigiri.Text, labelNameNigiri5.Text, int.Parse(textBoxNigiri5.Text), decimal.Parse(labelPriceNigiri5.Text), new food(fullname, foodAmount, price), bNigiri5);
 
+                bNigiri5 = true;
+            }
+            catch (FormatException)
+            {
+
+                MessageBox.Show("Please insert food amount");
+            }
         }
 
         private void buttonNigiri6_Click(object sender, EventArgs e)
         {
 
+            try
+            {
+                AddFood(buttonNigiri.Text, labelNameNigiri6.Text, int.Parse(textBoxNigiri6.Text), decimal.Parse(labelPriceNigiri6.Text), new food(fullname, foodAmount, price), bNigiri6);
 
+                bNigiri6 = true;
+            }
+            catch (FormatException)
+            {
+
+                MessageBox.Show("Please insert food amount");
+            }
 
         }
 
         private void buttonMakimono1_Click(object sender, EventArgs e)
         {
+            try
+            {
+                AddFood(buttonMakimono.Text, labelNameMakimono1.Text, int.Parse(textBoxMakimono1.Text), decimal.Parse(labelPriceMakimono1.Text), new food(fullname, foodAmount, price), bMakimono1);
 
+                bMakimono1 = true;
+            }
+            catch (FormatException)
+            {
+
+                MessageBox.Show("Please insert food amount");
+            }
         }
 
         private void buttonMakimono2_Click(object sender, EventArgs e)
         {
+            try
+            {
+                AddFood(buttonMakimono.Text, labelNameMakimono2.Text, int.Parse(textBoxMakimono2.Text), decimal.Parse(labelPriceMakimono2.Text), new food(fullname, foodAmount, price), bMakimono2);
 
+                bMakimono2 = true;
+            }
+            catch (FormatException)
+            {
+
+                MessageBox.Show("Please insert food amount");
+            }
         }
 
         private void buttonMakimono3_Click(object sender, EventArgs e)
         {
 
+            try
+            {
+                AddFood(buttonMakimono.Text, labelNameMakimono3.Text, int.Parse(textBoxMakimono3.Text), decimal.Parse(labelPriceMakimono3.Text), new food(fullname, foodAmount, price), bMakimono3);
 
+                bMakimono3 = true;
+            }
+            catch (FormatException)
+            {
+
+                MessageBox.Show("Please insert food amount");
+            }
         }
 
         private void buttonMakimono4_Click(object sender, EventArgs e)
         {
 
+            try
+            {
+                AddFood(buttonMakimono.Text, labelNameMakimono4.Text, int.Parse(textBoxMakimono4.Text), decimal.Parse(labelPriceMakimono4.Text), new food(fullname, foodAmount, price), bMakimono4);
 
+                bMakimono4 = true;
+            }
+            catch (FormatException)
+            {
+
+                MessageBox.Show("Please insert food amount");
+            }
 
         }
 
         private void buttonMakimono5_Click(object sender, EventArgs e)
         {
 
+            try
+            {
+                AddFood(buttonMakimono.Text, labelNameMakimono5.Text, int.Parse(textBoxMakimono5.Text), decimal.Parse(labelPriceMakimono5.Text), new food(fullname, foodAmount, price), bMakimono5);
 
+                bMakimono5 = true;
+            }
+            catch (FormatException)
+            {
+
+                MessageBox.Show("Please insert food amount");
+            }
 
         }
 
@@ -225,10 +339,10 @@ namespace Haziq_FinalProject
         {
             try
             {
-              
-                    AddFood(buttonGunkan.Text, labelNameGunkan3.Text, int.Parse(textBoxGunkan3.Text), decimal.Parse(labelPriceGunkan3.Text), new food(fullname, foodAmount, price), bGunkan3);
 
-                    bGunkan3 = true;
+                AddFood(buttonGunkan.Text, labelNameGunkan3.Text, int.Parse(textBoxGunkan3.Text), decimal.Parse(labelPriceGunkan3.Text), new food(fullname, foodAmount, price), bGunkan3);
+
+                bGunkan3 = true;
 
 
 
@@ -299,6 +413,148 @@ namespace Haziq_FinalProject
             }
 
         }
+        private void buttonMinusNigiri6_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                MinusFood(buttonNigiri.Text, labelNameNigiri6.Text, int.Parse(textBoxNigiri6.Text), decimal.Parse(labelPriceNigiri6.Text));
+            }
+            catch (FormatException)
+            {
+
+                MessageBox.Show("Please insert food amount");
+            }
+        }
+
+        private void buttonMinusNigiri5_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                MinusFood(buttonNigiri.Text, labelNameNigiri5.Text, int.Parse(textBoxNigiri5.Text), decimal.Parse(labelPriceNigiri5.Text));
+            }
+            catch (FormatException)
+            {
+
+                MessageBox.Show("Please insert food amount");
+            }
+        }
+
+        private void buttonMinusNigiri4_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                MinusFood(buttonNigiri.Text, labelNameNigiri4.Text, int.Parse(textBoxNigiri4.Text), decimal.Parse(labelPriceNigiri4.Text));
+            }
+            catch (FormatException)
+            {
+
+                MessageBox.Show("Please insert food amount");
+            }
+        }
+
+        private void buttonMinusNigiri3_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                MinusFood(buttonNigiri.Text, labelNameNigiri3.Text, int.Parse(textBoxNigiri3.Text), decimal.Parse(labelPriceNigiri3.Text));
+            }
+            catch (FormatException)
+            {
+
+                MessageBox.Show("Please insert food amount");
+            }
+        }
+
+        private void buttonMinusNigiri2_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                MinusFood(buttonNigiri.Text, labelNameNigiri2.Text, int.Parse(textBoxNigiri2.Text), decimal.Parse(labelPriceNigiri2.Text));
+            }
+            catch (FormatException)
+            {
+
+                MessageBox.Show("Please insert food amount");
+            }
+        }
+
+        private void buttonMinusNigiri1_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                MinusFood(buttonNigiri.Text, labelNameNigiri1.Text, int.Parse(textBoxNigiri1.Text), decimal.Parse(labelPriceNigiri1.Text));
+            }
+            catch (FormatException)
+            {
+
+                MessageBox.Show("Please insert food amount");
+            }
+        }
+        private void buttonMinusMakimono5_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                MinusFood(buttonMakimono.Text, labelNameMakimono5.Text, int.Parse(textBoxMakimono5.Text), decimal.Parse(labelPriceMakimono5.Text));
+            }
+            catch (FormatException)
+            {
+
+                MessageBox.Show("Please insert food amount");
+            }
+        }
+
+        private void buttonMinusMakimono4_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                MinusFood(buttonMakimono.Text, labelNameMakimono4.Text, int.Parse(textBoxMakimono4.Text), decimal.Parse(labelPriceMakimono4.Text));
+            }
+            catch (FormatException)
+            {
+
+                MessageBox.Show("Please insert food amount");
+            }
+        }
+
+        private void buttonMinusMakimono3_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                MinusFood(buttonMakimono.Text, labelNameMakimono3.Text, int.Parse(textBoxMakimono3.Text), decimal.Parse(labelPriceMakimono3.Text));
+            }
+            catch (FormatException)
+            {
+
+                MessageBox.Show("Please insert food amount");
+            }
+        }
+
+        private void buttonMinusMakimono2_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                MinusFood(buttonMakimono.Text, labelNameMakimono2.Text, int.Parse(textBoxMakimono2.Text), decimal.Parse(labelPriceMakimono2.Text));
+            }
+            catch (FormatException)
+            {
+
+                MessageBox.Show("Please insert food amount");
+            }
+        }
+
+        private void buttonMinusMakimono1_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                MinusFood(buttonMakimono.Text, labelNameMakimono1.Text, int.Parse(textBoxMakimono1.Text), decimal.Parse(labelPriceMakimono1.Text));
+            }
+            catch (FormatException)
+            {
+
+                MessageBox.Show("Please insert food amount");
+            }
+        }
+
         private void buttonMinusGunkan1_Click(object sender, EventArgs e)
         {
             try
@@ -352,8 +608,8 @@ namespace Haziq_FinalProject
             {
 
                 fullname = catagory + " " + orderName;
-              
-               
+
+
 
                 if (foodAmount <= 0)
                 {
@@ -439,14 +695,28 @@ namespace Haziq_FinalProject
             {
                 {
                     //Item.price is already the final price
-                    AddToListView(item.Fullname, item.FoodAmount - foodDeleteNumber, item.Price -  foodDeleteCost);
+                    AddToListView(item.Fullname, item.FoodAmount - foodDeleteNumber, item.Price - foodDeleteCost);
                 }
             }
 
-           
+
             bGunkan3 = false;
             bGunkan2 = false;
             bGunkan1 = false;
+
+            bMakimono5 = false;
+            bMakimono4 = false;
+            bMakimono3 = false;
+            bMakimono2 = false;
+            bMakimono1 = false;
+
+            bNigiri6 = false;
+            bNigiri5 = false;
+            bNigiri4 = false;
+            bNigiri3 = false;
+            bNigiri2 = false;
+            bNigiri1 = false;
+
             foodAmount = 0;
             foodDeleteNumber = 0;
             foodDeleteCost = 0;
@@ -493,12 +763,12 @@ namespace Haziq_FinalProject
             //command.Parameters.Add("@email", MySqlDbType.VarChar).Value = textBoxEmail.Text;
 
 
-           // command.Parameters.Add("@usn", MySqlDbType.VarChar).Value = GetUser();
-            command.Parameters.Add("@itn", MySqlDbType.VarChar).Value =name ;
+            // command.Parameters.Add("@usn", MySqlDbType.VarChar).Value = GetUser();
+            command.Parameters.Add("@itn", MySqlDbType.VarChar).Value = name;
             command.Parameters.Add("@qty", MySqlDbType.Int32).Value = qty;
             command.Parameters.Add("@price", MySqlDbType.Decimal).Value = price;
             command.Parameters.Add("@total_price", MySqlDbType.Decimal).Value = total;
-          
+
             //adapter.SelectCommand = command;
 
 
@@ -514,7 +784,5 @@ namespace Haziq_FinalProject
             //========//
 
         }
-
-      
     }
 }

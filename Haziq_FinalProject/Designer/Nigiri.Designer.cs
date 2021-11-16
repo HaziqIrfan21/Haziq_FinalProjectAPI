@@ -57,9 +57,15 @@ namespace Haziq_FinalProject
             this.pictureBoxNigiri5 = new System.Windows.Forms.PictureBox();
             this.panelNigiri6 = new System.Windows.Forms.Panel();
             this.buttonNigiri6 = new System.Windows.Forms.Button();
-            this.labelPriceNigir6 = new System.Windows.Forms.Label();
+            this.labelPriceNigiri6 = new System.Windows.Forms.Label();
             this.labelNameNigiri6 = new System.Windows.Forms.Label();
             this.pictureBoxNigiri6 = new System.Windows.Forms.PictureBox();
+            this.buttonMinusNigiri1 = new System.Windows.Forms.Button();
+            this.buttonMinusNigiri2 = new System.Windows.Forms.Button();
+            this.buttonMinusNigiri3 = new System.Windows.Forms.Button();
+            this.buttonMinusNigiri4 = new System.Windows.Forms.Button();
+            this.buttonMinusNigiri5 = new System.Windows.Forms.Button();
+            this.buttonMinusNigiri6 = new System.Windows.Forms.Button();
             this.panelNigiri1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxNigiri1)).BeginInit();
             this.panelNigiri2.SuspendLayout();
@@ -77,6 +83,7 @@ namespace Haziq_FinalProject
             // panelNigiri1
             // 
             this.panelNigiri1.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.panelNigiri1.Controls.Add(this.buttonMinusNigiri1);
             this.panelNigiri1.Controls.Add(this.buttonNigiri1);
             this.panelNigiri1.Controls.Add(this.labelPriceNigiri1);
             this.panelNigiri1.Controls.Add(this.labelNameNigiri1);
@@ -106,9 +113,9 @@ namespace Haziq_FinalProject
             this.labelPriceNigiri1.ForeColor = System.Drawing.Color.Red;
             this.labelPriceNigiri1.Location = new System.Drawing.Point(4, 158);
             this.labelPriceNigiri1.Name = "labelPriceNigiri1";
-            this.labelPriceNigiri1.Size = new System.Drawing.Size(83, 16);
+            this.labelPriceNigiri1.Size = new System.Drawing.Size(35, 16);
             this.labelPriceNigiri1.TabIndex = 3;
-            this.labelPriceNigiri1.Text = "Price $1.80";
+            this.labelPriceNigiri1.Text = "1.80";
             // 
             // labelNameNigiri1
             // 
@@ -133,6 +140,7 @@ namespace Haziq_FinalProject
             // panelNigiri2
             // 
             this.panelNigiri2.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.panelNigiri2.Controls.Add(this.buttonMinusNigiri2);
             this.panelNigiri2.Controls.Add(this.buttonNigiri2);
             this.panelNigiri2.Controls.Add(this.labelPriceNigiri2);
             this.panelNigiri2.Controls.Add(this.labelNameNigiri2);
@@ -161,9 +169,9 @@ namespace Haziq_FinalProject
             this.labelPriceNigiri2.ForeColor = System.Drawing.Color.Red;
             this.labelPriceNigiri2.Location = new System.Drawing.Point(4, 158);
             this.labelPriceNigiri2.Name = "labelPriceNigiri2";
-            this.labelPriceNigiri2.Size = new System.Drawing.Size(83, 16);
+            this.labelPriceNigiri2.Size = new System.Drawing.Size(35, 16);
             this.labelPriceNigiri2.TabIndex = 3;
-            this.labelPriceNigiri2.Text = "Price $1.80";
+            this.labelPriceNigiri2.Text = "1.80";
             // 
             // labelNameNigiri2
             // 
@@ -188,6 +196,7 @@ namespace Haziq_FinalProject
             // panelNigiri3
             // 
             this.panelNigiri3.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.panelNigiri3.Controls.Add(this.buttonMinusNigiri3);
             this.panelNigiri3.Controls.Add(this.buttonNigiri3);
             this.panelNigiri3.Controls.Add(this.labelPriceNigiri3);
             this.panelNigiri3.Controls.Add(this.labelNameNigiri3);
@@ -216,9 +225,9 @@ namespace Haziq_FinalProject
             this.labelPriceNigiri3.ForeColor = System.Drawing.Color.Red;
             this.labelPriceNigiri3.Location = new System.Drawing.Point(4, 158);
             this.labelPriceNigiri3.Name = "labelPriceNigiri3";
-            this.labelPriceNigiri3.Size = new System.Drawing.Size(83, 16);
+            this.labelPriceNigiri3.Size = new System.Drawing.Size(35, 16);
             this.labelPriceNigiri3.TabIndex = 3;
-            this.labelPriceNigiri3.Text = "Price $1.80";
+            this.labelPriceNigiri3.Text = "1.80";
             // 
             // labelNameNigiri3
             // 
@@ -243,6 +252,7 @@ namespace Haziq_FinalProject
             // panelNigiri4
             // 
             this.panelNigiri4.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.panelNigiri4.Controls.Add(this.buttonMinusNigiri4);
             this.panelNigiri4.Controls.Add(this.buttonNigiri4);
             this.panelNigiri4.Controls.Add(this.labelPriceNigiri4);
             this.panelNigiri4.Controls.Add(this.labelNameNigiri4);
@@ -271,9 +281,9 @@ namespace Haziq_FinalProject
             this.labelPriceNigiri4.ForeColor = System.Drawing.Color.Red;
             this.labelPriceNigiri4.Location = new System.Drawing.Point(4, 158);
             this.labelPriceNigiri4.Name = "labelPriceNigiri4";
-            this.labelPriceNigiri4.Size = new System.Drawing.Size(83, 16);
+            this.labelPriceNigiri4.Size = new System.Drawing.Size(35, 16);
             this.labelPriceNigiri4.TabIndex = 3;
-            this.labelPriceNigiri4.Text = "Price $1.80";
+            this.labelPriceNigiri4.Text = "1.80";
             // 
             // labelNameNigiri4
             // 
@@ -298,6 +308,7 @@ namespace Haziq_FinalProject
             // panelNigiri5
             // 
             this.panelNigiri5.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.panelNigiri5.Controls.Add(this.buttonMinusNigiri5);
             this.panelNigiri5.Controls.Add(this.buttonNigiri5);
             this.panelNigiri5.Controls.Add(this.labelPriceNigiri5);
             this.panelNigiri5.Controls.Add(this.labelNameNigiri5);
@@ -326,9 +337,9 @@ namespace Haziq_FinalProject
             this.labelPriceNigiri5.ForeColor = System.Drawing.Color.Red;
             this.labelPriceNigiri5.Location = new System.Drawing.Point(4, 158);
             this.labelPriceNigiri5.Name = "labelPriceNigiri5";
-            this.labelPriceNigiri5.Size = new System.Drawing.Size(83, 16);
+            this.labelPriceNigiri5.Size = new System.Drawing.Size(35, 16);
             this.labelPriceNigiri5.TabIndex = 3;
-            this.labelPriceNigiri5.Text = "Price $1.80";
+            this.labelPriceNigiri5.Text = "1.80";
             // 
             // labelNameNigiri5
             // 
@@ -353,8 +364,9 @@ namespace Haziq_FinalProject
             // panelNigiri6
             // 
             this.panelNigiri6.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.panelNigiri6.Controls.Add(this.buttonMinusNigiri6);
             this.panelNigiri6.Controls.Add(this.buttonNigiri6);
-            this.panelNigiri6.Controls.Add(this.labelPriceNigir6);
+            this.panelNigiri6.Controls.Add(this.labelPriceNigiri6);
             this.panelNigiri6.Controls.Add(this.labelNameNigiri6);
             this.panelNigiri6.Controls.Add(this.pictureBoxNigiri6);
             this.panelNigiri6.Location = new System.Drawing.Point(267, 396);
@@ -374,16 +386,16 @@ namespace Haziq_FinalProject
             this.buttonNigiri6.TabIndex = 4;
             this.buttonNigiri6.UseVisualStyleBackColor = false;
             // 
-            // labelPriceNigir6
+            // labelPriceNigiri6
             // 
-            this.labelPriceNigir6.AutoSize = true;
-            this.labelPriceNigir6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labelPriceNigir6.ForeColor = System.Drawing.Color.Red;
-            this.labelPriceNigir6.Location = new System.Drawing.Point(4, 158);
-            this.labelPriceNigir6.Name = "labelPriceNigir6";
-            this.labelPriceNigir6.Size = new System.Drawing.Size(83, 16);
-            this.labelPriceNigir6.TabIndex = 3;
-            this.labelPriceNigir6.Text = "Price $1.80";
+            this.labelPriceNigiri6.AutoSize = true;
+            this.labelPriceNigiri6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.labelPriceNigiri6.ForeColor = System.Drawing.Color.Red;
+            this.labelPriceNigiri6.Location = new System.Drawing.Point(4, 158);
+            this.labelPriceNigiri6.Name = "labelPriceNigiri6";
+            this.labelPriceNigiri6.Size = new System.Drawing.Size(35, 16);
+            this.labelPriceNigiri6.TabIndex = 3;
+            this.labelPriceNigiri6.Text = "1.80";
             // 
             // labelNameNigiri6
             // 
@@ -404,6 +416,84 @@ namespace Haziq_FinalProject
             this.pictureBoxNigiri6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxNigiri6.TabIndex = 0;
             this.pictureBoxNigiri6.TabStop = false;
+            // 
+            // buttonMinusNigiri1
+            // 
+            this.buttonMinusNigiri1.BackColor = System.Drawing.Color.Transparent;
+            this.buttonMinusNigiri1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.buttonMinusNigiri1.FlatAppearance.BorderSize = 0;
+            this.buttonMinusNigiri1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonMinusNigiri1.Image = global::Haziq_FinalProject.Properties.Resources.minus;
+            this.buttonMinusNigiri1.Location = new System.Drawing.Point(106, 148);
+            this.buttonMinusNigiri1.Name = "buttonMinusNigiri1";
+            this.buttonMinusNigiri1.Size = new System.Drawing.Size(25, 10);
+            this.buttonMinusNigiri1.TabIndex = 9;
+            this.buttonMinusNigiri1.UseVisualStyleBackColor = false;
+            // 
+            // buttonMinusNigiri2
+            // 
+            this.buttonMinusNigiri2.BackColor = System.Drawing.Color.Transparent;
+            this.buttonMinusNigiri2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.buttonMinusNigiri2.FlatAppearance.BorderSize = 0;
+            this.buttonMinusNigiri2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonMinusNigiri2.Image = global::Haziq_FinalProject.Properties.Resources.minus;
+            this.buttonMinusNigiri2.Location = new System.Drawing.Point(106, 148);
+            this.buttonMinusNigiri2.Name = "buttonMinusNigiri2";
+            this.buttonMinusNigiri2.Size = new System.Drawing.Size(25, 10);
+            this.buttonMinusNigiri2.TabIndex = 10;
+            this.buttonMinusNigiri2.UseVisualStyleBackColor = false;
+            // 
+            // buttonMinusNigiri3
+            // 
+            this.buttonMinusNigiri3.BackColor = System.Drawing.Color.Transparent;
+            this.buttonMinusNigiri3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.buttonMinusNigiri3.FlatAppearance.BorderSize = 0;
+            this.buttonMinusNigiri3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonMinusNigiri3.Image = global::Haziq_FinalProject.Properties.Resources.minus;
+            this.buttonMinusNigiri3.Location = new System.Drawing.Point(106, 148);
+            this.buttonMinusNigiri3.Name = "buttonMinusNigiri3";
+            this.buttonMinusNigiri3.Size = new System.Drawing.Size(25, 10);
+            this.buttonMinusNigiri3.TabIndex = 11;
+            this.buttonMinusNigiri3.UseVisualStyleBackColor = false;
+            // 
+            // buttonMinusNigiri4
+            // 
+            this.buttonMinusNigiri4.BackColor = System.Drawing.Color.Transparent;
+            this.buttonMinusNigiri4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.buttonMinusNigiri4.FlatAppearance.BorderSize = 0;
+            this.buttonMinusNigiri4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonMinusNigiri4.Image = global::Haziq_FinalProject.Properties.Resources.minus;
+            this.buttonMinusNigiri4.Location = new System.Drawing.Point(106, 148);
+            this.buttonMinusNigiri4.Name = "buttonMinusNigiri4";
+            this.buttonMinusNigiri4.Size = new System.Drawing.Size(25, 10);
+            this.buttonMinusNigiri4.TabIndex = 12;
+            this.buttonMinusNigiri4.UseVisualStyleBackColor = false;
+            // 
+            // buttonMinusNigiri5
+            // 
+            this.buttonMinusNigiri5.BackColor = System.Drawing.Color.Transparent;
+            this.buttonMinusNigiri5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.buttonMinusNigiri5.FlatAppearance.BorderSize = 0;
+            this.buttonMinusNigiri5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonMinusNigiri5.Image = global::Haziq_FinalProject.Properties.Resources.minus;
+            this.buttonMinusNigiri5.Location = new System.Drawing.Point(106, 148);
+            this.buttonMinusNigiri5.Name = "buttonMinusNigiri5";
+            this.buttonMinusNigiri5.Size = new System.Drawing.Size(25, 10);
+            this.buttonMinusNigiri5.TabIndex = 13;
+            this.buttonMinusNigiri5.UseVisualStyleBackColor = false;
+            // 
+            // buttonMinusNigiri6
+            // 
+            this.buttonMinusNigiri6.BackColor = System.Drawing.Color.Transparent;
+            this.buttonMinusNigiri6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.buttonMinusNigiri6.FlatAppearance.BorderSize = 0;
+            this.buttonMinusNigiri6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonMinusNigiri6.Image = global::Haziq_FinalProject.Properties.Resources.minus;
+            this.buttonMinusNigiri6.Location = new System.Drawing.Point(110, 148);
+            this.buttonMinusNigiri6.Name = "buttonMinusNigiri6";
+            this.buttonMinusNigiri6.Size = new System.Drawing.Size(25, 10);
+            this.buttonMinusNigiri6.TabIndex = 14;
+            this.buttonMinusNigiri6.UseVisualStyleBackColor = false;
             // 
             // Nigiri
             // 
@@ -469,8 +559,14 @@ namespace Haziq_FinalProject
         private System.Windows.Forms.PictureBox pictureBoxNigiri5;
         private System.Windows.Forms.Panel panelNigiri6;
         private System.Windows.Forms.Button buttonNigiri6;
-        private System.Windows.Forms.Label labelPriceNigir6;
+        private System.Windows.Forms.Label labelPriceNigiri6;
         private System.Windows.Forms.Label labelNameNigiri6;
         private System.Windows.Forms.PictureBox pictureBoxNigiri6;
+        private System.Windows.Forms.Button buttonMinusNigiri1;
+        private System.Windows.Forms.Button buttonMinusNigiri2;
+        private System.Windows.Forms.Button buttonMinusNigiri3;
+        private System.Windows.Forms.Button buttonMinusNigiri4;
+        private System.Windows.Forms.Button buttonMinusNigiri5;
+        private System.Windows.Forms.Button buttonMinusNigiri6;
     }
 }
