@@ -28,59 +28,59 @@ namespace RestaurantAPI.Controllers
             _db = db;
         }
 
-        [Route("getDB")]
-        [HttpPost]
-        public void OnGet()
-        {
-            LoadSampleData();
+        //[Route("getDB")]
+        //[HttpPost]
+        //public void OnGet()
+        //{
+        //    LoadSampleData();
 
-            //var people = _db.User.ToList();
-        }
+        //    //var people = _db.User.ToList();
+        //}
 
-        private void LoadSampleData()
-        {
+        //private void LoadSampleData()
+        //{
 
-            string file = System.IO.File.ReadAllText("users.json");
-            var user = JsonSerializer.Deserialize<List<Users>>(file);
-            _db.AddRange(user);
-            _db.SaveChanges();
+        //    string file = System.IO.File.ReadAllText("users.json");
+        //    var user = JsonSerializer.Deserialize<List<Users>>(file);
+        //    _db.AddRange(user);
+        //    _db.SaveChanges();
 
 
 
-        }
+        //}
 
-        // GET: api/<ValuesController>
-        [HttpGet]
-        public IEnumerable<string> Get()
-        {
-            return new string[] { "value1", "value2" };
-        }
+        //// GET: api/<ValuesController>
+        //[HttpGet]
+        //public IEnumerable<string> Get()
+        //{
+        //    return new string[] { "value1", "value2" };
+        //}
 
-        // GET api/<ValuesController>/5
-        [HttpGet("{id}")]
-        public string Get(int id)
-        {
-            return "value";
-        }
+        //// GET api/<ValuesController>/5
+        //[HttpGet("{id}")]
+        //public string Get(int id)
+        //{
+        //    return "value";
+        //}
 
-        // POST api/<ValuesController>
-        [HttpPost]
-        public void Post([FromBody] string value)
-        {
-        }
+        //// POST api/<ValuesController>
+        //[HttpPost]
+        //public void Post([FromBody] string value)
+        //{
+        //}
 
-        // PUT api/<ValuesController>/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
-        {
-        }
+        //// PUT api/<ValuesController>/5
+        //[HttpPut("{id}")]
+        //public void Put(int id, [FromBody] string value)
+        //{
+        //}
 
-        // DELETE api/<ValuesController>/5
-        [HttpDelete("{id}")]
-        public void Delete(int id)
-        {
+        //// DELETE api/<ValuesController>/5
+        //[HttpDelete("{id}")]
+        //public void Delete(int id)
+        //{
 
-        }
+        //}
 
         [Route("login")]
         [HttpGet]
