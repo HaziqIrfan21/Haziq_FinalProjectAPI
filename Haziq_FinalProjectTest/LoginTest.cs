@@ -21,7 +21,7 @@ namespace Haziq_FinalProjectTest
         }
        
         [Fact]
-        public void Login_UserCredentialShouldAuth()
+        public void GetLogin_UserCredentialShouldAuth()
         {
             LoginController loginController = new LoginController(_db);
 
@@ -48,7 +48,7 @@ namespace Haziq_FinalProjectTest
         [InlineData("user1", "pass", true)]
         [InlineData("hello", "hello", true)]
         [InlineData("adadasd", "asdasddas", false)]
-        public void Login_UserCredentialShouldAuthMulti(string username, string password,bool expected)
+        public void GetLogin_UserCredentialShouldAuthMulti(string username, string password,bool expected)
         {
             LoginController loginController = new LoginController(_db);
 
