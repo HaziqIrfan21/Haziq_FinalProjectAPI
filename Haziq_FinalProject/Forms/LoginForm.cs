@@ -57,7 +57,64 @@ namespace Haziq_FinalProject
 
         }
 
-       
+        public bool GetLogin(string userName, string password)
+        {
+            DB db = new DB();
+
+            //string username = textBoxUsername.Text;
+            //string password = textBoxPassword.Text;
+
+            DataTable table = new DataTable();
+            MySqlDataAdapter adapter = new MySqlDataAdapter();
+            MySqlCommand command = new MySqlCommand("SELECT * FROM `users` WHERE `username` = @usn and `password` = @pass", db.GetConnection());
+
+            command.Parameters.Add("@usn", MySqlDbType.VarChar).Value = userName;
+            command.Parameters.Add("@pass", MySqlDbType.VarChar).Value = password;
+
+            adapter.SelectCommand = command;
+
+            adapter.Fill(table);
+
+
+            //check if the user is empty
+            if (table.Rows.Count > 0)
+            {
+                //Admin Control
+                if (userName == "user1" && password == "pass")
+                {
+                    return true;
+                }
+                //User Control
+                else
+                {
+                    return true;
+
+                }
+
+            }
+
+            else
+            {
+                if (userName.Trim().Equals(""))
+                {
+                    //MessageBox.Show("Username is empty,please enter a username");
+                    return false;
+                }
+
+                else if (password.Trim().Equals(""))
+                {
+                    //MessageBox.Show("Password is empty,please enter a Password");
+                    return false;
+                }
+                else
+                {
+                   // MessageBox.Show("Wrong username or password, try again");
+                    return false;
+                }
+
+            }
+            return false;
+        }
 
 
         public void Login(string userName,string password)
