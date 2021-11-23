@@ -24,26 +24,45 @@ namespace Haziq_FinalProjectTest
     {
         private readonly RestaurantContext _db;
 
-        [Fact]
-        public void CreateAccount_UserShouldRegister()
+        [Theory]
+        [InlineData("testUsername1", "testPassword123", "testPassword123", "testFirstname", "testLastname", "testEmail", false)]
+        [InlineData("", "testPassword123", "testPassword123", "testFirstname", "testLastname", "testEmail", false)]
+        [InlineData("testUsername123", "", "testPassword123", "testFirstname", "testLastname", "testEmail", false)]
+        [InlineData("", "", "testPassword123", "testFirstname", "testLastname", "testEmail", false)]
+        [InlineData("", "Password", "Password", "First Name", "Last Name", "Email", false)]
+        public void CreateAccount_UserShouldRegister(string userName, string password, string confirmPassword, string firstName, string lastName, string email, bool expected)
         {
-            RegisterController registerController = new RegisterController(_db);
+            var options = new DbContextOptionsBuilder<RestaurantContext>().UseInMemoryDatabase(databaseName: "CreateAccount_UserShouldRegister").Options;
 
-            registerController.CreateAccount("testUsername", "testPassword", "testPassword", "testFirstname", "testLastname", "testEmail");
-
-            DBAPI db = new DBAPI();
-            //MySqlCommand command = new MySqlCommand("INSERT INTO `users`(`username`, `password`, `firstname`, `lastname`, `email`) VALUES (@usn, @pass, @fn, @ln, @email)", db.GetConnection());
+            var context = new RestaurantContext(options);
 
 
+
+            var registerController = new RegisterController(context);
+
+            Seed(context);
+
+            registerController.CreateAccount(userName, password, confirmPassword, firstName, lastName, email);
+            bool query = false;
 
             //Arrange
-            //bool expected = true;
+
+
 
             //Act
-            // bool actual = loginController.GetLogin("user1", "pass");
+            // bool actual = loginController.GetLoginDB("user1", "pass");
 
             //Assert
-            Assert.NotNull(db);
+            Assert.Equal(expected, query);
+
+
+            //bool expected = true;
+
+            ////Act
+            //bool actual = true;
+
+            ////Assert
+            //Assert.Equal(expected, actual);
         }
 
         [Theory]
@@ -51,10 +70,11 @@ namespace Haziq_FinalProjectTest
         [InlineData("", "testPassword123", "testPassword123", "testFirstname", "testLastname", "testEmail", false)]
         [InlineData("testUsername123", "", "testPassword123", "testFirstname", "testLastname", "testEmail", false)]
         [InlineData("", "", "testPassword123", "testFirstname", "testLastname", "testEmail", false)]
-        public void CreateAccount_UserShouldRegister2(string userName, string password, string confirmPassword, string firstName, string lastName, string email, bool expected)
+        [InlineData("", "Password", "Password", "First Name", "Last Name", "Email", false)]
+        public void CreateAccount_UserShouldRegisterDb(string userName, string password, string confirmPassword, string firstName, string lastName, string email, bool expected)
         {
 
-            var options = new DbContextOptionsBuilder<RestaurantContext>().UseInMemoryDatabase(databaseName: "CreateAccount_UserShouldRegister2").Options;
+            var options = new DbContextOptionsBuilder<RestaurantContext>().UseInMemoryDatabase(databaseName: "CreateAccount_UserShouldRegisterDb").Options;
 
             var context = new RestaurantContext(options);
 
@@ -64,12 +84,12 @@ namespace Haziq_FinalProjectTest
 
             Seed(context);
 
-           registerController.CreateAccountDB(userName, password, confirmPassword,firstName,lastName,email);
+            registerController.CreateAccountDB(userName, password, confirmPassword, firstName, lastName, email);
             bool query = false;
 
             //Arrange
 
-          
+
 
             //Act
             // bool actual = loginController.GetLoginDB("user1", "pass");
@@ -88,19 +108,90 @@ namespace Haziq_FinalProjectTest
 
         }
 
+        //[Theory]
+        //[InlineData("testUsername1", "testPassword123", "testFirstname", "testLastname", "testEmail", false)]
+        //[InlineData("", "testPassword123", "testFirstname", "testLastname", "testEmail", false)]
+        //[InlineData("testUsername123", "", "testFirstname", "testLastname", "testEmail", false)]
+        //[InlineData("", "", "testFirstname", "testLastname", "testEmail", false)]
+        //[InlineData("", "Password", "First Name", "Last Name", "Email", false)]
+        //public void CreateAccount_UserShouldRegisterForm(string userName, string password, string firstName, string lastName, string email, bool expected)
+        //{
+          
+        //    RegisterForm registerForm = new RegisterForm();
+
+        //    registerForm.CreateAccount(userName, password, firstName, lastName, email);
+
+
+           
+        //    bool query = false;
+
+        //    //Arrange
+
+
+        //    //Act
+        //    // bool actual = loginController.GetLoginDB("user1", "pass");
+
+        //    //Assert
+        //    Assert.Equal(expected, query);
+
+          
+
+        //    //bool expected = true;
+
+        //    ////Act
+        //    //bool actual = true;
+
+        //    ////Assert
+        //    //Assert.Equal(expected, actual);
+        //}
+
+        [Theory]
+        [InlineData("testUsername1", "testPassword123", "testFirstname", "testLastname", "testEmail", false)]
+        [InlineData("", "testPassword123", "testFirstname", "testLastname", "testEmail", false)]
+        [InlineData("testUsername123", "", "testFirstname", "testLastname", "testEmail", false)]
+        [InlineData("", "", "testFirstname", "testLastname", "testEmail", false)]
+        [InlineData("", "Password", "First Name", "Last Name", "Email", false)]
+        public void CheckUsername_UsernameShouldBeUnique(string userName, string password, string firstName, string lastName, string email, bool expected)
+        {
+
+            RegisterForm registerForm = new RegisterForm();
+
+            bool query = registerForm.CheckUsername();
+                    registerForm.CheckTextBoxValues();
+            registerForm.CreateAccount(userName, password, firstName, lastName, email);
+
+            //bool query = false;
+
+            //Arrange
+
+
+            //Act
+            // bool actual = loginController.GetLoginDB("user1", "pass");
+
+            //Assert
+            Assert.Equal(expected, query);
+
+
+
+            //bool expected = true;
+
+            ////Act
+            //bool actual = true;
+
+            ////Assert
+            //Assert.Equal(expected, actual);
+        }
+
         private void Seed(RestaurantContext context)
         {
             var customers = new[]
             {
+                 new Users { UserName = "testUsername1", Password = "testPassword123" ,FirstName = "testFirstname" , LastName = "testLastname" , Email = "testEmail"},
+                   new Users { UserName = "", Password = "testPassword123" ,FirstName = "testFirstname Name" , LastName = "testLastname Name" , Email = "testEmail"},
+                   new Users { UserName = "testUsername1", Password = "" ,FirstName = "testFirstname Name" , LastName = "testLastname Name" , Email = "testEmail"},
+                   new Users { UserName = "", Password = "" ,FirstName = "testFirstname Name" , LastName = "testLastname Name" , Email = "testEmail"},
+                     new Users { UserName = "", Password = "Password" ,FirstName = "First Name" , LastName = "Last Name" , Email = "Email"},
 
-
-            new Users { UserName = "user1", Password = "pass" },
-            new Users { UserName = "hello", Password = "hello"},
-             new Users { UserName = "asdasdad", Password = "asdadsa" },
-              new Users { UserName = "", Password = "pass" },
-                new Users { UserName = "user1", Password = "" },
-               new Users { UserName = "", Password = "" },
-                 new Users { UserName = null, Password = null },
              };
 
             context.User.AddRange(customers);
