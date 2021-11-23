@@ -6,12 +6,16 @@ using System.Security.Authentication;
 using System.Text;
 using System.Windows.Forms;
 using EFDataAcessLibrary.DataAccess;
+using EFDataAcessLibrary.Models;
 using Haziq_FinalProject;
+using Microsoft.EntityFrameworkCore;
 using MySql.Data.MySqlClient;
 using Newtonsoft.Json;
 using RestaurantAPI;
 using RestaurantAPI.Controllers;
 using Xunit;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace Haziq_FinalProjectTest
 {
@@ -67,6 +71,71 @@ namespace Haziq_FinalProjectTest
             //Assert
             Assert.Equal(expected, actual);
         }
+
+        private void Seed(RestaurantContext context)
+        {
+            var customers = new[]
+            {
+            new Users { UserName = "postmanDB ", Password = "pass", FirstName = "rick " , LastName ="grimes" , Email = "zzz@mail.com" , IsAdmin = 0 },
+             };
+
+            context.User.AddRange(customers);
+            context.SaveChanges();
+        }
+
+        [Fact]
+        public void Admin_ShouldGetUsersDB()
+        {
+            var options = new DbContextOptionsBuilder<RestaurantContext>().UseInMemoryDatabase(databaseName: "Admin_ShouldGetUsersDB").Options;
+
+            var context = new RestaurantContext(options);
+
+            Seed(context);
+
+            var adminController = new AdminController(context);
+
+            //Seed(Context);
+
+            string query = adminController.GetAdminUserDB();
+
+            //Arrange
+
+
+
+            //Act
+            // bool actual = loginController.GetLoginDB("user1", "pass");
+
+            //Assert
+            Assert.NotEmpty( query);
+        }
+
+        [Fact]
+        public void Admin_ShouldGetOrdersDB()
+        {
+            var options = new DbContextOptionsBuilder<RestaurantContext>().UseInMemoryDatabase(databaseName: "Admin_ShouldGetOrdersDB").Options;
+
+            var context = new RestaurantContext(options);
+
+            Seed(context);
+
+            var adminController = new AdminController(context);
+
+            //Seed(Context);
+
+            string query = adminController.GetAdminOrderDB();
+
+            //Arrange
+
+
+
+            //Act
+            // bool actual = loginController.GetLoginDB("user1", "pass");
+
+            //Assert
+            Assert.NotEmpty(query);
+        }
+
+
 
         //[Fact]
         //public void Admin_ShouldGetOrdersException()

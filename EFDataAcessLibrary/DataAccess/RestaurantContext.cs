@@ -8,7 +8,10 @@ namespace EFDataAcessLibrary.DataAccess
 {
     public class RestaurantContext : DbContext
     {
-    
+    public RestaurantContext()
+        {
+
+        }
 
         public RestaurantContext(DbContextOptions<RestaurantContext> options) : base(options) { }
         public DbSet<Users> User { get; set; }
