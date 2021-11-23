@@ -24,7 +24,9 @@ namespace Haziq_FinalProject
 
         }
 
-        private void Admin_Load()
+       
+
+        public void Admin_Load()
         {
             try
             {

@@ -135,6 +135,32 @@ namespace Haziq_FinalProjectTest
             Assert.NotEmpty(query);
         }
 
+        [Fact]
+        public void AdminLoad_ShouldDispayPhpDb()
+        {
+            //var options = new DbContextOptionsBuilder<RestaurantContext>().UseInMemoryDatabase(databaseName: "Admin_ShouldGetOrdersDB").Options;
+
+            //var context = new RestaurantContext(options);
+
+            //Seed(context);
+
+            var adminForm = new AdminForm();
+
+            //Seed(Context);
+
+           adminForm.Admin_Load();
+
+            //Arrange
+            bool expected = true;
+
+
+            //Act
+            // bool actual = loginController.GetLoginDB("user1", "pass");
+
+            //Assert
+            Assert.True(expected);
+        }
+
 
 
         //[Fact]
