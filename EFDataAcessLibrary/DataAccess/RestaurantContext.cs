@@ -18,5 +18,7 @@ namespace EFDataAcessLibrary.DataAccess
 
         public DbSet<Orders> Order { get; set; }
 
+        public DbSet<Items> Item { get; set; }
+
     }
 }

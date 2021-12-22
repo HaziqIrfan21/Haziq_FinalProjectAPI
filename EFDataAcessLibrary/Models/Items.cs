@@ -7,27 +7,19 @@ using Microsoft.EntityFrameworkCore.Metadata.Internal;
 
 namespace EFDataAcessLibrary.Models
 {
-    public class Orders
+    public class Items
     {
         public int Id { get; set; }
 
-        [Required]
-        [MaxLength(100)]
-        public string UserName { get; set; }
-        [Required]
         [MaxLength(100)]
         public string ItemName { get; set; }
-        [Required]
-        public int Qty { get; set; }
+
+        [MaxLength(255)]
+        public string ItemDescription { get; set; }
 
         [Column(TypeName = "decimal(18,2)")]
-        public decimal Price { get; set; }
+        public decimal ItemPrice { get; set; }
 
-        [Column(TypeName = "decimal(18,2)")]
-        public decimal TotalPrice { get; set; }
-
-        public virtual Users Users { get; set; }
-
-        public virtual Items Items { get; set; }
+        public byte[] ItemImage { get; set; }
     }
 }
