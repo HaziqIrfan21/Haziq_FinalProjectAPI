@@ -140,11 +140,17 @@ namespace RestaurantAPI.Controllers
 
         [Route("AddtoOrderDB")]
         [HttpPut]
-        public void AddToOrderDB(string userName, string itemName, int qty, decimal price, decimal total, int id)
+        public void AddToOrderDB(int userId, int itemId, int qty)
         {
 
             //---------//
-             Orders orders = new Orders() {UserName = userName,ItemName = itemName, Qty = qty,Price = price,TotalPrice = total ,Id = id};
+            var user = _db.User.FirstOrDefault(p => p.Id == userId);
+
+            var item = _db.Item.FirstOrDefault(p => p.Id == itemId);
+
+            //UserName = user.UserName, ItemName = item.ItemName, Qty = qty, Price = item.ItemPrice, TotalPrice = qty * item.ItemPrice
+
+            Orders orders = new Orders() {UsersId = user.Id, ItemsId = itemId, UserName = user.UserName, ItemName = item.ItemName, Qty = qty, Price = item.ItemPrice, TotalPrice = qty * item.ItemPrice };
             
             _db.Order.Add(orders);
             _db.SaveChanges();

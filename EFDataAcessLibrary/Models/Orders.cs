@@ -11,6 +11,10 @@ namespace EFDataAcessLibrary.Models
     {
         public int Id { get; set; }
 
+        public int ItemsId { get; set; }
+
+        public int UsersId { get; set; }
+
         [Required]
         [MaxLength(100)]
         public string UserName { get; set; }

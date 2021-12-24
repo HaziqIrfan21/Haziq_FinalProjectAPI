@@ -11,6 +11,9 @@ namespace EFDataAcessLibrary.Models
     {
         public int Id { get; set; }
 
+        [MaxLength(50)]
+        public string ItemCategory { get; set; }
+
         [MaxLength(100)]
         public string ItemName { get; set; }
 
@@ -20,6 +23,6 @@ namespace EFDataAcessLibrary.Models
         [Column(TypeName = "decimal(18,2)")]
         public decimal ItemPrice { get; set; }
 
-        public byte[] ItemImage { get; set; }
+
     }
 }

@@ -65,6 +65,11 @@ namespace RestaurantAPI.Controllers
         public void CreateAccountDB(string userName, string password, string confirmPassword, string firstName, string lastName, string email)
         {
             Users user = new Users() { UserName = userName, Password = password, FirstName = firstName, LastName = lastName, Email = email };
+
+            bool users = _db.User.Any(p => p.UserName == userName);
+
+
+
             if (!CheckTextBoxValues(firstName, lastName, email, password))
             {
 
@@ -72,7 +77,7 @@ namespace RestaurantAPI.Controllers
                 if (password == confirmPassword)
                 {
                     //Check if this username already exists
-                    if (CheckUsername(userName))
+                    if (users)
                     {
                         MessageBox.Show("Username taken,please select a different username");
                         //custom error message

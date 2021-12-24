@@ -4,13 +4,17 @@ using System.Data;
 using System.Linq;
 using System.Text.Json;
 using System.Threading.Tasks;
+using System.Windows.Forms;
+using Castle.Core.Resource;
 using DatabaseSQL;
 using EFDataAcessLibrary.DataAccess;
 using EFDataAcessLibrary.Models;
 using Haziq_FinalProject;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using Microsoft.VisualBasic.ApplicationServices;
 using MySql.Data.MySqlClient;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -133,7 +137,7 @@ namespace RestaurantAPI.Controllers
             // Users Users = new Users();
 
             var users = _db.User.Where(p => p.UserName == userName && p.Password == password);
-            
+
 
 
             foreach (var item in users)
@@ -161,6 +165,69 @@ namespace RestaurantAPI.Controllers
 
             return false;
 
+        }
+
+        [Route("changeCredentialsDB")]
+        [HttpPost]
+        public void ChangeCredentialsDB(int id, string firstName, string LastName, string email, string confirmPassword)
+        {
+            var queryUserAcccount = from user in _db.User
+                                    where user.Id == id
+                                    select user;
+
+
+            foreach (var item in queryUserAcccount)
+            {
+                if (item.Password == confirmPassword)
+                {
+                    item.FirstName = firstName;
+                    item.LastName = LastName;
+                    item.Email = email;
+                    _db.User.Add(item);
+                    _db.SaveChanges();
+
+                }
+                else
+                {
+                    MessageBox.Show("Incorrect password. Please retry");
+                }
+
+
+            }
+        }
+        [Route("changeUserNameDB")]
+        [HttpPost]
+        public void ChangeUserNameDB(int id, string username, string confirmPassword)
+        {
+            var queryUserAcccount = from user in _db.User
+                                    where user.Id == id
+                                    select user;
+
+
+            foreach (var item in queryUserAcccount)
+            {
+                if (item.Password == confirmPassword)
+                {
+                    bool users = _db.User.Any(p => p.UserName == username);
+
+                    if(users)
+                    {
+                        MessageBox.Show("Username already taken please choose another");
+                    }
+                    else if(!users)
+                    {
+                        _db.User.Add(item);
+                        _db.SaveChanges();
+                    }
+                   
+                }
+                else
+                {
+                    MessageBox.Show("Incorrect password. Please retry");
+                }
+
+
+            }
         }
 
 

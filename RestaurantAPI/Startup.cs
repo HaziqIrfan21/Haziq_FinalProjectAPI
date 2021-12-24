@@ -30,6 +30,7 @@ namespace RestaurantAPI
             {
                 options.UseSqlServer(Configuration.GetConnectionString("Default"));
             });
+            services.AddSwaggerGen();
             services.AddControllersWithViews();
             services.AddControllers().AddNewtonsoftJson();
         }
@@ -37,6 +38,8 @@ namespace RestaurantAPI
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+            app.UseSwagger();
+            app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Assesment7_API"));
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();

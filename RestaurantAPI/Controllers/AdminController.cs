@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using DatabaseSQL;
 using EFDataAcessLibrary.DataAccess;
+using EFDataAcessLibrary.Models;
 using Microsoft.AspNetCore.Mvc;
 using MySql.Data.MySqlClient;
 using Newtonsoft.Json;
@@ -155,6 +156,43 @@ namespace RestaurantAPI.Controllers
             }
             return null;
         }
+
+        [Route("adminAddFood")]
+        [HttpPost]
+        public void PostAddFood(string itemCategory, string itemName, string itemDescription, decimal itemPrice)
+        {
+            try
+            {
+                Items items = new Items() { ItemCategory = itemCategory, ItemName = itemName, ItemDescription = itemDescription, ItemPrice = itemPrice };
+                _db.Item.Add(items);
+                _db.SaveChanges();
+            }
+            catch (Exception)
+            {
+
+                throw;  
+            }
+        }
+
+        [Route("adminGetUserOrderList")]
+        [HttpGet]
+        public string AdminGetUserOrders(int userId)
+        {
+            try
+            {
+                var order = _db.Order.Where(p => p.UsersId == userId);
+
+                string json = JsonConvert.SerializeObject(order);
+                return json;
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+
+
 
     }
 
